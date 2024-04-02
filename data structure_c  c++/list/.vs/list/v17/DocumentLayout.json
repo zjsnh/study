@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD5DDA7A-6F97-46B7-93A5-73EF462BAB1A}|list\\list.vcxproj|E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\list\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AD5DDA7A-6F97-46B7-93A5-73EF462BAB1A}|list\\list.vcxproj|solutionrelative:list\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AD5DDA7A-6F97-46B7-93A5-73EF462BAB1A}|list\\list.vcxproj|E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\list\\list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AD5DDA7A-6F97-46B7-93A5-73EF462BAB1A}|list\\list.vcxproj|solutionrelative:list\\list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD5DDA7A-6F97-46B7-93A5-73EF462BAB1A}|list\\list.vcxproj|E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\list\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AD5DDA7A-6F97-46B7-93A5-73EF462BAB1A}|list\\list.vcxproj|solutionrelative:list\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD5DDA7A-6F97-46B7-93A5-73EF462BAB1A}|list\\list.vcxproj|E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\list\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AD5DDA7A-6F97-46B7-93A5-73EF462BAB1A}|list\\list.vcxproj|solutionrelative:list\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +34,62 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "list.h",
-              "DocumentMoniker": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\list\\list.h",
-              "RelativeDocumentMoniker": "list\\list.h",
-              "ToolTip": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\list\\list.h",
-              "RelativeToolTip": "list\\list.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-02T06:55:29.355Z",
+              "DocumentIndex": 1,
+              "Title": "text.cpp",
+              "DocumentMoniker": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\list\\text.cpp",
+              "RelativeDocumentMoniker": "list\\text.cpp",
+              "ToolTip": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\list\\text.cpp",
+              "RelativeToolTip": "list\\text.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T09:07:06.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "list.cpp",
               "DocumentMoniker": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\list\\list.cpp",
               "RelativeDocumentMoniker": "list\\list.cpp",
               "ToolTip": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\list\\list.cpp",
               "RelativeToolTip": "list\\list.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAE8AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-02T06:55:08.441Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "802fa296-49d4-4927-8988-90eaed57382d",
+        "Display": 1,
+        "X": 92,
+        "Y": -25,
+        "Width": 721,
+        "Height": 640,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "list.h",
+              "DocumentMoniker": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\list\\list.h",
+              "RelativeDocumentMoniker": "list\\list.h",
+              "ToolTip": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\list\\list\\list.h",
+              "RelativeToolTip": "list\\list.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-02T06:55:29.355Z",
               "EditorCaption": ""
             }
           ]
