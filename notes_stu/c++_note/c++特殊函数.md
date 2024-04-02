@@ -55,3 +55,9 @@
 
 
 <img src="C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240402201653531.png" alt="image-20240402201653531" style="zoom:50%;" />
+
+只要支持连续赋值就需要返回值
+
+
+
+<img src="C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240402210423551.png" alt="image-20240402210423551" style="zoom:50%;" />

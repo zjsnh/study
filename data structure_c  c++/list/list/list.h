@@ -17,11 +17,11 @@ public:
 
     List();
     ~List();
-    void ListPushback(DateType date);
-    void ListPushfront(DateType date);
+    void Pushback(DateType date);
+    void Pushfront(DateType date);
     void Seek();
-    void ListInsert(ListNode* node, DateType date);
-    void ListRemove(ListNode* node);
+    void Insert(ListNode* node, DateType date);
+    void Remove(ListNode* node);
 
 private:
 

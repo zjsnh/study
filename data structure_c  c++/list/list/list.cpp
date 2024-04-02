@@ -35,7 +35,7 @@ ListNode* List::create(DateType date)
 
 }
 
-void List::ListPushback(DateType date)
+void List::Pushback(DateType date)
 {
 	if (_head == nullptr)
 	{
@@ -50,7 +50,7 @@ void List::ListPushback(DateType date)
 	_tail = cur;
 }
 
-void List::ListPushfront(DateType date)
+void List::Pushfront(DateType date)
 {
 
 	ListNode* temp = create(date);
@@ -82,7 +82,7 @@ void List::Seek()
 	cout << endl;
 
 }
-void List::ListInsert(ListNode* node, DateType date)
+void List::Insert(ListNode* node, DateType date)
 {
 	ListNode* cur = _head;
 	while (cur != node)
@@ -98,7 +98,7 @@ void List::ListInsert(ListNode* node, DateType date)
 }
 
 
-void List::ListRemove(ListNode* node)
+void List::Remove(ListNode* node)
 {
 	ListNode* cur = _head;
 	ListNode* tail = cur;
