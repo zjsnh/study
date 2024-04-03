@@ -4,7 +4,7 @@
 
 using namespace std;
 
-typedef int Datetype;
+typedef int Datatype;
 
 class Stack
 {
@@ -12,13 +12,13 @@ public:
 	Stack(int capacity = 4);
 	~Stack();
 
-	void Push(Datetype x);
+	void Push(Datatype x);
 	void New_capacity();
 	void Pop();
 	void pPop();
 
 private:
-	Datetype* _date;
+	Datatype* _data;
 	int _size;
 	int _capacity;
 };

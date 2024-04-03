@@ -8,7 +8,7 @@ typedef int DateType;
 
 // 定义链表节点结构体
 struct ListNode {
-    DateType _date;
+    DateType _data;
     ListNode* _next;
 };
 
@@ -17,15 +17,15 @@ public:
 
     List();
     ~List();
-    void Pushback(DateType date);
-    void Pushfront(DateType date);
+    void Pushback(DateType data);
+    void Pushfront(DateType data);
     void Seek();
-    void Insert(ListNode* node, DateType date);
+    void Insert(ListNode* node, DateType data);
     void Remove(ListNode* node);
 
 private:
 
-    ListNode* create(DateType date);
+    ListNode* create(DateType data);
     ListNode* _head;
     ListNode* _tail;
 };

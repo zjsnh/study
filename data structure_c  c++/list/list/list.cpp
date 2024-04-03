@@ -20,7 +20,7 @@ List::~List()
 
 }
 
-ListNode* List::create(DateType date)
+ListNode* List::create(DateType data)
 {
 	ListNode* temp = (ListNode*)malloc(sizeof(List));
 	if (temp == nullptr)
@@ -28,32 +28,32 @@ ListNode* List::create(DateType date)
 		perror("malloc");
 		exit(-1);
 	}
-	temp->_date = date;
+	temp->_data = data;
 	temp->_next = nullptr;
 
 	return temp;
 
 }
 
-void List::Pushback(DateType date)
+void List::Pushback(DateType data)
 {
 	if (_head == nullptr)
 	{
-		_head = create(date);
+		_head = create(data);
 		_tail = _head;
 		return;
 	}
 
-	ListNode* cur = create(date);
+	ListNode* cur = create(data);
 
 	_tail->_next = cur;
 	_tail = cur;
 }
 
-void List::Pushfront(DateType date)
+void List::Pushfront(DateType data)
 {
 
-	ListNode* temp = create(date);
+	ListNode* temp = create(data);
 	if (_head == nullptr)
 	{
 		_head = temp;
@@ -76,13 +76,13 @@ void List::Seek()
 	ListNode* cur = _head;
 	while (cur != nullptr)
 	{
-		cout << cur->_date << " ";
+		cout << cur->_data << " ";
 		cur = cur->_next;
 	}
 	cout << endl;
 
 }
-void List::Insert(ListNode* node, DateType date)
+void List::Insert(ListNode* node, DateType data)
 {
 	ListNode* cur = _head;
 	while (cur != node)
@@ -90,7 +90,7 @@ void List::Insert(ListNode* node, DateType date)
 		cur = cur->_next;
 	}
 
-	ListNode* temp = create(date);
+	ListNode* temp = create(data);
 
 	temp->_next = cur->_next;
 	cur->_next = temp;

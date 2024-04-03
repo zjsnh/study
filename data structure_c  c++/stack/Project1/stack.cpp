@@ -2,8 +2,8 @@
 
 Stack::Stack(int capacity=4)
 {
-	_date = (Datetype*)malloc(sizeof(Datetype) * capacity);
-	if (_date == nullptr)
+	_data = (Datatype*)malloc(sizeof(Datatype) * capacity);
+	if (_data == nullptr)
 	{
 		perror("malloc");
 		exit(-1);
@@ -15,8 +15,8 @@ Stack::Stack(int capacity=4)
 
 Stack::~Stack()
 {
-	free(_date);
-	_date = nullptr;
+	free(_data);
+	_data = nullptr;
 	_size = _capacity = 0;
 }
 
@@ -24,24 +24,24 @@ void Stack::New_capacity()
 {
 	_capacity *= 2;
 
-	Datetype* temp = (Datetype*)malloc(sizeof(int) * _capacity);
+	Datatype* temp = (Datatype*)malloc(sizeof(int) * _capacity);
 	if (temp == nullptr)
 	{
 		perror("malloc");
 		exit(-1);
 	}
 
-	_date = temp;
+	_data = temp;
 }
 
-void Stack::Push(Datetype x)
+void Stack::Push(Datatype x)
 {
 	if (_size == _capacity)
 	{
 		New_capacity();
 	}
 
-	_date[_size++] = x;
+	_data[_size++] = x;
 
 }
 
@@ -51,7 +51,7 @@ void Stack::Pop()
 
 }
 
-Datetype Stack::pPop()
+Datatype Stack::pPop()
 {
-	return _date[_size - 1];
+	return _data[_size - 1];
 }
