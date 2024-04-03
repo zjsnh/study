@@ -47,10 +47,11 @@ void Stack::Push(Datetype x)
 
 void Stack::Pop()
 {
+	_size--;
 
 }
 
-void Stack::pPop()
+Datetype Stack::pPop()
 {
-
+	return _date[_size - 1];
 }
