@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\2023_code\\study\\text\\Project1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{92B7F09F-2A17-4176-92B9-E928A2839BF6}|Project1\\Project1.vcxproj|E:\\2023_code\\study\\text\\Project1\\Project1\\text.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{92B7F09F-2A17-4176-92B9-E928A2839BF6}|Project1\\Project1.vcxproj|solutionrelative:Project1\\text.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 9,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "text.c",
+              "DocumentMoniker": "E:\\2023_code\\study\\text\\Project1\\Project1\\text.c",
+              "RelativeDocumentMoniker": "Project1\\text.c",
+              "ToolTip": "E:\\2023_code\\study\\text\\Project1\\Project1\\text.c",
+              "RelativeToolTip": "Project1\\text.c",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-04-05T04:50:18.275Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
