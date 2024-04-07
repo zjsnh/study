@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\2023_code\\study\\text\\Project2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72901BED-85DE-440E-A3B6-752AFB97B2B3}|Project2\\Project2.vcxproj|E:\\2023_code\\study\\text\\Project2\\Project2\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{72901BED-85DE-440E-A3B6-752AFB97B2B3}|Project2\\Project2.vcxproj|solutionrelative:Project2\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 9,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "text.cpp",
+              "DocumentMoniker": "E:\\2023_code\\study\\text\\Project2\\Project2\\text.cpp",
+              "RelativeDocumentMoniker": "Project2\\text.cpp",
+              "ToolTip": "E:\\2023_code\\study\\text\\Project2\\Project2\\text.cpp",
+              "RelativeToolTip": "Project2\\text.cpp",
+              "ViewState": "AQIAACYAAAAAAAAAAAAkwCsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-07T03:30:55.044Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
