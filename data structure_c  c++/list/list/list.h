@@ -19,7 +19,7 @@ public:
     ~List();
     void Pushback(DateType data);
     void Pushfront(DateType data);
-    void Seek();
+    ListNode* Seek(int target);
     void Insert(ListNode* node, DateType data);
     void Remove(ListNode* node);
 

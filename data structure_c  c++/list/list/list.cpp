@@ -71,17 +71,30 @@ void List::Pushfront(DateType data)
 }
 
 
-void List::Seek()
-{
-	ListNode* cur = _head;
-	while (cur != nullptr)
-	{
-		cout << cur->_data << " ";
-		cur = cur->_next;
-	}
-	cout << endl;
+//ListNode* List::Seek()
+//{
+//	/*ListNode* cur = _head;
+//	while (cur != nullptr)
+//	{
+//		cout << cur->_data << " ";
+//		cur = cur->_next;
+//	}
+//	cout << endl;*/
+//
+//}
 
+ListNode* List::Seek(int target) {
+	ListNode* current = _head;  // 从链表头节点开始遍历
+	while (current != nullptr) {
+		if (current->_data == target) {
+			return current;  // 找到节点，返回节点指针
+		}
+		current = current->_next;  // 移动到下一个节点
+	}
+	return nullptr;  // 没有找到节点，返回空指针
 }
+
+
 void List::Insert(ListNode* node, DateType data)
 {
 	ListNode* cur = _head;

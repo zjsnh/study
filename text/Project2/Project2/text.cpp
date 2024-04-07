@@ -60,3 +60,17 @@ using namespace std;
 //
 //	return 0;
 //}
+
+typedef struct List
+{
+	int* data;
+	int A;
+	Node* data;
+	Node B;
+}Node, *node, &noDe;
+
+int main()
+{
+	Node a;
+	return 0;
+}

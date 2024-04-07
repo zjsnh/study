@@ -10,7 +10,7 @@ int main()
 	l.Pushback(5);
 	l.Pushback(6);
 
-	l.Seek();
+	/*l.Seek();*/
 
 	return 0;
 
