@@ -1,0 +1,13 @@
+﻿  Date.cpp
+E:\2023_code\study\c++_study\time\time\Date.cpp(5,23): error C2572: “Date::Date”: 重定义默认参数 : 参数 1
+  E:\2023_code\study\c++_study\time\time\time.h(21,2):
+  参见“Date::Date”的声明
+  
+E:\2023_code\study\c++_study\time\time\Date.cpp(5,41): error C2572: “Date::Date”: 重定义默认参数 : 参数 2
+  E:\2023_code\study\c++_study\time\time\time.h(21,2):
+  参见“Date::Date”的声明
+  
+E:\2023_code\study\c++_study\time\time\Date.cpp(5,54): error C2572: “Date::Date”: 重定义默认参数 : 参数 3
+  E:\2023_code\study\c++_study\time\time\time.h(21,2):
+  参见“Date::Date”的声明
+  
