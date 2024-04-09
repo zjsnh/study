@@ -1,4 +1,3 @@
-#pragma once
 #include"time.h"
 
 
@@ -146,7 +145,7 @@ Date Date::operator-(int day) const
 	return temp -= day;
 }
 
-Date& Date::operator--(int)
+Date Date::operator--(int)
 {
 	Date temp = *this;
 
@@ -154,7 +153,7 @@ Date& Date::operator--(int)
 	return temp;
 }
 
-Date& Date::operator++(int)
+Date Date::operator++(int)
 {
 	Date temp = *this;
 

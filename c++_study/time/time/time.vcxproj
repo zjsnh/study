@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Date.cpp" />
+    <ClCompile Include="text.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
