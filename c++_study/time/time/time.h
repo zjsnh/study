@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<cassert>
+#include<ctime>
 using namespace std;
 //using std::cout;
 //using std::cin;

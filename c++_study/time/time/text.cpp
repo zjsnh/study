@@ -2,6 +2,8 @@
 
 int main()
 {
+	/*time_t local;
+	struct */
 
 
 	Date d(2023, 3, 4);
@@ -10,7 +12,7 @@ int main()
 	d += 100;
 	cout << d << d2;
 	
-
+	/*localtime();*/
 
 	return 0;
 }
