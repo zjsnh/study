@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<stdlib.h>
+#include<cstdbool>
 
 using namespace std;
 
@@ -16,6 +17,7 @@ public:
 	void New_capacity();
 	void Pop();
 	void pPop();
+	bool Empty();
 
 private:
 	Datatype* _data;

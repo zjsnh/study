@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "queue\\queue.cpp",
               "ToolTip": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\queue\\queue\\queue.cpp",
               "RelativeToolTip": "queue\\queue.cpp",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAkwFcAAAACAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFcAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-03T02:57:19.8Z",
               "EditorCaption": ""
@@ -51,7 +51,7 @@
       "FloatingWindowState": {
         "Id": "ea4c4130-ad7a-436c-8ec3-0717545b4c47",
         "Display": 1,
-        "X": -80,
+        "X": -81,
         "Y": -14,
         "Width": 721,
         "Height": 640,

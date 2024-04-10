@@ -24,7 +24,7 @@ void Stack::New_capacity()
 {
 	_capacity *= 2;
 
-	Datatype* temp = (Datatype*)malloc(sizeof(int) * _capacity);
+	Datatype* temp = (Datatype*)malloc(_data, sizeof(Datatype) * _capacity);
 	if (temp == nullptr)
 	{
 		perror("malloc");
@@ -47,11 +47,18 @@ void Stack::Push(Datatype x)
 
 void Stack::Pop()
 {
+	assert(!Empty());
 	_size--;
 
 }
 
 Datatype Stack::pPop()
 {
+	assert(!Empty());
 	return _data[_size - 1];
+}
+
+bool Stack::Empty()
+{
+	return _size == 0;
 }
