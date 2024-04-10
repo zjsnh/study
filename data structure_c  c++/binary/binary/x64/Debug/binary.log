@@ -1,0 +1,13 @@
+﻿  binary.cpp
+E:\2023_code\study\data structure_c  c++\binary\binary\binary.cpp(76,34): error C2248: “BinaryTree::_left”: 无法访问 private 成员(在“BinaryTree”类中声明)
+  E:\2023_code\study\data structure_c  c++\binary\binary\binary.h(16,14):
+  参见“BinaryTree::_left”的声明
+  E:\2023_code\study\data structure_c  c++\binary\binary\binary.h(10,7):
+  参见“BinaryTree”的声明
+  
+E:\2023_code\study\data structure_c  c++\binary\binary\binary.cpp(77,28): error C2248: “BinaryTree::_right”: 无法访问 private 成员(在“BinaryTree”类中声明)
+  E:\2023_code\study\data structure_c  c++\binary\binary\binary.h(17,14):
+  参见“BinaryTree::_right”的声明
+  E:\2023_code\study\data structure_c  c++\binary\binary\binary.h(10,7):
+  参见“BinaryTree”的声明
+  
