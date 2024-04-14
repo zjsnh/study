@@ -1,22 +1,40 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
-template<class T>
-class human
-{
-	class brain
-	{
 
-	};
+
+template<class t>
+class node
+{
+	node();
+	~node();
 
 
 private:
-	T name;
-
+	t* _data;
+	int size;
+	int capacity;
 };
+
+template<class t>
+node<t>::node()
+{
+
+}
+
+
+template<class t>
+node<t>::~node()
+{
+
+}
+
+
+
 
 
 int main()
 {
-
+	vector<int> V;
 }
