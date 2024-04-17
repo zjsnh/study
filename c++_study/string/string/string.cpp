@@ -91,28 +91,150 @@ using namespace std;
 //
 //}
 
+//int main()
+//{
+//	string s1("!:@#$ $%%^");
+//	string::iterator it = s1.begin();//begin 第一个位置的指针
+//	while (it != s1.end())//end 最后一个位置的下一个位置
+//	{
+//		cout << *it << " ";
+//		++it;
+//	}
+//
+//	
+//
+//	cout << endl;
+//
+//	for (auto ch : s1)
+//	{
+//		cout << ch << " ";
+//	}
+//
+//	cout << endl;
+//
+//
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	string s ("ning wen bo!");
+//
+//	string::iterator it = s.begin();
+//	while (it != s.end())
+//	{
+//		if (*it == ' ')
+//		{
+//			//s.replace(std::distance(s.begin(), it), 1, "%%d");//用distancs计算迭代器的距离
+//			s.replace(it, it + 1, 1, '*');
+//		}
+//		else
+//		{
+//			++it;
+//		}
+//	}
+//
+//	cout << s << endl;
+//
+//	return 0;
+//
+//}
+
+
+//int main() {
+//    std::string s("hello world");
+//    std::string replace_string("replace_string");
+//
+//    // 使用迭代器遍历字符串
+//    for (auto it = s.begin(); it != s.end(); ) {
+//        if (*it == ' ') {
+//            // 计算要替换的空格及其后的字符数量
+//            size_t replace_length = replace_string.length();
+//            size_t erase_length = 1; // 空格本身
+//
+//            // 如果空格后面还有空格，则继续计算要替换的长度
+//            while (std::next(it) != s.end() && *std::next(it) == ' ') {
+//                ++erase_length;
+//            }
+//
+//            // 执行替换操作
+//            it = s.replace(it, it + erase_length, replace_string.c_str(), replace_length).begin() + (it - s.begin());
+//        }
+//        else {
+//            ++it;
+//        }
+//    }
+//
+//    std::cout << s << std::endl;
+//
+//    return 0;
+//}
+
+
+//int main()
+//{
+//	string s ("ning wen bo!");
+//
+//	string::iterator it = s.begin();
+//	while (it != s.end())
+//	{
+//		if (*it == ' ')
+//		{
+//			//s.replace(std::distance(s.begin(), it), 1, "%%d");//用distancs计算迭代器的距离
+//			//it = s.replace(it, it + 1, "abc", 3).begin() + (it - s.begin());
+//			//it = s.replace(it, it + 1, 1, '*').begin() + (it - s.begin());//更换一个字符
+//
+//			//s.replace(it, it + 1, 1, '*');
+//
+//			//it = s.replace(it, it + 1, 1, '*').begin();
+//			
+//			it=s.replace(it, it + 1, "abc", 3).begin();
+//
+//			//replac返回修改后的字符串的首地址
+//		}
+//		else
+//		{
+//			++it;
+//		}
+//	}
+//
+//	cout << s << endl;
+//
+//	return 0;
+//
+//}
+
 int main()
 {
-	string s1("!:@#$ $%%^");
-	string::iterator it = s1.begin();//begin 第一个位置的指针
-	while (it != s1.end())//end 最后一个位置的下一个位置
-	{
-		cout << *it << " ";
-		++it;
-	}
+	string s ("ning wen bo!");
+
+	//string::iterator it = s.begin();
+	//while (it != s.end())
+	//{
+	//	if (*it == ' ')
+	//	{
+	//		//s.replace(std::distance(s.begin(), it), 1, "%%d");//用distancs计算迭代器的距离
+	//		s.replace(it, it + 1, 1, '*');
+	//	}
+	//	else
+	//	{
+	//		++it;
+	//	}
+	//}
 
 	
 
-	cout << endl;
-
-	for (auto ch : s1)
+	size_t pos = s.find(' ');
+	while (pos != string::npos)
 	{
-		cout << ch << " ";
+		s.replace(pos, 1, "%20");
+		pos = s.find(' ',pos+3);//pos起始位置
 	}
 
-	cout << endl;
-
+	cout << s << endl;
 
 	return 0;
-}
 
+}

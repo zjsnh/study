@@ -168,6 +168,174 @@ for (auto ch : s1)
 cout << endl;
 ```
 
-可以线理解为指针，，范围for  本质来说就是迭代器
+可以先理解为指针，，范围for  本质来说就是迭代器
 
 ![image-20240414205340662](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240414205340662.png)
+
+反向迭代器
+
+```c++
+reverse_iterator 
+```
+
+![image-20240417134655412](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417134655412.png)
+
+const_iterator
+
+不能修改，只能读，遍历
+
+![image-20240417135320376](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417135320376.png)
+
+## []  at
+
+```c++
+a[100];
+a.at(100);
+```
+
+对于越界的数据，在string类中，重载后会直接中止，at会抛异常，可以被捕获
+
+## assign
+
+赋值
+
+## insert
+
+插入
+
+std::[string](https://legacy.cplusplus.com/reference/string/string/)::insert
+
+|           string (1) | ` string& insert (size_t pos, const string& str); `          |
+| -------------------: | ------------------------------------------------------------ |
+|        substring (2) | ` string& insert (size_t pos, const string& str, size_t subpos, size_t sublen); ` |
+|         c-string (3) | ` string& insert (size_t pos, const char* s); `              |
+|           buffer (4) | ` string& insert (size_t pos, const char* s, size_t n); `    |
+|             fill (5) | ` string& insert (size_t pos, size_t n, char c);    void insert (iterator p, size_t n, char c); ` |
+| single character (6) | `iterator insert (iterator p, char c); `                     |
+|            range (7) | `template <class InputIterator>   void insert (iterator p, InputIterator first, InputIterator last);` |
+
+插入空格,但
+
+![image-20240417141816701](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417141816701.png)
+
+## erase
+
+### std::[string](https://legacy.cplusplus.com/reference/string/string/)::erase
+
+|  sequence (1) | ` string& erase (size_t pos = 0, size_t len = npos); ` |
+| ------------: | ------------------------------------------------------ |
+| character (2) | `iterator erase (iterator p); `                        |
+|     range (3) | `     iterator erase (iterator first, iterator last);` |
+
+len 长度
+
+![image-20240417141336171](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417141336171.png)
+
+## find/rfind
+
+返回第一次匹配的位置
+
+![image-20240417153721048](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417153721048.png)
+
+![image-20240417153928433](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417153928433.png)
+
+![image-20240417154100930](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417154100930.png)
+
+## swap
+
+![image-20240417154649562](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417154649562.png)
+
+一个是类模板，一个是string单独实现的swap
+
+单独实现的是改变指针的指向，类模板是深拷贝
+
+## 打印
+
+c_str()返回字符串的指针，但是打印是按字符串打印
+
+c_str(）遇到  \0 截至 
+
+![image-20240417155334441](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417155334441.png)
+
+![image-20240417155405754](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417155405754.png)
+
+c_str(),是为了与c语言的函数接口兼容比如 
+
+fopen  
+
+![ ](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417155643532.png)
+
+## substr
+
+取子串
+
+### std::[string](https://legacy.cplusplus.com/reference/string/string/)::substr
+
+```c++
+string substr (size_t pos = 0, size_t len = npos) const;
+```
+
+![image-20240417160236622](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417160236622.png)
+
+## find_first_of
+
+![image-20240417161218434](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417161218434.png)
+
+![image-20240417161201217](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417161201217.png)
+
+## ==
+
+![image-20240417161658870](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417161658870.png)
+
+## getline
+
+### std::getline (string)
+
+|  (1) | `istream& getline (istream& is, string& str, char delim); ` |
+| ---: | ----------------------------------------------------------- |
+|  (2) | `istream& getline (istream& is, string& str);`              |
+
+cin>> 在输入有空格的时候，就会分割，getline只会因为换行分割
+
+![image-20240417162548280](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417162548280.png)
+
+
+
+
+
+
+
+![image-20240417163710085](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417163710085.png)
+
+![image-20240417163727720](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417163727720.png)
+
+ 
+
+![image-20240417164011859](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417164011859.png)
+
+转换为字符
+
+![image-20240417164113747](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417164113747.png)
+
+额外处理
+
+![image-20240417164724180](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417164724180.png)
+
+![image-20240417164737766](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417164737766.png)
+
+1：空间先开辟
+
+2：尾插后逆置
+
+# 逆置
+
+### std::reverse
+
+[Bidirectional iterators](https://legacy.cplusplus.com/BidirectionalIterator) to the initial and final positions of the sequence to be reversed. The range used is , which contains all the elements between and , including the element pointed by but not the element pointed by .
+
+```
+template <class BidirectionalIterator>
+  void reverse (BidirectionalIterator first, BidirectionalIterator last);
+```
+
+reverse（）迭代器区间，，左闭右开
