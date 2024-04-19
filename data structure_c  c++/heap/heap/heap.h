@@ -2,6 +2,8 @@
 #include<iostream>
 #include<cassert>
 #include<cstdbool>
+#include<ctime>
+#include<cstdlib>
 using namespace std;
 
 
@@ -14,6 +16,7 @@ public:
 	Heap(int capacity=4);
 	~Heap();
 	void Push(Datatype a);
+	void TopPush(Datatype a);
 	Datatype TPop();
 	bool Empty();
 
@@ -38,7 +41,7 @@ inline ostream& operator<<(ostream& out, Heap& h)
 {
 	while (!h.Empty())
 	{
-		out << h.TPop()<<" ";
+		out << h.TPop()<<endl;
 	}
 
 	out << endl;

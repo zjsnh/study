@@ -44,7 +44,7 @@ void Heap::adjustup(int child)
 	int parent = (child - 1) / 2;
 	while (child > 0)
 	{
-		if (heap[parent] < heap[child])
+		if (heap[parent] > heap[child])
 		{
 			swap(heap[parent] , heap[child]);
 		}
@@ -66,6 +66,16 @@ void Heap::Push(Datatype a)
 
 }
 
+void Heap::TopPush(Datatype a)
+{
+	if (a > heap[0])
+	{
+		swap(a, heap[0]);
+	}
+
+	adjustdown();
+}
+
 void Heap::adjustdown()
 {
 	int parent = 0;
@@ -73,12 +83,12 @@ void Heap::adjustdown()
 
 	while (child < _size)
 	{
-		if (child + 1 < _size && heap[child] < heap[child + 1])
+		if (child + 1 < _size && heap[child] > heap[child + 1])
 		{
 			child += 1;
 		}
 
-		if (heap[parent] < heap[child])
+		if (heap[parent] > heap[child])
 		{
 			swap(heap[parent], heap[child]);
 		}
@@ -97,8 +107,8 @@ Datatype Heap::TPop()
 
 	swap(heap[0], heap[--_size]);
 	adjustdown();
-	cout << temp;
-	return temp;
+	/*cout << temp;*/
+	return temp;//µ÷Ê½ÓÃ
 }
 
 bool Heap::Empty()
