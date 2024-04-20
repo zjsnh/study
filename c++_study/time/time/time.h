@@ -44,6 +44,24 @@ public:
 
 	int operator-(const Date& d);
 
+
+	ostream& operator<<(ostream& out)
+	{
+		out << _year << "\\" << _month << "\\" << _day;
+		out << endl;
+
+		return out;
+	}
+
+
+	istream& operator>>(istream& in)//²»Òªconst 
+	{
+		in >> _year >> _month >> _day;
+
+		return in;
+	}
+
+
 private:
 	int _year;
 	int _month;

@@ -61,7 +61,7 @@ bool Date::operator>=(const Date& d) const
 Date& Date::operator+=(int day)
 {
 
-	if (day < 0)
+	if (day < 0)//因为+可以进行+负数运算，我们可以单独实现后再这里复用函数
 	{
 		*this -= -day;
 		return *this;
