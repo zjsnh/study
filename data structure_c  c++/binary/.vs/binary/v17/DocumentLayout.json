@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\binary\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{72ECEF9C-FC55-4D2C-B050-4673208F067F}|binary\\binary.vcxproj|E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\binary\\binary\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{72ECEF9C-FC55-4D2C-B050-4673208F067F}|binary\\binary.vcxproj|solutionrelative:binary\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{72ECEF9C-FC55-4D2C-B050-4673208F067F}|binary\\binary.vcxproj|E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\binary\\binary\\binary.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{72ECEF9C-FC55-4D2C-B050-4673208F067F}|binary\\binary.vcxproj|solutionrelative:binary\\binary.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +34,62 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "binary.h",
-              "DocumentMoniker": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\binary\\binary\\binary.h",
-              "RelativeDocumentMoniker": "binary\\binary.h",
-              "ToolTip": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\binary\\binary\\binary.h",
-              "RelativeToolTip": "binary\\binary.h",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAB8AAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-10T13:53:12.113Z",
+              "DocumentIndex": 0,
+              "Title": "text.cpp",
+              "DocumentMoniker": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\binary\\binary\\text.cpp",
+              "RelativeDocumentMoniker": "binary\\text.cpp",
+              "ToolTip": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\binary\\binary\\text.cpp",
+              "RelativeToolTip": "binary\\text.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-21T12:08:37.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "binary.cpp",
               "DocumentMoniker": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\binary\\binary\\binary.cpp",
               "RelativeDocumentMoniker": "binary\\binary.cpp",
               "ToolTip": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\binary\\binary\\binary.cpp",
               "RelativeToolTip": "binary\\binary.cpp",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAG8AAAABAAAA",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAiwHkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-10T13:58:16.777Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "06ebcc1d-b66c-4de9-b3c1-1c12590e2719",
+        "Display": 1,
+        "X": -5,
+        "Y": 67,
+        "Width": 1076,
+        "Height": 690,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "binary.h",
+              "DocumentMoniker": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\binary\\binary\\binary.h",
+              "RelativeDocumentMoniker": "binary\\binary.h",
+              "ToolTip": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\binary\\binary\\binary.h",
+              "RelativeToolTip": "binary\\binary.h",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-10T13:53:12.113Z",
               "EditorCaption": ""
             }
           ]

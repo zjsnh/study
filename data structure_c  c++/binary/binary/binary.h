@@ -22,6 +22,7 @@ private:
 
 class BTNode
 {
+public:
 	BTNode();
 	~BTNode();
 

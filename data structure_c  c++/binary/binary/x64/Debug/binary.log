@@ -1,13 +1,16 @@
 ﻿  binary.cpp
-E:\2023_code\study\data structure_c  c++\binary\binary\binary.cpp(76,34): error C2248: “BinaryTree::_left”: 无法访问 private 成员(在“BinaryTree”类中声明)
-  E:\2023_code\study\data structure_c  c++\binary\binary\binary.h(16,14):
-  参见“BinaryTree::_left”的声明
-  E:\2023_code\study\data structure_c  c++\binary\binary\binary.h(10,7):
-  参见“BinaryTree”的声明
-  
-E:\2023_code\study\data structure_c  c++\binary\binary\binary.cpp(77,28): error C2248: “BinaryTree::_right”: 无法访问 private 成员(在“BinaryTree”类中声明)
-  E:\2023_code\study\data structure_c  c++\binary\binary\binary.h(17,14):
-  参见“BinaryTree::_right”的声明
-  E:\2023_code\study\data structure_c  c++\binary\binary\binary.h(10,7):
-  参见“BinaryTree”的声明
-  
+  text.cpp
+  正在生成代码...
+text.obj : error LNK2005: "public: __cdecl BTNode::BTNode(void)" (??0BTNode@@QEAA@XZ) 已经在 binary.obj 中定义
+text.obj : error LNK2005: "public: __cdecl BTNode::~BTNode(void)" (??1BTNode@@QEAA@XZ) 已经在 binary.obj 中定义
+text.obj : error LNK2005: "public: bool __cdecl BTNode::BinaryTreeComplete(class BinaryTree *)" (?BinaryTreeComplete@BTNode@@QEAA_NPEAVBinaryTree@@@Z) 已经在 binary.obj 中定义
+text.obj : error LNK2005: "public: class BinaryTree * __cdecl BTNode::BinaryTreeCreate(char *,int,int *)" (?BinaryTreeCreate@BTNode@@QEAAPEAVBinaryTree@@PEADHPEAH@Z) 已经在 binary.obj 中定义
+text.obj : error LNK2005: "public: class BinaryTree * __cdecl BTNode::BinaryTreeFind(class BinaryTree *,char)" (?BinaryTreeFind@BTNode@@QEAAPEAVBinaryTree@@PEAV2@D@Z) 已经在 binary.obj 中定义
+text.obj : error LNK2005: "public: void __cdecl BTNode::BinaryTreeInOrder(class BinaryTree *)" (?BinaryTreeInOrder@BTNode@@QEAAXPEAVBinaryTree@@@Z) 已经在 binary.obj 中定义
+text.obj : error LNK2005: "public: int __cdecl BTNode::BinaryTreeLeafSize(class BinaryTree *)" (?BinaryTreeLeafSize@BTNode@@QEAAHPEAVBinaryTree@@@Z) 已经在 binary.obj 中定义
+text.obj : error LNK2005: "public: int __cdecl BTNode::BinaryTreeLevelKSize(class BinaryTree *,int)" (?BinaryTreeLevelKSize@BTNode@@QEAAHPEAVBinaryTree@@H@Z) 已经在 binary.obj 中定义
+text.obj : error LNK2005: "public: void __cdecl BTNode::BinaryTreeLevelOrder(class BinaryTree *)" (?BinaryTreeLevelOrder@BTNode@@QEAAXPEAVBinaryTree@@@Z) 已经在 binary.obj 中定义
+text.obj : error LNK2005: "public: void __cdecl BTNode::BinaryTreePostOrder(class BinaryTree *)" (?BinaryTreePostOrder@BTNode@@QEAAXPEAVBinaryTree@@@Z) 已经在 binary.obj 中定义
+text.obj : error LNK2005: "public: void __cdecl BTNode::BinaryTreePrevOrder(class BinaryTree *)" (?BinaryTreePrevOrder@BTNode@@QEAAXPEAVBinaryTree@@@Z) 已经在 binary.obj 中定义
+text.obj : error LNK2005: "public: int __cdecl BTNode::BinaryTreeSize(class BinaryTree *)" (?BinaryTreeSize@BTNode@@QEAAHPEAVBinaryTree@@@Z) 已经在 binary.obj 中定义
+E:\2023_code\study\data structure_c  c++\binary\x64\Debug\binary.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
