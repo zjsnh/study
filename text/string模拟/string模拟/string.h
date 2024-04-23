@@ -185,9 +185,10 @@ namespace str
 		{
 			assert(pos < _size);
 
-			if (len == npos)
+			if (len == npos||pos+len>_size)
 			{
 				_str[pos] = '\0';
+				_size = pos;
 			}
 			else
 			{
@@ -235,7 +236,7 @@ namespace str
 
 
 		char ch = ' ';
-		ch = in.get();
+		ch = in.get();//防止<<无法接收 ' ' 和 '\n' 
 		while (ch != ' ' && ch != '\n')
 		{
 			s += ch;

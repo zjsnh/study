@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0EAE068B-726E-4F43-AED7-5CFD45CD0D6E}|string\u6A21\u62DF\\string\u6A21\u62DF.vcxproj|E:\\2023_code\\study\\text\\string\u6A21\u62DF\\string\u6A21\u62DF\\string.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0EAE068B-726E-4F43-AED7-5CFD45CD0D6E}|string\u6A21\u62DF\\string\u6A21\u62DF.vcxproj|solutionrelative:string\u6A21\u62DF\\string.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0EAE068B-726E-4F43-AED7-5CFD45CD0D6E}|string\u6A21\u62DF\\string\u6A21\u62DF.vcxproj|E:\\2023_code\\study\\text\\string\u6A21\u62DF\\string\u6A21\u62DF\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0EAE068B-726E-4F43-AED7-5CFD45CD0D6E}|string\u6A21\u62DF\\string\u6A21\u62DF.vcxproj|solutionrelative:string\u6A21\u62DF\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,43 +32,9 @@
               "RelativeDocumentMoniker": "string\u6A21\u62DF\\string.h",
               "ToolTip": "E:\\2023_code\\study\\text\\string\u6A21\u62DF\\string\u6A21\u62DF\\string.h",
               "RelativeToolTip": "string\u6A21\u62DF\\string.h",
-              "ViewState": "AQIAANsAAAAAAAAAAAAvwO0AAAAQAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAvwA4AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-23T09:33:45.635Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "bae7b9fd-1886-4436-9e42-6f1c2bf1ffc8",
-        "Display": 1,
-        "X": -5,
-        "Y": 123,
-        "Width": 1076,
-        "Height": 690,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "text.cpp",
-              "DocumentMoniker": "E:\\2023_code\\study\\text\\string\u6A21\u62DF\\string\u6A21\u62DF\\text.cpp",
-              "RelativeDocumentMoniker": "string\u6A21\u62DF\\text.cpp",
-              "ToolTip": "E:\\2023_code\\study\\text\\string\u6A21\u62DF\\string\u6A21\u62DF\\text.cpp",
-              "RelativeToolTip": "string\u6A21\u62DF\\text.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-23T09:33:53.66Z",
               "EditorCaption": ""
             }
           ]
