@@ -8,6 +8,12 @@ namespace str
 
 	public:
 
+		/*string()
+			:_str(new char[1]{'\0'})
+			,_size(0)
+			,_capacity(0)
+		{}*/
+
 		string(const char* str = "")
 			:_size(strlen(str))
 		{
@@ -17,11 +23,67 @@ namespace str
 			strcpy(_str, str);
 		}
 
-		/*string()
-			:_str(new char[1]{'\0'})
-			,_size(0)
-			,_capacity(0)
-		{}*/
+		/*string(const string& s)
+		{
+			_str = new char[s._capacity + 1];
+			strcpy(_str, s._str);
+
+
+			_size = s._size;
+			_capacity = s._capacity;
+		}*/
+
+		void swap(string& s)
+		{
+			std::swap(_str, s._str);
+			std::swap(_size, s._size);
+			std::swap(_capacity, s._capacity);
+		}
+
+		string(const string& s)
+			:_str(nullptr),
+			_size(0),
+			_capacity(0)
+		{
+			string temp(s._str);
+
+			swap(temp);
+		}
+
+		// =的重载 函数的写法
+
+		/*void operator=(const string& s)
+		{
+			if ( this!=&s)
+			{
+				char* temp = new char[s._capacity + 1];
+				strcpy(temp, s._str);
+				delete[] _str;
+
+				_str = temp;
+				_size = s._size;
+				_capacity = s._capacity;
+			}
+		}*/
+
+		//string& operator=(const string& s)
+		//{
+		//	if (/*_str != s._str*/ this!=&s)
+		//	{
+		//		string temp(s._str);
+		//		swap(temp);
+		//		return *this;
+		//	}
+		//	
+		//}
+
+
+		string& operator=(string temp)
+		{
+			swap(temp);
+			return *this;
+		}
+
 
 		~string()
 		{
@@ -156,7 +218,7 @@ namespace str
 				_str[end + 1] = _str[end];
 				end--;
 			}*/
-			memmove(_str + pos + 1, _str + pos, _size - pos); 
+			memmove(_str + pos + 1, _str + pos, _size - pos);
 			_str[pos] = ch;
 
 			_size++;
@@ -185,7 +247,7 @@ namespace str
 		{
 			assert(pos < _size);
 
-			if (len == npos||pos+len>_size)
+			if (len == npos || pos + len > _size)
 			{
 				_str[pos] = '\0';
 				_size = pos;
@@ -197,8 +259,68 @@ namespace str
 				_size -= len;
 				_str[_size] = '\0';
 			}
+		}
 
+		size_t find(const char* str, size_t pos = npos)
+		{
 
+			const char* p = strstr(_str, str);
+
+			if (p != NULL)
+			{
+				return p - _str;
+			}
+			else
+			{
+				return npos;
+			}
+		}
+
+		/*string substr(size_t pos = 0, size_t len = npos) const
+		{
+
+			string temp;
+
+			if (npos + pos >= _size||len == npos)
+			{
+				size_t len = _size - pos;
+				temp.reserve(len);
+				for (size_t i = pos; i < _size; i++)
+				{
+					temp += _str[i];
+				}
+			}
+			else
+			{
+				temp.reserve(len);
+				for (size_t i = pos; i < pos+len; i++)
+				{
+					temp += _str[i];
+				}
+			}
+
+			temp._str[_size] = '\0';
+		}*/
+
+		string substr(size_t pos = 0, size_t len = npos) const
+		{
+
+			string temp;
+			size_t size = pos + len;
+			if (npos + pos >= _size || len == npos)
+			{
+				len = _size - pos;
+				size = _size;
+			}
+
+			temp.reserve(len);
+
+			for (size_t i = pos; i < size; i++)
+			{
+				temp += _str[i];
+			}
+
+			temp._str[_size] = '\0';
 		}
 
 	private:
@@ -218,32 +340,66 @@ namespace str
 		{
 			out << *it;
 			it++;
-		}*/
+		}
 
+		out << endl;*/
 		for (auto ch : s)
 		{
 			out << ch;
 		}
-
 		out << endl;
-
 		return out;
 	}
+
+	//istream& operator>>(istream& in, string& s)
+	//{
+	//	s.clear();
+
+
+	//	char ch = ' ';
+	//	ch = in.get();//防止<<无法接收 ' ' 和 '\n' 
+	//	while (ch != ' ' && ch != '\n')
+	//	{
+	//		s += ch;
+	//		ch = in.get();
+	//	}
+
+	//	return in;
+	//}
 
 	istream& operator>>(istream& in, string& s)
 	{
 		s.clear();
 
+		char buttf[129];
 
 		char ch = ' ';
 		ch = in.get();//防止<<无法接收 ' ' 和 '\n' 
+		size_t i = 0;
 		while (ch != ' ' && ch != '\n')
 		{
-			s += ch;
+
+			buttf[i++] = ch;
+			if (i == 128)
+			{
+				buttf[i] = '\0';
+
+				s += buttf;
+				i = 0;
+			}
+
 			ch = in.get();
 		}
 
+		if (i != 0)
+		{
+			buttf[i] = '\0';
+
+			s += buttf;
+			i = 0;
+		}
+
 		return in;
- 	}
+	}
 
 }
