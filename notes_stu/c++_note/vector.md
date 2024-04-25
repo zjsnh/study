@@ -51,3 +51,9 @@ find 库函数模板
 ![image-20240425172936193](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240425172936193.png)
 
 先记录size的位置
+
+迭代器
+
+![image-20240425220741306](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240425220741306.png)
+
+迭代器可能会失效，因为再insert中我们不知vector是否会扩容，所以，迭代器可能会改变位置

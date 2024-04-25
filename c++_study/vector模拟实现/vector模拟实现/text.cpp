@@ -5,9 +5,10 @@ using namespace std;
 
 #include"vector.h"
 
-int main()
+void text1()
 {
 	vec::vector<int> v;
+
 
 	v.push_back(1);
 	v.push_back(2);
@@ -33,5 +34,147 @@ int main()
 	}
 
 	cout << endl;
+
+}
+
+void text2()
+{
+	vector<int> w;
+
+	w.push_back(1);
+	w.push_back(2);
+	w.push_back(3);
+
+	/*for (auto e : w)
+	{
+		cout << e << " ";
+	}
+	cout << w.capacity();
+
+	cout << endl;*/
+
+	w.resize(10);
+
+	/*for (auto e : w)
+	{
+		cout << e << " ";
+	}*/
+
+	cout << w.size() << " ";
+	cout << w.capacity() << " ";
+	cout << endl;
+
+
+	w.resize(5);
+
+	/*vector<int>::iterator it = w.begin();*/
+	/*while (it != w.end())
+	{
+		cout << *it << " ";
+		it++;
+	}*/
+
+	for (auto it : w)
+	{
+		cout << it << " ";
+	}
+
+	cout << endl;
+
+	cout << w.size() << " ";
+	cout << w.capacity() << " ";
+	cout << endl;
+
+
+}
+
+void text3()
+{
+	vec::vector<int> w;
+
+	w.push_back(1);
+	w.push_back(2);
+	w.push_back(3);
+
+	w.resize(5, 0);
+
+	for (auto e : w)
+	{
+		cout << e << " ";
+	}
+	/*cout << w.capacity();*/
+
+	cout << endl;
+
+	for (auto e : w)
+	{
+		cout << e << " ";
+	}
+
+	cout << endl;
+
+	cout << w.size() << " ";
+	cout << w.capacity() << " ";
+	cout << endl;
+
+	w.resize(10,0);
+
+	vec::vector<int>::iterator it = w.begin();
+	while (it != w.end())
+	{
+		cout << *it << " ";
+		it++;
+	}
+
+	w.resize(5, 0);
+	/*for (auto it : w)
+	{
+		cout << it << " ";
+	}*/
+
+	cout << endl;
+
+	cout << w.size() << " ";
+	cout << w.capacity() << " ";
+	cout << endl;
+}
+
+void text4()
+{
+	vec::vector<int> w;
+
+	w.push_back(1);
+	w.push_back(2);
+	w.push_back(3);
+
+
+	w.resize(10, 0);
+
+	vec::vector<int>::iterator it = w.begin();
+	while (it != w.end())
+	{
+		cout << *it << " ";
+		it++;
+	}
+	cout << endl;
+	cout << w.size() << " ";
+	cout << w.capacity() << " ";
+	cout << endl;
+
+
+	w.resize(5, 0);
+	for (auto e : w)
+	{
+		cout << e << " ";
+	}
+	cout << endl;
+	cout << w.size() << " ";
+	cout << w.capacity() << " ";
+	cout << endl;
+}
+
+int main()
+{
+	text4();
 	return 0;
 }
