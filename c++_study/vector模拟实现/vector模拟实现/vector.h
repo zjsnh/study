@@ -9,7 +9,6 @@ namespace vec
 	{
 	public:
 		typedef T* iterator;
-
 		typedef const T* const_iterator;
 
 		iterator begin()
@@ -27,7 +26,7 @@ namespace vec
 			return _start;
 		}
 
-		iterator end()const 
+		iterator end()const
 		{
 			return _finish;
 		}
@@ -38,6 +37,49 @@ namespace vec
 			_endofstorage(nullptr)
 		{}
 
+		//template <class InputIterator>//使用迭代器进行赋值
+		//vector(InputIterator first, InputIterator last)
+		//{
+		//	//w.reserve(last - first);
+		//	while (first != last)
+		//	{
+		//		push_back(*first);
+		//		++first;
+		//	}
+
+		//}
+
+		vector(size_t n, const T& val = T())//用vector大小跟初始值初始化
+		{
+			reserve(n);
+			while (_finish != _endofstorage)
+			{
+				*_finish = val;
+				_finish++;
+			}
+
+			/*for (size_t i = 0; i < n; i++)
+			{
+				*_finish = val;
+				_finish++;
+			}*/
+
+			/*for (size_t i = 0; i < n; i++)
+			{
+				push_back(val);
+			}*/
+		}
+
+		vector(const vector<T>& s)
+		{
+			reserve(s.capacity());
+
+			for (auto& e : s)
+			{
+				push_back(e);
+			}
+		}
+
 		~vector()
 		{
 			delete[] _start;
@@ -47,72 +89,78 @@ namespace vec
 			_endofstorage = nullptr;
 		}
 
-		size_t size()
+		size_t size()const
 		{
 			return _finish - _start;
 		}
 
-		size_t capacity()
+		size_t capacity()const
 		{
 			return _endofstorage - _start;
-		}
-
-		void resize(size_t vale_size, size_t vale = 0)
-		{
-			size_t sz = size();//
-			size_t sz_capacity = capacity();
-			T* tmp = new T[vale_size]{ 0 };
-			if (sz > vale_size) // 如果原vector长度大于vale_size，将数据拷贝字节改变为vale_size；
-				sz = vale_size;
-			else
-				sz_capacity = vale_size;
-			memcpy(tmp, _start, sizeof(T) * sz);
-			delete[] _start;
-			_start = tmp;
-			_finish = _start + vale_size;
-			_endofstorage = _start + sz_capacity;
-			
 		}
 
 		//void resize(size_t vale_size, T vale = 0)
 		//{
 		//	size_t sz = size();
-		//	size_t sz_capacity = capacity();
-
+		//	size_t sz_capacity = capacity()
 		//	if (sz > vale_size) // 如果原vector长度大于vale_size，将数据拷贝字节改变为vale_size；
 		//		sz = vale_size;
 		//	else
 		//		sz_capacity = vale_size;
-
 		//	T* tmp = new T[vale_size]{ vale };
-		//	std::copy(_start, _start + sz, tmp);
+		//	std::copy(_start, _start + sz, tmp);//memcpy(tmp, _start, sizeof(T) * sz);
 		//	delete[] _start;
 		//	_start = tmp;
 		//	_finish = _start + vale_size;
 		//	_endofstorage = _start + sz_capacity;
 		//}
 
-		/*void resize(size_t n, const T& val = T())
+		/*template<class type>
+		void swap(type& t1, type& t2)
 		{
-			if (n <= size())
+			type temp = t1;
+			t1 = t2;
+			t2 = temp;
+		}*/
+
+		void swap(vector<T>& v)
+		{
+			std::swap(_start, v._start);
+			std::swap(_finish, v._finish);
+			std::swap(_endofstorage, v._endofstorage);
+
+		}
+
+		vector<T>& operator=(vector<T> tmp)//形参
+		{
+			swap(tmp);
+
+			return *this;
+		}
+
+		//非常冗余的两段代码
+
+		void resize(size_t vale_size, const T& val = T())
+		{
+			if (vale_size <= size())
 			{
-				_finish = _start + n;
+				_finish = _start + vale_size;
 			}
 			else
 			{
-				reserve(n);
-				while (_finish < _start + n)
+				reserve(vale_size);
+				while (_finish < _start + vale_size)
 				{
 					*_finish = val;
 					++_finish;
 				}
 			}
-		}*/
+		}
 
 
 		void reserve(size_t vale_size)
 		{
-			if (_finish == _endofstorage)
+			if (vale_size > capacity())//n > capacity()
 			{
 				size_t sz = size();
 				//size_t capacity = capacity() == 0 ? 4 : capacity() * 2;
@@ -121,9 +169,8 @@ namespace vec
 				if (_start != nullptr)
 				{
 					memcpy(tmp, _start, sizeof(T)*sz);
-					delete[] _start;
 				}
-
+				delete[] _start;
 				_start = tmp;
 				_finish = _start + sz;
 				_endofstorage = _start + vale_size;
@@ -132,7 +179,7 @@ namespace vec
 		}
 
 		//void push_back(T vale)
-		void push_back(const T& vale)//减小程序拷贝
+		void push_back(const T& vale)//减少程序拷贝
 		{
 			if (_finish == _endofstorage)
 			{
@@ -162,7 +209,7 @@ namespace vec
 		void insert(iterator pos, const T& x)
 		{
 			assert(pos < _finish);
-			assert(pos > _start);
+			assert(pos >= _start);
 
 			if (_finish == _endofstorage)
 			{
@@ -204,7 +251,7 @@ namespace vec
 		{
 
 			assert(pos < _finish);
-			assert(pos > _start);
+			assert(pos >= _start);
 
 			memmove(pos, pos+1, sizeof(T) * (_finish - pos));
 			_finish--;

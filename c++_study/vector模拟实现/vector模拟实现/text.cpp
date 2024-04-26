@@ -117,7 +117,7 @@ void text3()
 	cout << w.capacity() << " ";
 	cout << endl;
 
-	w.resize(10,0);
+	w.resize(10, 0);
 
 	vec::vector<int>::iterator it = w.begin();
 	while (it != w.end())
@@ -156,6 +156,13 @@ void text4()
 		cout << *it << " ";
 		it++;
 	}
+
+
+
+	for (auto e : w)
+	{
+		cout << e << " ";
+	}
 	cout << endl;
 	cout << w.size() << " ";
 	cout << w.capacity() << " ";
@@ -173,8 +180,68 @@ void text4()
 	cout << endl;
 }
 
+void text5()
+{
+	vec::vector<int> w;
+	w.push_back(1);
+	w.push_back(2);
+	w.push_back(3);
+	w.push_back(3);
+	w.push_back(3);
+	w.push_back(9);
+
+	//vec::vector<int>::iterator it = std::find(w.begin(), w.end(), 1);
+	auto it = std::find(w.begin(), w.end(), 1);
+
+	w.erase(it);
+	w.insert(it, 100);
+
+	for (auto e : w)
+	{
+		cout << e << " ";
+	}
+	cout << endl;
+	cout << w.size() << " ";
+	cout << w.capacity() << " ";
+	cout << endl;
+
+}
+
+void text6()
+{
+	vec::vector<int> w(6,0);
+	for (auto e : w)
+	{
+		cout << e << " ";
+	}
+
+}
+
+void text7()
+{
+	vec::vector<int> w(6, 0);
+	for (auto e : w)
+	{
+		cout << e << " ";
+	}
+	cout << endl;
+	auto vv = w;
+	for (auto e : vv)
+	{
+		cout << e << " ";
+	}
+	cout << endl;
+	auto v(w);
+	for (auto e : v)
+	{
+		cout << e << " ";
+	}
+	cout << endl;
+
+}
+
 int main()
 {
-	text4();
+	text7();
 	return 0;
 }
