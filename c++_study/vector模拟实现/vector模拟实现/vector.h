@@ -37,17 +37,7 @@ namespace vec
 			_endofstorage(nullptr)
 		{}
 
-		//template <class InputIterator>//使用迭代器进行赋值
-		//vector(InputIterator first, InputIterator last)
-		//{
-		//	//w.reserve(last - first);
-		//	while (first != last)
-		//	{
-		//		push_back(*first);
-		//		++first;
-		//	}
-
-		//}
+		
 
 		vector(size_t n, const T& val = T())//用vector大小跟初始值初始化
 		{
@@ -68,6 +58,29 @@ namespace vec
 			{
 				push_back(val);
 			}*/
+		}
+
+		vector(int n, const T& val = T())
+			//处理两个都是int size_t类型的传参
+			// 编译器就会调用最匹配的函数去调用
+		{
+			reserve(n);
+			while (_finish != _endofstorage)
+			{
+				*_finish = val;
+				_finish++;
+			}
+		}
+
+		template <class InputIterator>//使用迭代器进行赋值
+		vector(InputIterator first, InputIterator last)
+		{
+			//w.reserve(last - first);
+			while (first != last)
+			{
+				push_back(*first);
+				++first;
+			}
 		}
 
 		vector(const vector<T>& s)
@@ -123,7 +136,7 @@ namespace vec
 			t2 = temp;
 		}*/
 
-		void swap(vector<T>& v)
+		void swap(vector<T>& v)//等同于vector& v  但是建议写全
 		{
 			std::swap(_start, v._start);
 			std::swap(_finish, v._finish);
@@ -168,9 +181,17 @@ namespace vec
 
 				if (_start != nullptr)
 				{
-					memcpy(tmp, _start, sizeof(T)*sz);
+					//memcpy(tmp, _start, sizeof(T)*sz);//导致深层次的浅拷贝
+
+					for (size_t i = 0; i < sz; i++)
+					{
+						tmp[i] = _start[i];
+						//每一个string对象去调用库里面的拷贝构造函数，进行对string对象的深拷贝，
+						//也就是说对于有自己空间的对象，不能使用memcpy拷贝
+					}
+					delete[] _start;
 				}
-				delete[] _start;
+				
 				_start = tmp;
 				_finish = _start + sz;
 				_endofstorage = _start + vale_size;
@@ -206,7 +227,7 @@ namespace vec
 			_finish++;
 		}
 
-		void insert(iterator pos, const T& x)
+		/*iterator*/void insert(iterator pos, const T& x)//返回插入位置的迭代器，防止迭代器失效
 		{
 			assert(pos < _finish);
 			assert(pos >= _start);
@@ -227,6 +248,8 @@ namespace vec
 
 			*(pos) = x;
 			_finish++;
+
+			//return pos;
 		}
 
 		/*void insert(size_t pos, const T& x)
@@ -247,7 +270,7 @@ namespace vec
 
 		}*///
 
-		void erase(iterator pos)
+		iterator erase(iterator pos)//返回当前位置的迭代器,防止迭代器失效
 		{
 
 			assert(pos < _finish);
@@ -255,6 +278,8 @@ namespace vec
 
 			memmove(pos, pos+1, sizeof(T) * (_finish - pos));
 			_finish--;
+
+			return pos;
 		}
 
 
@@ -276,9 +301,9 @@ namespace vec
 
 	private:
 
-		iterator _start;
-		iterator _finish;
-		iterator _endofstorage;
+		iterator _start = nullptr;
+		iterator _finish = nullptr;
+		iterator _endofstorage = nullptr;//缺省值，防止忘写初始化导致崩溃
 	};
 
 }

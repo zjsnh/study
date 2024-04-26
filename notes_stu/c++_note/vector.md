@@ -57,3 +57,31 @@ find 库函数模板
 ![image-20240425220741306](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240425220741306.png)
 
 迭代器可能会失效，因为再insert中我们不知vector是否会扩容，所以，迭代器可能会改变位置
+
+![image-20240426152306659](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240426152306659.png)
+
+memcpy导致的深层次的浅拷贝问题
+
+![image-20240426154421236](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240426154421236.png)
+
+![image-20240426154544545](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240426154544545.png)
+
+![image-20240426160545247](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240426160545247.png)
+
+![image-20240426160801262](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240426160801262.png)
+
+编译器会调用最匹配的函数，
+
+![image-20240426162557935](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240426162557935.png)
+
+![image-20240426162615567](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240426162615567.png)
+
+![image-20240426163837851](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240426163837851.png)
+
+每一次递归，遍历递归所有的字符，进行拼接，str获得当前数字下保存的字符串，然后遍历，如果我们递归的层数等于传入的数字串的个数的时候，就尾插vector返回即可，递归参数不好想 num是映射获得字符串
+
++不会改变自己，所以就可以进行下一次循环，再次用之前未完成遍历的字符串进行拼接
+
+![image-20240426163548991](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240426163548991.png)
+
+多路递归！

@@ -1,2 +1,18 @@
 ﻿  text.cpp
-  vector模拟实现.vcxproj -> E:\2023_code\study\c++_study\vector模拟实现\x64\Debug\vector模拟实现.exe
+E:\2023_code\study\c++_study\vector模拟实现\vector模拟实现\vector.h(69,15): error C2100: 无法取消引用类型为“InputIterator”的操作数
+E:\2023_code\study\c++_study\vector模拟实现\vector模拟实现\vector.h(69,15): error C2100:         with
+E:\2023_code\study\c++_study\vector模拟实现\vector模拟实现\vector.h(69,15): error C2100:         [
+E:\2023_code\study\c++_study\vector模拟实现\vector模拟实现\vector.h(69,15): error C2100:             InputIterator=int
+E:\2023_code\study\c++_study\vector模拟实现\vector模拟实现\vector.h(69,15): error C2100:         ]
+  (编译源文件“text.cpp”)
+  E:\2023_code\study\c++_study\vector模拟实现\vector模拟实现\vector.h(69,15):
+  模板实例化上下文(最早的实例化上下文)为
+  	E:\2023_code\study\c++_study\vector模拟实现\vector模拟实现\text.cpp(212,20):
+  	查看对正在编译的函数 模板 实例化“vec::vector<int>::vector<int>(InputIterator,InputIterator)”的引用
+          with
+          [
+              InputIterator=int
+          ]
+  		E:\2023_code\study\c++_study\vector模拟实现\vector模拟实现\text.cpp(212,20):
+  		请参阅 "text6" 中对 "vec::vector<int>::vector" 的第一个引用
+  
