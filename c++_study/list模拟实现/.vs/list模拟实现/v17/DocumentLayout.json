@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\2023_code\\study\\c\u002B\u002B_study\\list\u6A21\u62DF\u5B9E\u73B0\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1874696-7CE6-40F7-AC07-5739D15E87BE}|list\u6A21\u62DF\u5B9E\u73B0\\list\u6A21\u62DF\u5B9E\u73B0.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\list\u6A21\u62DF\u5B9E\u73B0\\list\u6A21\u62DF\u5B9E\u73B0\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1874696-7CE6-40F7-AC07-5739D15E87BE}|list\u6A21\u62DF\u5B9E\u73B0\\list\u6A21\u62DF\u5B9E\u73B0.vcxproj|solutionrelative:list\u6A21\u62DF\u5B9E\u73B0\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1874696-7CE6-40F7-AC07-5739D15E87BE}|list\u6A21\u62DF\u5B9E\u73B0\\list\u6A21\u62DF\u5B9E\u73B0.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\list\u6A21\u62DF\u5B9E\u73B0\\list\u6A21\u62DF\u5B9E\u73B0\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1874696-7CE6-40F7-AC07-5739D15E87BE}|list\u6A21\u62DF\u5B9E\u73B0\\list\u6A21\u62DF\u5B9E\u73B0.vcxproj|solutionrelative:list\u6A21\u62DF\u5B9E\u73B0\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "text.cpp",
+              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\list\u6A21\u62DF\u5B9E\u73B0\\list\u6A21\u62DF\u5B9E\u73B0\\text.cpp",
+              "RelativeDocumentMoniker": "list\u6A21\u62DF\u5B9E\u73B0\\text.cpp",
+              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\list\u6A21\u62DF\u5B9E\u73B0\\list\u6A21\u62DF\u5B9E\u73B0\\text.cpp",
+              "RelativeToolTip": "list\u6A21\u62DF\u5B9E\u73B0\\text.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-27T10:22:53.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "list.h",
+              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\list\u6A21\u62DF\u5B9E\u73B0\\list\u6A21\u62DF\u5B9E\u73B0\\list.h",
+              "RelativeDocumentMoniker": "list\u6A21\u62DF\u5B9E\u73B0\\list.h",
+              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\list\u6A21\u62DF\u5B9E\u73B0\\list\u6A21\u62DF\u5B9E\u73B0\\list.h",
+              "RelativeToolTip": "list\u6A21\u62DF\u5B9E\u73B0\\list.h",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAgwHgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-27T10:22:16.445Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

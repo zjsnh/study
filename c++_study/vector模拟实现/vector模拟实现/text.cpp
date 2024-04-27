@@ -263,6 +263,6 @@ void text8()
 
 int main()
 {
-	text8();
+	text6();
 	return 0;
 }
