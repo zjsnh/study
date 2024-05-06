@@ -61,3 +61,13 @@ reverse逆置函数
 ![image-20240427180949050](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240427180949050.png)
 
 返回时强制转换（因为，迭代器就是对指针的模拟，也就是说，迭代器中模拟的行为都是指针可以实现的行为，这也就是强制转换不会丢失数据的原因）
+
+对于自定义类型的流处理
+
+![image-20240506205409987](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240506205409987.png)
+
+![image-20240506205505920](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240506205505920.png)
+
+重载->
+
+![image-20240506205805883](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240506205805883.png)

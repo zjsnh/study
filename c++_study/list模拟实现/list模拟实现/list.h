@@ -1,4 +1,8 @@
 #pragma once
+/*
+* 
+* 带头循环双向链表
+*/
 #include<cstdbool>
 
 namespace lt
@@ -6,50 +10,64 @@ namespace lt
 	template<class T>
 	struct list_node
 	{
-		T _data;
-		list_node* _next;
-		list_node* _prev;
+		T data;
+		list_node<T> *_next;
+		list_node<T> *_prev;
 
 
-		//list_node()
-		//	:_data(const T& x = T())
-		//	, _next(nullptr)
-		//	, _prev(nullptr)
-		//{}
-
-		list_node(const T& val = T())
-			:_data(val)
-			, _next(nullptr)
-			, _prev(nullptr)
+		list_node(const T& val=T())
+			:data(val),
+			_next(nullptr),
+			_prev(nullptr)
 		{}
 	};
 
-	template <class T>
+
+	template<class T>
 	struct _list_iterator
 	{
 		typedef list_node<T> Node;
-		typedef _list_iterator<T> self;
+		typedef _list_iterator<T> seft;
+
 		Node* _node;
 
-		__list_iterator(Node* node)
-			:_node(node)
-		{}
 
-		self& operator++()
+		_list_iterator(Node* node)
+			:_node(node)
+		{
+
+		}
+
+		seft& operator++()
 		{
 			_node = _node->_next;
-			return _node;
+			return *this;
 		}
 
 		T& operator*()
 		{
-			return _node->_data;
+			return _node->data;
+		}
+		T* operator->()
+		{
+			return &_node->data;
 		}
 
-		bool operator!=(const self& s)
+		bool operator==(const seft& it)
 		{
-			return _node != s._node;
+			/*return *this == it;*/
+
+			return _node == it._node;
 		}
+
+		bool operator!=(const seft& it)
+		{
+			/*return *this == it;*/
+
+			return _node != it._node;
+		}
+
+
 
 	};
 
@@ -60,45 +78,104 @@ namespace lt
 	public:
 		typedef _list_iterator<T> iterator;
 
-		iterator end()
-		{
-			return _head;
-		}
-
+	public:
 		iterator begin()
 		{
-			return _head->_prev;
+			//return iterator(head);
+
+			return head->_next;
+		}
+
+		iterator end()
+		{
+			return head;
+		}
+
+		void empty_init()
+		{
+			head = new Node;
+			head->_next = head;
+			head->_prev = head;
+
+
+			size = 0;
+
 		}
 
 		list()
 		{
-			_head = new Node;
-			_head->_next = _head;
-			_head->_prev = _head;
+			empty_init();
 		}
 
-		void push_front(const T& data)
+		/*list<T>& operator=(list<T> ls)
 		{
-			insert(begin(), data);
+			if (*this != ls)
+			{
+				clear();
+				for (auto it : ls)
+				{
+					push_back(it);
+				}
+			}
+
+			return *this;
+		}*/
+
+		void swap(list<T>& ls)
+		{
+			std::swap(this->head, ls.head);
+			std::swap(this->size, ls.size);
 		}
 
-		void push_back(const T& data)
+		list<T>& operator=(list<T> ls)
 		{
-			
-			/*Node* tmp = new Node;
-			tmp->_data = data;
-			_head->_prev->_next = tmp;
-			tmp->_prev = _head->_prev;
-			tmp->_next = _head;*/
+			swap(ls);
 
+			return *this;
+		}
+
+
+
+
+		list(const list<T>& ls)//拷贝构造  但是需要 const_iterator  
+		{
+			empty_init();
+			for (auto it : ls)
+			{
+				push_back(it);
+			}
+
+		}
+
+
+
+		~list()
+		{
+			clear();
+
+			delete head;
+			head = nullptr;
+
+		}
+
+		void clear()
+		{
+			iterator it = begin();
+			while (it != end())
+			{
+				it = erase(it);
+			}
+		}
+
+		void push_back(T data)
+		{
 			insert(end(), data);
-
 		}
 
-		void insert(iterator pos, const T& x)
+		iterator insert(iterator pos, const T& x)
 		{
 			Node* cur = pos._node;
-			Node* tmp = new Node(x);
+			Node* newnode = new Node(x);
 
 			Node* prev = cur->_prev;
 
@@ -109,12 +186,12 @@ namespace lt
 			newnode->_next = cur;
 			cur->_prev = newnode;
 
-			++_size;
+			++size;
 
-			return iterator(newnode);
+			return iterator(newnode);//返回新插入位置的迭代器
 		}
 
-		iterator earse(iterator pos)
+		iterator erase(iterator pos)
 		{
 			Node* cur = pos._node;
 			Node* prev = cur->_prev;
@@ -124,18 +201,15 @@ namespace lt
 			prev->_next = next;
 			next->_prev = prev;
 
-			--_size;
+			--size;
 
-			return iterator(next);
+			return iterator(next);//防止迭代器失效
 		}
 
-		size_t size()
-		{
-			return _size;
-		}
+
 
 	private:
-		Node* _head;
+		Node* head;
 		size_t size;
 	};
 }
