@@ -71,3 +71,25 @@ reverse逆置函数
 重载->
 
 ![image-20240506205805883](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240506205805883.png)
+
+const_iterator
+
+![image-20240507195523668](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240507195523668.png)
+
+![image-20240507195841839](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240507195841839.png)
+
+![image-20240507200119983](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240507200119983.png)
+
+![image-20240507200208422](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240507200208422.png)
+
+模板 typename class的区别
+
+![image-20240507201426018](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240507201426018.png)
+
+没有被实例化的类模板，编译器无法确定类：：后内部是什么，这时候需要typename
+
+![image-20240507201921641](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240507201921641.png)
+
+![image-20240507202243218](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240507202243218.png)
+
+模板（泛型编程）本质，将我们需要编译的代码，交给编译器处理

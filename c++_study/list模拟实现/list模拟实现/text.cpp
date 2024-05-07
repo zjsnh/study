@@ -1,5 +1,6 @@
 #include<iostream>
 #include<list>
+#include<vector>
 
 using namespace std;
 
@@ -8,6 +9,11 @@ using namespace std;
 
 int main()
 {
+
+	list<int> s;
+	list<int>::const_iterator it = s.begin();
+
+	lt::test_list4();
 	/*lt::list<int> l;
 
 	l.push_back(1);
@@ -15,24 +21,31 @@ int main()
 	return 0;*/
 
 
-	lt::list<int> l;
+	//lt::list<int> l;
+	//
 
-	l.push_back(1);
-	l.push_back(1);
-	l.push_back(1);
-	l.push_back(1);
-	l.push_back(1);
-	l.push_back(6);
+	//l.push_back(1);
+	//l.push_back(1);
+	//l.push_back(1);
+	//l.push_back(1);
+	//l.push_back(1);
+	//l.push_back(6);
 
-	lt::list<int>::iterator it = l.begin();
-	while (it != l.end())
-	{
-		
-		cout << *it << " ";
-		cout << it.operator*() << " ";
-		++it;
-	}
+	///*list<int>::const_iterator it = s.begin();*/
 
-	return 0;
+	//lt::list<int>::const_iterator it = l.begin();
+	//while (it != l.end())
+	//{
+	//	
+	//	cout << *it << " ";
+	//	cout << it.operator*() << " ";
+	//	++it;
+	//}
+
+	//return 0;
+
+
+
+
 
 }
