@@ -1,10 +1,2 @@
 ﻿  text.cpp
-E:\2023_code\study\c++_study\list模拟实现\list模拟实现\list.h(496,32): error C2440: “初始化”: 无法从“lt::__list_iterator<T,T &,T *>”转换为“lt::__list_iterator<T,const T &,const T *>”
-E:\2023_code\study\c++_study\list模拟实现\list模拟实现\list.h(496,32): error C2440:         with
-E:\2023_code\study\c++_study\list模拟实现\list模拟实现\list.h(496,32): error C2440:         [
-E:\2023_code\study\c++_study\list模拟实现\list模拟实现\list.h(496,32): error C2440:             T=int
-E:\2023_code\study\c++_study\list模拟实现\list模拟实现\list.h(496,32): error C2440:         ]
-  (编译源文件“text.cpp”)
-  E:\2023_code\study\c++_study\list模拟实现\list模拟实现\list.h(496,32):
-  没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
-  
+  list模拟实现.vcxproj -> E:\2023_code\study\c++_study\list模拟实现\x64\Debug\list模拟实现.exe

@@ -282,12 +282,19 @@ namespace lt
 	{
 		typedef list_node<T> Node;
 		typedef __list_iterator<T, Ref, Ptr> self;
+
+		typedef __list_iterator<T, T&, T*>             iterator;
+		typedef __list_iterator<T, const T&, const T*> const_iterator;
 		Node* _node;
 
 		__list_iterator(Node* node)
 			:_node(node)
 		{}
 
+		__list_iterator(const iterator& it)//不能添加 explicit
+			: _node(it._node)              //(禁止编译器用这段代码进行隐式转换，我们需要他进行隐式转换)
+			                               //  iterator  ->   const_iterator  这样转换是有风险的，需要我们显式构造转换
+		{}
 
 		self& operator++()
 		{
@@ -327,12 +334,12 @@ namespace lt
 			return &_node->_data;
 		}
 
-		bool operator!=(const self& s)
+		bool operator!=(const self& s) const
 		{
 			return _node != s._node;
 		}
 
-		bool operator==(const self& s)
+		bool operator==(const self& s) const
 		{
 			return _node == s._node;
 		}
@@ -348,12 +355,12 @@ namespace lt
 
 		//typedef __list_const_iterator<T> const_iterator;
 
-		const_iterator begin() const
+		const_iterator cbegin() const
 		{
 			return const_iterator(_head->_next);
 		}
 
-		const_iterator end() const
+		const_iterator cend() const
 		{
 			return const_iterator(_head);
 		}
@@ -492,7 +499,26 @@ namespace lt
 
 	void test_list4()
 	{
-		list<int> lt;
-		list<int>::const_iterator it =  lt.begin();
+		list<int> l;
+		l.push_back(1);
+		l.push_back(1);
+		l.push_back(5);
+		l.push_back(8);
+		l.push_back(1);
+		l.push_back(6);
+		list<int>::const_iterator it = l.cbegin();
+		list<int>::iterator it1 = l.begin();
+
+		while (it != l.cend())
+		{
+			
+			cout << *it << " ";
+			it++;
+		}
+
+		list<int>::const_iterator it2(it1);
+
+
+		cout << endl;
 	}
 }

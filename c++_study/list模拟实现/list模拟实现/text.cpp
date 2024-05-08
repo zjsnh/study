@@ -10,8 +10,7 @@ using namespace std;
 int main()
 {
 
-	list<int> s;
-	list<int>::const_iterator it = s.begin();
+	
 
 	lt::test_list4();
 	/*lt::list<int> l;
@@ -19,8 +18,6 @@ int main()
 	l.push_back(1);
 
 	return 0;*/
-
-
 	//lt::list<int> l;
 	//
 
