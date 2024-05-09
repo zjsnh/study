@@ -34,6 +34,14 @@ namespace str
 
 		}
 
+		~string()
+		{
+			delete[] _str;
+			_size = 0;
+			_capacity = 0;
+			_str = nullptr;
+		}
+
 		/*Lose one's mind*/
 		/*string& operator=(const string& str)
 		{
@@ -204,6 +212,33 @@ namespace str
 				_size -= len;
 				_str[_size] = '\0';
 			}
+		}
+
+		size_t find(const char* str, size_t pos = npos)
+		{
+			assert(pos >= 0 && pos < _size);
+			const char* p = strstr(_str + pos, str);
+
+			if (p == nullptr)
+				return npos;
+			else
+				return p - _str;//Ö¸ÕëÏà¼õ·µ»Ø¾àÀë
+		}
+
+		string substr(size_t pos = 0, size_t len = npos) const
+		{
+			string temp;
+			size_t size = pos + len;
+			if (len == npos || pos + len >= _size)
+			{
+				size = _size;
+			}
+
+			for (size_t i = pos; i < size; i++)
+			{
+				temp += _str[i];
+			}
+
 		}
 
 

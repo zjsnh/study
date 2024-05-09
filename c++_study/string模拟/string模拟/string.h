@@ -264,7 +264,7 @@ namespace str
 		size_t find(const char* str, size_t pos = npos)
 		{
 
-			const char* p = strstr(_str, str);
+			const char* p = strstr(_str+pos, str);
 
 			if (p != NULL)
 			{

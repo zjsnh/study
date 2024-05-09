@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\2023_code\\study\\c\u002B\u002B_study\\string\u6A21\u62DF\\string\u6A21\u62DF\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:string\u6A21\u62DF\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\2023_code\\study\\c\u002B\u002B_study\\string\u6A21\u62DF\\string\u6A21\u62DF\\string.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:string\u6A21\u62DF\\string.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,13 +34,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "string.h",
+              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\string\u6A21\u62DF\\string\u6A21\u62DF\\string.h",
+              "RelativeDocumentMoniker": "string\u6A21\u62DF\\string.h",
+              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\string\u6A21\u62DF\\string\u6A21\u62DF\\string.h",
+              "RelativeToolTip": "string\u6A21\u62DF\\string.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-09T09:05:29.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "text.cpp",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\string\u6A21\u62DF\\string\u6A21\u62DF\\text.cpp",
               "RelativeDocumentMoniker": "string\u6A21\u62DF\\text.cpp",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\string\u6A21\u62DF\\string\u6A21\u62DF\\text.cpp",
               "RelativeToolTip": "string\u6A21\u62DF\\text.cpp",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAQAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-25T07:23:54.784Z",
               "EditorCaption": ""
