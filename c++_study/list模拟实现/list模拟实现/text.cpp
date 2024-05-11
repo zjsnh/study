@@ -6,13 +6,21 @@ using namespace std;
 
 #include"list.h"
 
+namespace n
+{
+	int less()
+	{
+		return 2;
+	}
+}
+
 
 int main()
 {
 
 	
 
-	lt::test_list4();
+	//lt::test_list4();
 	/*lt::list<int> l;
 
 	l.push_back(1);
@@ -41,8 +49,10 @@ int main()
 
 	//return 0;
 
+	int a = n::less();
 
 
-
+	cout << a;
+	return 0;
 
 }

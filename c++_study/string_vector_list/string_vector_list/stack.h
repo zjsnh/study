@@ -1,5 +1,8 @@
 #pragma once
-#include"list.h"
+//#include"list.h"
+#include<list>
+#include<deque>
+#include<vector>
 //#include<list>
 
 namespace sk

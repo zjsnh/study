@@ -65,3 +65,13 @@ deque 双端队列 不是队列，只是普通容器
 ![image-20240509214650708](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240509214650708.png)
 
 ![image-20240509215601767](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240509215601767.png)
+
+assign   赋值，可以使用迭代器
+
+![image-20240510172539185](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240510172539185.png)
+
+deque可以使用库里的sort 阴天他的迭代器被分类成随机访问跌打去 redom iterator  
+
+deque 在实现stack和queue上，比vector list更好的 头尾插入删除的性能更强，但其他的更能性能并不行
+
+![image-20240510174240517](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240510174240517.png)

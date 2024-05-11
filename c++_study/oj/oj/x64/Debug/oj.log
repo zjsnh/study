@@ -1,2 +1,3 @@
 ﻿  oj.cpp
+E:\2023_code\study\c++_study\oj\oj\oj.cpp(260,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   oj.vcxproj -> E:\2023_code\study\c++_study\oj\x64\Debug\oj.exe
