@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-
+#include<list>
 using namespace std;
 
 
@@ -256,43 +256,59 @@ using namespace std;
 //    return _max > nums[left] ? _max : nums[left];
 //}
 
-int maxSubArray(vector<int>& nums) {
-    int n = nums.size();
-    if (n == 0)
-        return 0; // 处理空数组的情况
-
-    int left = 0, right = n - 1; // 定义两个指针
-    int currentSum = 0;          // 当前子数组和
-    int maxSum = nums[0]; // 最大子数组和，初始化为数组的第一个元素
-
-    while (left <= right) {
-        // 如果当前子数组和小于等于0，就从下一个元素重新开始计算子数组和
-        if (currentSum <= 0) {
-            currentSum = nums[left];
-        }
-        else {
-            // 否则，将当前元素加入子数组
-            currentSum += nums[left];
-        }
-
-        // 更新最大子数组和
-        maxSum = max(maxSum, currentSum);
-
-        left++; // 向右移动左指针
-    }
-
-    // 返回最大子数组和
-    return maxSum;
-}
-
-
+//int maxSubArray(vector<int>& nums) {
+//    int n = nums.size();
+//    if (n == 0)
+//        return 0; // 处理空数组的情况
+//
+//    int left = 0, right = n - 1; // 定义两个指针
+//    int currentSum = 0;          // 当前子数组和
+//    int maxSum = nums[0]; // 最大子数组和，初始化为数组的第一个元素
+//
+//    while (left <= right) {
+//        // 如果当前子数组和小于等于0，就从下一个元素重新开始计算子数组和
+//        if (currentSum <= 0) {
+//            currentSum = nums[left];
+//        }
+//        else {
+//            // 否则，将当前元素加入子数组
+//            currentSum += nums[left];
+//        }
+//
+//        // 更新最大子数组和
+//        maxSum = max(maxSum, currentSum);
+//
+//        left++; // 向右移动左指针
+//    }
+//
+//    // 返回最大子数组和
+//    return maxSum;
+//}
+//
+//
+//
+//int main()
+//{
+//    vector<int> v = { -2,1,-3,4,-1,2,1,-8,4 };
+//
+//    cout<<maxSubArray(v);
+//
+//    
+//    return 0;
+//}
 
 int main()
 {
-    vector<int> v = { -2,1,-3,4,-1,2,1,-8,4 };
+	list<int> l = { 1,2,3,4,5 };
 
-    cout<<maxSubArray(v);
+	list<int>::reverse_iterator it = l.rbegin();
 
-    
-    return 0;
+	cout << *it << " ";
+	//it++;
+
+	it.operator--();
+	cout << *it << " ";
+
+
+	return 0;
 }

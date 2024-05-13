@@ -52,10 +52,25 @@ using namespace std;
 
 int main()
 {
-	sk::stack<int, lt::list<int>> s;
+	/*sk::stack<int, lt::list<int>> s;*/
+	
+	lt::list<int> l;
+	l.push_back(1);
+	l.push_back(2);
+	l.push_back(3);
+	l.push_back(4);
+	l.push_back(5);
 
+	lt::list<int>::reverse_iterator it = l.rbegin();
 
+	cout << *it << " ";
+	while (it != l.rend())
+	{
+		cout << *it << " ";
+		++it;
+	}
 
+	return 0;
 
 	return 0;
 }

@@ -1,5 +1,6 @@
 #pragma once
 #include<cstdbool>
+#include"iterator.h"
 //#include<cassert>
 
 
@@ -27,6 +28,7 @@ namespace lt
 		typedef __list_iterator<T, Ref, Ptr> sef;
 		typedef __list_iterator<T, T&, T*> iterator;
 		typedef __list_iterator<T, const T&, const T*> const_iterator;
+
 
 		typedef Ref reference;
 		typedef Ptr pointer;
@@ -70,7 +72,7 @@ namespace lt
 			return temp;
 		}
 
-		sef operator++()
+		sef& operator++()
 		{
 			_node = _node->_next;
 
@@ -85,7 +87,7 @@ namespace lt
 			return temp;
 		}
 
-		sef operator--()
+		sef& operator--()
 		{
 			_node = _node->_prev;
 
@@ -101,14 +103,40 @@ namespace lt
 	public:
 		typedef ListNode<T> Node;
 		typedef __list_iterator<T, T&, T*> iterator;
-		typedef __list_iterator<T,const T&,const T*> iterator;
+		typedef __list_iterator<T,const T&,const T*> const_iterator;
+
+
+		typedef ReverseIterator<iterator, T&, T*> reverse_iterator;
+		typedef ReverseIterator<const iterator,const T&,const T*> const_reverse_iterator;
 
 		///*    --- list  Lead two-way linked list 	*/
+
+		reverse_iterator rbegin()
+		{
+			return reverse_iterator(--end());
+		}
+
+		reverse_iterator rend()
+		{
+			return reverse_iterator(end());
+		}
+
+		reverse_iterator rbegin() const
+		{
+			return const_reverse_iterator(--end());
+		}
+
+		reverse_iterator rend() const
+		{
+			return const_reverse_iterator(end());
+		}
+
+
 
 		iterator begin()
 		{
 			return _head->_next;
-			//retunr iterator(_head->_next);
+			//return iterator(_head->_next);
 		}
 
 		iterator end()
@@ -205,7 +233,7 @@ namespace lt
 			erase(begin());
 		}
 
-		void pop_front()
+		void pop_back()
 		{
 			erase(--end());
 		}
