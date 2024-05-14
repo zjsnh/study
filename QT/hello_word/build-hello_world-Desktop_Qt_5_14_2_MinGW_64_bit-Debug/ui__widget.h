@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -20,6 +21,7 @@ class Ui__Widget
 {
 public:
     QLabel *label;
+    QPushButton *pushButton;
 
     void setupUi(QWidget *_Widget)
     {
@@ -29,6 +31,9 @@ public:
         label = new QLabel(_Widget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(120, 130, 111, 51));
+        pushButton = new QPushButton(_Widget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(110, 210, 80, 20));
 
         retranslateUi(_Widget);
 
@@ -39,6 +44,7 @@ public:
     {
         _Widget->setWindowTitle(QCoreApplication::translate("_Widget", "_Widget", nullptr));
         label->setText(QCoreApplication::translate("_Widget", "hello_world", nullptr));
+        pushButton->setText(QCoreApplication::translate("_Widget", "\344\275\240\345\245\275", nullptr));
     } // retranslateUi
 
 };

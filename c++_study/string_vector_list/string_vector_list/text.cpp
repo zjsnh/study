@@ -1,10 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS 1
+
+
 #include<iostream>
 using namespace std;
 //#include"string.h"
 //#include"vector.h"
+
+
 #include"list.h"
-#include"stack.h"
+#include"vector.h"
+#include"string.h"
 
 
 //int main()
@@ -50,27 +55,70 @@ using namespace std;
 //
 //}
 
-int main()
+//void Print(const lt::list<int>& l)
+//{
+//	lt::list<int>::const_reverse_iterator it = l.rbegin();
+//
+//	cout << *it << " ";
+//	while (it != l.rend())
+//	{
+//		cout << *it << " ";
+//		it++;
+//	}
+//}
+//
+//int main()
+//{
+//	//sk::stack<int, lt::list<int>> s;
+//	
+//	lt::list<int> l;
+//	l.push_back(1);
+//	l.push_back(2);
+//	l.push_back(3);
+//	l.push_back(4);
+//	l.push_back(5);
+//
+//	Print(l);
+//
+//	return 0;
+//
+//
+//}
+
+void Print(const vec::vector<int>& s)
 {
-	/*sk::stack<int, lt::list<int>> s;*/
-	
-	lt::list<int> l;
-	l.push_back(1);
-	l.push_back(2);
-	l.push_back(3);
-	l.push_back(4);
-	l.push_back(5);
-
-	lt::list<int>::reverse_iterator it = l.rbegin();
-
-	cout << *it << " ";
-	while (it != l.rend())
+	vec::vector<int>::const_reverse_iterator it = s.rbegin();
+	while (it != s.rend())
 	{
 		cout << *it << " ";
 		++it;
 	}
+}
 
-	return 0;
+int main()
+{
+	vec::vector<int> s;
+
+	s.push_back(1);
+	s.push_back(2);
+	s.push_back(3);
+	s.push_back(4);
+
+	/*vec::vector<int>::reverse_iterator it = s.rbegin();
+	while (it != s.rend())
+	{
+		cout << *it << " ";
+		++it;
+	}*/
+
+	/*vec::vector<int>::const_reverse_iterator it = s.rbegin();
+	while (it != s.rend())
+	{
+		cout << *it << " ";
+		++it;
+	}*/
+
+	Print(s);
 
 	return 0;
 }

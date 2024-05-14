@@ -2,6 +2,7 @@
 
 #include<cstdbool>
 #include<cassert>
+#include"iterator.h"
 
 namespace vec
 {
@@ -12,6 +13,8 @@ namespace vec
 		typedef T* iterator;
 		typedef const T* const_iterator;
 
+		typedef ReverseIterator<iterator, T&, T*> reverse_iterator;
+		typedef ReverseIterator<const_iterator,const T&,const T*> const_reverse_iterator;
 
 		iterator begin()
 		{
@@ -41,6 +44,27 @@ namespace vec
 		iterator cend() const
 		{
 			return _finish;
+		}
+
+
+		reverse_iterator rbegin()
+		{
+			return reverse_iterator(end());
+		}
+
+		reverse_iterator rend()
+		{
+			return reverse_iterator(begin());
+		}
+
+		const_reverse_iterator rbegin() const
+		{
+			return const_reverse_iterator(end());
+		}
+
+		const_reverse_iterator rend() const
+		{
+			return const_reverse_iterator(begin());
 		}
 
 		vector()

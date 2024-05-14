@@ -6,6 +6,8 @@ _Widget::_Widget(QWidget *parent)
     , ui(new Ui::_Widget)
 {
     ui->setupUi(this);
+
+
 }
 
 _Widget::~_Widget()

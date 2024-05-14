@@ -1,12 +1,21 @@
 #pragma once
 
-template<class iterator,class Ref,class Ptr>
+//  file: "E:\2023_code\study\notes_stu\c++_note\·´Ïòµü´úÆ÷.md"
+
+template<class Iterator,class Ref,class Ptr>
 class ReverseIterator
 {
-	typedef ReverseIterator<iterator,Ref,Ptr> sef;
+	typedef ReverseIterator<Iterator,Ref,Ptr> sef;
+	/*typedef ReverseIterator<Iterator,Ref,Ptr> iterator;
+	typedef ReverseIterator<const Iterator,Ref,Ptr> const_iterator;*/
+
 public:
-	ReverseIterator(iterator it)
+	ReverseIterator(Iterator it)
 		:_it(it)
+	{}
+
+	ReverseIterator(const sef& it)
+		:_it(it._it)
 	{}
 
 	sef& operator++()
@@ -15,14 +24,24 @@ public:
 		return *this;
 	}
 
-	Ref operator*()
+	sef operator++(int)
 	{
-		return *_it;
+		Iterator temp(_it);
+		--_it;
+		return temp;
 	}
 
-	Ptr operator->()
+
+	Ref operator*() const
 	{
-		return _it.operator->();
+		Iterator temp = _it;
+		return *(--temp);
+	}
+
+	Ptr operator->() const
+	{
+		//return &(this->operator*())£»
+		return &(operator*());
 	}
 
 	bool operator!=(const sef& it)
@@ -32,9 +51,9 @@ public:
 
 	bool operator==(const sef& it)
 	{
-		return _it == it.it;
+		return _it == it._it;
 	}
 
 private:
-	iterator _it;
+	Iterator _it;
 };
