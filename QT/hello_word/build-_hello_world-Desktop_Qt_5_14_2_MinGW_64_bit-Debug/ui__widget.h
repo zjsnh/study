@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -18,12 +19,16 @@ QT_BEGIN_NAMESPACE
 class Ui__Widget
 {
 public:
+    QPushButton *pushButton;
 
     void setupUi(QWidget *_Widget)
     {
         if (_Widget->objectName().isEmpty())
             _Widget->setObjectName(QString::fromUtf8("_Widget"));
         _Widget->resize(800, 600);
+        pushButton = new QPushButton(_Widget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(250, 210, 161, 51));
 
         retranslateUi(_Widget);
 
@@ -33,6 +38,7 @@ public:
     void retranslateUi(QWidget *_Widget)
     {
         _Widget->setWindowTitle(QCoreApplication::translate("_Widget", "_Widget", nullptr));
+        pushButton->setText(QCoreApplication::translate("_Widget", "hello world", nullptr));
     } // retranslateUi
 
 };
