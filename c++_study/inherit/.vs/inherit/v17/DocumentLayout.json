@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD0B1D26-9582-4762-991A-BD62CCAA8457}|inherit\\inherit.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\inherir.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD0B1D26-9582-4762-991A-BD62CCAA8457}|inherit\\inherit.vcxproj|solutionrelative:inherit\\inherir.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD0B1D26-9582-4762-991A-BD62CCAA8457}|inherit\\inherit.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DD0B1D26-9582-4762-991A-BD62CCAA8457}|inherit\\inherit.vcxproj|solutionrelative:inherit\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0B1D26-9582-4762-991A-BD62CCAA8457}|inherit\\inherit.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\inherir.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD0B1D26-9582-4762-991A-BD62CCAA8457}|inherit\\inherit.vcxproj|solutionrelative:inherit\\inherir.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,26 +34,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "text.cpp",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\text.cpp",
               "RelativeDocumentMoniker": "inherit\\text.cpp",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\text.cpp",
               "RelativeToolTip": "inherit\\text.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAswFoAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-15T13:35:27.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "inherir.h",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\inherir.h",
               "RelativeDocumentMoniker": "inherit\\inherir.h",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\inherir.h",
               "RelativeToolTip": "inherit\\inherir.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-15T13:33:00.55Z",
               "EditorCaption": ""

@@ -25,3 +25,4 @@ protected:
 	int _jobid; // ¹¤ºÅ
 };
 
+
