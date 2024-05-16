@@ -9,15 +9,16 @@ _Widget::_Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
+    this->move(100,0);//控制weight在桌面的位置
 
-    //connect(ui->myButton,&QPushButton::clicked,this,&_Widget::handleClick);
-    connect(ui->pushButton,&QPushButton::clicked,this,&_Widget::handleClick);
-
-    QPushButton* myButton=new QPushButton(this);
+    myButton=new QPushButton(this);
     QString q("hello world");
     myButton->setText(q);
 
+    myButton->move(200,300);
 
+    connect(myButton,&QPushButton::clicked,this,&_Widget::close);
+    connect(ui->pushButton,&QPushButton::clicked,this,&_Widget::handleClick);
 
 }
 
@@ -37,6 +38,19 @@ void _Widget::handleClick()
     else
     {
         ui->pushButton->setText("ning wen bo");
+    }
+
+}
+
+void _Widget::myhandleClick()
+{
+    if(myButton->text()==QString("ning wen bo"))
+    {
+        myButton->setText("sb");
+    }
+    else
+    {
+        myButton->setText("ning wen bo");
     }
 }
 
