@@ -11,6 +11,7 @@ _Widget::_Widget(QWidget *parent)
 
     this->move(100,0);//控制weight在桌面的位置
 
+
     myButton=new QPushButton(this);
     QString q("hello world");
     myButton->setText(q);
@@ -30,6 +31,8 @@ _Widget::~_Widget()
 void _Widget::handleClick()
 {
    //ui->pushButton->setText("hello qt");
+
+    this->setWindowTitle("text");
 
     if(ui->pushButton->text()==QString("ning wen bo"))
     {
