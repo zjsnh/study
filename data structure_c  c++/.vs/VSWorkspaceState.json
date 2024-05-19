@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\list"
+    "\\list",
+    "\\queue",
+    "\\queue\\queue"
   ],
+  "SelectedNode": "\\queue\\queue\\queue.cpp",
   "PreviewInSolutionExplorer": false
 }

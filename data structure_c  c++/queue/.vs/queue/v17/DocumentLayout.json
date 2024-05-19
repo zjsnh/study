@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\queue\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5370456-E62F-4E33-AE06-8FD770811752}|queue\\queue.vcxproj|E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\queue\\queue\\queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5370456-E62F-4E33-AE06-8FD770811752}|queue\\queue.vcxproj|solutionrelative:queue\\queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D5370456-E62F-4E33-AE06-8FD770811752}|queue\\queue.vcxproj|E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\queue\\queue\\queue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D5370456-E62F-4E33-AE06-8FD770811752}|queue\\queue.vcxproj|solutionrelative:queue\\queue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5370456-E62F-4E33-AE06-8FD770811752}|queue\\queue.vcxproj|E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\queue\\queue\\queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5370456-E62F-4E33-AE06-8FD770811752}|queue\\queue.vcxproj|solutionrelative:queue\\queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "queue.cpp",
               "DocumentMoniker": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\queue\\queue\\queue.cpp",
               "RelativeDocumentMoniker": "queue\\queue.cpp",
@@ -44,6 +44,20 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-03T02:57:19.8Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1448,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
@@ -68,7 +82,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "queue.h",
               "DocumentMoniker": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\queue\\queue\\queue.h",
               "RelativeDocumentMoniker": "queue\\queue.h",

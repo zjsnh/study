@@ -9,13 +9,29 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
-    connect(this,&Widget::mySignals,this,&Widget::handlmySignals);
-    connect(ui->pushButton,&QPushButton::clicked,this,&Widget::handleClick);
 
-    connect(this,&Widget::mysignal1,this,&Widget::handleClick1);
-    connect(this,&Widget::mysignal1,this,&Widget::handleClick2);
-    connect(this,&Widget::mysignal2,this,&Widget::handleClick1);
-    connect(this,&Widget::mysignal2,this,&Widget::handleClick2);
+
+//    connect(this,&Widget::mySignals,this,&Widget::handlmySignals);
+//    connect(ui->pushButton,&QPushButton::clicked,this,&Widget::handleClick);
+
+//    connect(this,&Widget::mysignal1,this,&Widget::handleClick1);
+//    connect(this,&Widget::mysignal1,this,&Widget::handleClick2);
+//    connect(this,&Widget::mysignal2,this,&Widget::handleClick1);
+//    connect(this,&Widget::mysignal2,this,&Widget::handleClick2);
+
+    QPushButton* button =new QPushButton;
+
+    button->setText("niaho");
+    button->move(200,200);
+
+    connect(button,&QPushButton::clicked, this,[=]()
+    {
+        if(button->text()=="nihao")
+        {
+            button->setText("o");
+        }
+    });
+
 
 }
 

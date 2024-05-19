@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "text.cpp",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\text.cpp",
-              "RelativeDocumentMoniker": "inherit\\text.cpp",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\text.cpp",
-              "RelativeToolTip": "inherit\\text.cpp",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAswFoAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-15T13:35:27.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "inherir.h",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\inherir.h",
               "RelativeDocumentMoniker": "inherit\\inherir.h",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\inherir.h",
               "RelativeToolTip": "inherit\\inherir.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-15T13:33:00.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "text.cpp",
+              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\text.cpp",
+              "RelativeDocumentMoniker": "inherit\\text.cpp",
+              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\inherit\\inherit\\text.cpp",
+              "RelativeToolTip": "inherit\\text.cpp",
+              "ViewState": "AQIAANQAAAAAAAAAAAAswOQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-15T13:35:27.302Z",
               "EditorCaption": ""
             }
           ]
