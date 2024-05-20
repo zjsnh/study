@@ -297,18 +297,114 @@ using namespace std;
 //    return 0;
 //}
 
-int main()
-{
-	list<int> l = { 1,2,3,4,5 };
+//int main()
+//{
+//	list<int> l = { 1,2,3,4,5 };
+//
+//	list<int>::reverse_iterator it = l.rbegin();
+//
+//	cout << *it << " ";
+//	//it++;
+//
+//	it.operator--();
+//	cout << *it << " ";
+//
+//
+//	return 0;
+//}
 
-	list<int>::reverse_iterator it = l.rbegin();
+//#include<string>
+//
+//class Solution {
+//public:
+//	int myAtoi(string str) {
+//
+//		string::iterator it = str.begin();
+//		int num = 0;
+//		while (*it == ' ')
+//		{
+//			it++;
+//		}
+//		int flag = 1;
+//
+//		if (*it == '-'||*it=='+')
+//		{
+//			flag = *it == '-' ? -1 : 1;
+//
+//			//flag = -1;
+//			it++;
+//		}
+//
+//		while (it != str.end() && (*it) <= '9' && (*it) >= '0')
+//		{
+//			if (num > INT_MAX / 10 || (num == INT_MAX / 10 && (*it) - '0' > 7)) //Òç³öÅĞ¶¨
+//				return flag == 1 ? INT_MAX : INT_MIN;
+//
+//			num = num * 10 + int((*it) - '0');
+//			it++;
+//
+//		}
+//		return num * flag;
+//	}
+//};
+//
+//int main()
+//{
+//
+//	Solution s;
+//	string str = { "+1" };
+//
+//	cout << s.myAtoi(str);
+//
+//	return 0;
+//}
 
-	cout << *it << " ";
-	//it++;
+class Solution {
+public:
+    string addStrings(string num1, string num2) {
 
-	it.operator--();
-	cout << *it << " ";
+        string::reverse_iterator it1 = num1.rbegin();
+        string::reverse_iterator it2 = num2.rbegin();
+
+        size_t size1 = num1.size();
+        size_t size2 = num2.size();
+
+        if (size1 > size2)
+        {
+            swap(num1, num2);
+        }
+        string ret;
+        int digit = 0;
+        int bits = 1;
+
+        while (it1 != num1.rend())
+        {
+            int nums1 = *it1 - '0';
+            int nums2 = *it2 - '0';
+            
+            if ((nums1 + nums2 + digit) > 10)
+            {
+                digit = 1;
+                int num = (nums1 + nums2) % 10;
+                for (int i = 1; i < bits; i++)
+                {
+                    num * 10;
+                }
+                ret += num + '0';
+
+                bits++;
+            }
+
+            it1++;
+            it2++;
+        }
 
 
-	return 0;
-}
+        if (it2 != num1.rend())
+        {
+            ret.insert(0, );
+        }
+
+
+    }
+};

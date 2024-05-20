@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\2023_code\\study\\c\u002B\u002B_study\\vector\u6A21\u62DF\u5B9E\u73B0\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F5072114-94C7-4A73-9576-5B7684DCD19E}|vector\u6A21\u62DF\u5B9E\u73B0\\vector\u6A21\u62DF\u5B9E\u73B0.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\vector\u6A21\u62DF\u5B9E\u73B0\\vector\u6A21\u62DF\u5B9E\u73B0\\vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5072114-94C7-4A73-9576-5B7684DCD19E}|vector\u6A21\u62DF\u5B9E\u73B0\\vector\u6A21\u62DF\u5B9E\u73B0.vcxproj|solutionrelative:vector\u6A21\u62DF\u5B9E\u73B0\\vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F5072114-94C7-4A73-9576-5B7684DCD19E}|vector\u6A21\u62DF\u5B9E\u73B0\\vector\u6A21\u62DF\u5B9E\u73B0.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\vector\u6A21\u62DF\u5B9E\u73B0\\vector\u6A21\u62DF\u5B9E\u73B0\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F5072114-94C7-4A73-9576-5B7684DCD19E}|vector\u6A21\u62DF\u5B9E\u73B0\\vector\u6A21\u62DF\u5B9E\u73B0.vcxproj|solutionrelative:vector\u6A21\u62DF\u5B9E\u73B0\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -13,7 +17,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
+          "DockedHeight": 246,
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -31,15 +35,42 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "vector.h",
+              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\vector\u6A21\u62DF\u5B9E\u73B0\\vector\u6A21\u62DF\u5B9E\u73B0\\vector.h",
+              "RelativeDocumentMoniker": "vector\u6A21\u62DF\u5B9E\u73B0\\vector.h",
+              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\vector\u6A21\u62DF\u5B9E\u73B0\\vector\u6A21\u62DF\u5B9E\u73B0\\vector.h",
+              "RelativeToolTip": "vector\u6A21\u62DF\u5B9E\u73B0\\vector.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-20T07:45:11.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "text.cpp",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\vector\u6A21\u62DF\u5B9E\u73B0\\vector\u6A21\u62DF\u5B9E\u73B0\\text.cpp",
               "RelativeDocumentMoniker": "vector\u6A21\u62DF\u5B9E\u73B0\\text.cpp",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\vector\u6A21\u62DF\u5B9E\u73B0\\vector\u6A21\u62DF\u5B9E\u73B0\\text.cpp",
               "RelativeToolTip": "vector\u6A21\u62DF\u5B9E\u73B0\\text.cpp",
-              "ViewState": "AQIAAO4AAAAAAAAAAAAIwPQAAAABAAAA",
+              "ViewState": "AQIAANAAAAAAAAAAAAAswPQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-26T07:18:13.342Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 11,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
