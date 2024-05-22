@@ -206,46 +206,168 @@ using namespace std;
 //
 //    return 0;
 //}
-int main()
+//int main()
+//
+//{
+//
+//	string strText = "How are you?";
+//
+//	string strSeparator = " ";
+//
+//	string strResult;
+//
+//	int size_pos = 0;
+//
+//	int size_prev_pos = 0;
+//
+//	while ((size_pos = strText.find_first_of(strSeparator, size_pos)) != string::npos)
+//
+//	{
+//
+//		strResult = strText.substr(size_prev_pos, size_pos - size_prev_pos);
+//
+//		cout << strResult << " ";
+//
+//		size_prev_pos = ++size_pos;
+//
+//	}
+//
+//	if (size_prev_pos != strText.size())
+//
+//	{
+//
+//		strResult = strText.substr(size_prev_pos, size_pos - size_prev_pos);
+//
+//		cout << strResult << " ";
+//
+//	}
+//
+//	cout << endl;
+//
+//	return 0;
+//
+//}
 
+
+//class A
+//{
+//public:
+//	virtual void fun1()
+//	{
+//		cout << "A:fun1()" << endl;
+//	}
+//
+//public:
+//	int _a;
+//};
+//
+//class B :public virtual A
+//{
+//public:
+//	virtual void fun1()
+//	{
+//		cout << "B:fun1()" << endl;
+//	}
+//
+//	virtual void fun2()
+//	{
+//		cout << "B:fun2()" << endl;
+//	}
+//
+//public:
+//	int _b;
+//};
+//
+//class C :public virtual A
+//{
+//public:
+//	virtual void fun1()
+//	{
+//		cout << "C:fun1()" << endl;
+//	}
+//
+//	virtual void fun3()
+//	{
+//		cout << "C:fun3()" << endl;
+//	}
+//
+//public:
+//	int _c;
+//};
+//
+//class D :public virtual B, public virtual C
+//{
+//public:
+//	virtual void fun1()
+//	{
+//		cout << "D:fun1()" << endl;
+//	}
+//
+//	virtual void fun2()
+//	{
+//		cout << "D:fun2()" << endl;
+//	}
+//
+//	virtual void fun3()
+//	{
+//		cout << "D:fun3()" << endl;
+//	}
+//
+//public:
+//	int _d;
+//};
+//
+//
+//int main()
+//{
+//	D d;
+//	d._a = 1;
+//	d._b= 2;
+//	d._c = 3;
+//	d._d = 4;
+//
+//	return 0;
+//}
+
+
+class A
 {
-
-	string strText = "How are you?";
-
-	string strSeparator = " ";
-
-	string strResult;
-
-	int size_pos = 0;
-
-	int size_prev_pos = 0;
-
-	while ((size_pos = strText.find_first_of(strSeparator, size_pos)) != string::npos)
-
+public:
+	virtual void fun1()
 	{
-
-		strResult = strText.substr(size_prev_pos, size_pos - size_prev_pos);
-
-		cout << strResult << " ";
-
-		size_prev_pos = ++size_pos;
-
+		cout << "A:fun1()" << endl;
 	}
 
-	if (size_prev_pos != strText.size())
+public:
+	int _a;
+};
 
+class B :public virtual A
+{
+public:
+	virtual void fun1()
 	{
-
-		strResult = strText.substr(size_prev_pos, size_pos - size_prev_pos);
-
-		cout << strResult << " ";
-
+		cout << "B:fun1()" << endl;
 	}
 
-	cout << endl;
+	virtual void fun2()
+	{
+		cout << "B:fun2()" << endl;
+	}
 
+public:
+	int _b;
+};
+
+int main()
+{
+	B b;
+	A a;
+	b._a = 1;
+	b._b = 2;
+
+	a._a = 3;
 	return 0;
-
 }
 
 

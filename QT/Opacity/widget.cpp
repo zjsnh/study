@@ -7,13 +7,19 @@ Widget::Widget(QWidget *parent)
     , ui(new Ui::Widget)
 {
     ui->setupUi(this);
+
+    qDebug()<<this->windowOpacity();
+
+    ui->pushButton_up->setToolTip("透明度增高");
+    ui->pushButton_up->setToolTipDuration(3000);
+
+    ui->pushButton_down->setToolTip("透明度降低");
+    ui->pushButton_down->setToolTipDuration(3000);
 }
 
 Widget::~Widget()
 {
     delete ui;
-
-    qDebug()<<this->windowOpacity();
 }
 
 

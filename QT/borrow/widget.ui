@@ -6,26 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>840</width>
+    <height>617</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Widget</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>90</y>
-     <width>291</width>
-     <height>91</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>借我1000块</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
@@ -50,6 +37,19 @@
    </property>
    <property name="text">
     <string>不太行</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>100</y>
+     <width>221</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>借我1000</string>
    </property>
   </widget>
  </widget>

@@ -359,52 +359,65 @@ using namespace std;
 //	return 0;
 //}
 
-class Solution {
-public:
-    string addStrings(string num1, string num2) {
+//class Solution {
+//public:
+//    string addStrings(string num1, string num2) {
+//
+//        string::reverse_iterator it1 = num1.rbegin();
+//        string::reverse_iterator it2 = num2.rbegin();
+//
+//        size_t size1 = num1.size();
+//        size_t size2 = num2.size();
+//
+//        if (size1 > size2)
+//        {
+//            swap(num1, num2);
+//        }
+//        string ret;
+//        int digit = 0;
+//        int bits = 1;
+//
+//        while (it1 != num1.rend())
+//        {
+//            int nums1 = *it1 - '0';
+//            int nums2 = *it2 - '0';
+//            
+//            if ((nums1 + nums2 + digit) > 10)
+//            {
+//                digit = 1;
+//                int num = (nums1 + nums2) % 10;
+//                for (int i = 1; i < bits; i++)
+//                {
+//                    num * 10;
+//                }
+//                ret += num + '0';
+//
+//                bits++;
+//            }
+//
+//            it1++;
+//            it2++;
+//        }
+//
+//
+//        if (it2 != num1.rend())
+//        {
+//            ret.insert(0, );
+//        }
+//
+//
+//    }
+//};
 
-        string::reverse_iterator it1 = num1.rbegin();
-        string::reverse_iterator it2 = num2.rbegin();
-
-        size_t size1 = num1.size();
-        size_t size2 = num2.size();
-
-        if (size1 > size2)
-        {
-            swap(num1, num2);
-        }
-        string ret;
-        int digit = 0;
-        int bits = 1;
-
-        while (it1 != num1.rend())
-        {
-            int nums1 = *it1 - '0';
-            int nums2 = *it2 - '0';
-            
-            if ((nums1 + nums2 + digit) > 10)
-            {
-                digit = 1;
-                int num = (nums1 + nums2) % 10;
-                for (int i = 1; i < bits; i++)
-                {
-                    num * 10;
-                }
-                ret += num + '0';
-
-                bits++;
-            }
-
-            it1++;
-            it2++;
-        }
 
 
-        if (it2 != num1.rend())
-        {
-            ret.insert(0, );
-        }
+int main()
+{
+	cout << sizeof(int *) << endl;
+	cout << sizeof(char *) << endl;
+	cout << sizeof(long *) << endl;
+	cout << sizeof(long long *) << endl;
+	cout << sizeof(double *) << endl;
 
-
-    }
-};
+	return 0;
+}
