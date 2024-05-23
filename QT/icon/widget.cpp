@@ -27,6 +27,11 @@ void Widget::Widget_set()
     QIcon icon(":/point.png");
     this->setWindowIcon(icon);
 
+    QIcon icon_pushbutton(":/camera.png");
+    ui->pushButton_up->setIcon(icon_pushbutton);
+    ui->pushButton_up->setIconSize(QSize(20,20));
+    //ui->pushButton_up->shortcut("");
+
     ui->pushButton_up->setToolTip("透明度增高");
     ui->pushButton_up->setToolTipDuration(3000);
 

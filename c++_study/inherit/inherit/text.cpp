@@ -365,7 +365,6 @@ int main()
 	A a;
 	b._a = 1;
 	b._b = 2;
-
 	a._a = 3;
 	return 0;
 }

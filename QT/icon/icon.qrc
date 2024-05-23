@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>point.png</file>
+        <file>camera.png</file>
     </qresource>
 </RCC>

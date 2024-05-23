@@ -58,7 +58,7 @@ OBJECTS       = debug/main.o \
 		debug/qrc_icon.o \
 		debug/moc_widget.o
 
-DIST          =  ..\icon\widget.h ..\icon\main.cpp \
+DIST          = camera.png ..\icon\widget.h ..\icon\main.cpp \
 		..\icon\widget.cpp
 QMAKE_TARGET  = icon
 DESTDIR        = debug\ #avoid trailing-slash linebreak
@@ -104,7 +104,8 @@ compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_icon.cpp
 debug/qrc_icon.cpp: ../icon/icon.qrc \
 		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/rcc.exe \
-		../icon/point.png
+		../icon/point.png \
+		../icon/camera.png
 	C:\Qt\Qt5.14.2\5.14.2\mingw73_64\bin\rcc.exe -name icon ..\icon\icon.qrc -o debug\qrc_icon.cpp
 
 compiler_moc_predefs_make_all: debug/moc_predefs.h
@@ -476,8 +477,18 @@ debug/widget.o: ../icon/widget.cpp ../icon/widget.h \
 		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QCalendarWidget \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qcalendarwidget.h \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/qdatetime.h \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QLabel \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui/qicon.h \
 		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui/QIcon \
-		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui/qicon.h
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\widget.o ..\icon\widget.cpp
 
 debug/qrc_icon.o: debug/qrc_icon.cpp 
