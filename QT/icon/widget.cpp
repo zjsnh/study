@@ -36,10 +36,9 @@ void Widget::Widget_set()
     ui->pushButton_up->setToolTipDuration(3000);
 
     ui->pushButton_down->setToolTip("透明度降低");
-    ui->pushButton_down->setToolTipDuration(3000);
-
     QPixmap pixmap(":/point.png");
     pixmap=pixmap.scaled(10,10);//设置tu图标大小
+
 
     QCursor cursor(pixmap);
     ui->pushButton_up->setCursor(pixmap);

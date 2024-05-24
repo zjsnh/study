@@ -330,43 +330,83 @@ using namespace std;
 //}
 
 
-class A
-{
-public:
-	virtual void fun1()
-	{
-		cout << "A:fun1()" << endl;
-	}
+//class A
+//{
+//public:
+//	virtual void fun1()
+//	{
+//		cout << "A:fun1()" << endl;
+//	}
+//
+//public:
+//	int _a;
+//};
+//
+//class B :public virtual A
+//{
+//public:
+//	virtual void fun1()
+//	{
+//		cout << "B:fun1()" << endl;
+//	}
+//
+//	virtual void fun2()
+//	{
+//		cout << "B:fun2()" << endl;
+//	}
+//
+//public:
+//	int _b;
+//};
+//
+//int main()
+//{
+//	B b;
+//	A a;
+//	b._a = 1;
+//	b._b = 2;
+//	a._a = 3;
+//	return 0;
+//}
 
-public:
-	int _a;
+
+#include <iostream>
+#include <vector>
+
+// 定义棋盘上的格子类型
+enum class Cell {
+    B, // 黑色将牌
+    W, // 白色将牌
+    E  // 空格
 };
 
-class B :public virtual A
-{
-public:
-	virtual void fun1()
-	{
-		cout << "B:fun1()" << endl;
-	}
-
-	virtual void fun2()
-	{
-		cout << "B:fun2()" << endl;
-	}
-
-public:
-	int _b;
-};
-
-int main()
-{
-	B b;
-	A a;
-	b._a = 1;
-	b._b = 2;
-	a._a = 3;
-	return 0;
+// 计算启发函数 h(n)
+int heuristic(const std::vector<Cell>& board) {
+    int cost = 0;
+    for (int i = 0; i < board.size(); ++i) {
+        if (board[i] == Cell::W) {
+            // 找到最近的黑色将牌在其左边
+            for (int j = i - 1; j >= 0; --j) {
+                if (board[j] == Cell::B) {
+                    cost += i - j; // 计算距离
+                    break;
+                }
+            }
+        }
+    }
+    return cost;
 }
+
+int main() {
+    // 初始游戏布局
+    std::vector<Cell> board = { Cell::B, Cell::B, Cell::W, Cell::W, Cell::E };
+
+    // 计算启发函数的值
+    int cost = heuristic(board);
+    std::cout << "The heuristic value for the given board is: " << cost << std::endl;
+
+    return 0;
+}
+
 
 
