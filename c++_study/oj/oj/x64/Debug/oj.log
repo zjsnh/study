@@ -1,2 +1,485 @@
 ﻿  oj.cpp
-  oj.vcxproj -> E:\2023_code\study\c++_study\oj\x64\Debug\oj.exe
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(556,37): error C2825: '_Alloc': 当后面跟“::”时必须为类或命名空间
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(556,37):
+  模板实例化上下文(最早的实例化上下文)为
+  	E:\2023_code\study\c++_study\oj\oj\oj.cpp(470,19):
+  	查看对正在编译的 类 模板 实例化“std::vector<int,int>”的引用
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(442,26):
+  	查看对正在编译的 别名 模板 实例化“std::_Rebind_alloc_t<_Alloc,_Ty>”的引用
+          with
+          [
+              _Alloc=int,
+              _Ty=int
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(774,69):
+  	查看对正在编译的 类 模板 实例化“std::allocator_traits<_Alloc>”的引用
+          with
+          [
+              _Alloc=int
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(750,27):
+  	查看对正在编译的 类 模板 实例化“std::_Normal_allocator_traits<_Alloc>”的引用
+          with
+          [
+              _Alloc=int
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(556,45): error C2510: “_Alloc”:“::”的左边必须是类/结构/联合
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(556,45): error C2061: 语法错误: 标识符“value_type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(345,27): error C2825: '_Ty': 当后面跟“::”时必须为类或命名空间
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(345,27):
+  模板实例化上下文(最早的实例化上下文)为
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(558,68):
+  	查看对正在编译的 类 模板 实例化“std::_Get_pointer_type<_Alloc,void>”的引用
+          with
+          [
+              _Alloc=int
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(345,32): error C2510: “_Ty”:“::”的左边必须是类/结构/联合
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(345,32): error C2061: 语法错误: 标识符“value_type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(558,68): error C2039: "type": 不是 "std::_Get_pointer_type<_Alloc,void>" 的成员
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(558,68): error C2039:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(558,68): error C2039:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(558,68): error C2039:             _Alloc=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(558,68): error C2039:         ]
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(344,8):
+  参见“std::_Get_pointer_type<_Alloc,void>”的声明
+          with
+          [
+              _Alloc=int
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(558,68): error C2061: 语法错误: 标识符“type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(357,53): error C2039: "type": 不是 "std::_Get_pointer_type<_Alloc,void>" 的成员
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(357,53): error C2039:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(357,53): error C2039:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(357,53): error C2039:             _Alloc=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(357,53): error C2039:         ]
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(344,8):
+  参见“std::_Get_pointer_type<_Alloc,void>”的声明
+          with
+          [
+              _Alloc=int
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(357,53):
+  模板实例化上下文(最早的实例化上下文)为
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(559,74):
+  	查看对正在编译的 类 模板 实例化“std::_Get_const_pointer_type<_Alloc,void>”的引用
+          with
+          [
+              _Alloc=int
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(357,53): error C2061: 语法错误: 标识符“type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(358,29): error C2825: '_Ty': 当后面跟“::”时必须为类或命名空间
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(358,34): error C2510: “_Ty”:“::”的左边必须是类/结构/联合
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(358,34): error C2061: 语法错误: 标识符“value_type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(359,44): error C2065: “_Ptrty”: 未声明的标识符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(359,29): error C2923: "std::pointer_traits": "_Ptrty" 不是参数 "_Ty" 的有效 模板 类型参数
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(359,44):
+  参见“_Ptrty”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(359,75): error C2065: “_Valty”: 未声明的标识符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(359,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(359,75): error C2146: 语法错误: 缺少“>”(在标识符“_Valty”的前面)
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(371,53): error C2039: "type": 不是 "std::_Get_pointer_type<_Alloc,void>" 的成员
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(371,53): error C2039:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(371,53): error C2039:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(371,53): error C2039:             _Alloc=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(371,53): error C2039:         ]
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(344,8):
+  参见“std::_Get_pointer_type<_Alloc,void>”的声明
+          with
+          [
+              _Alloc=int
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(371,53):
+  模板实例化上下文(最早的实例化上下文)为
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(560,73):
+  	查看对正在编译的 类 模板 实例化“std::_Get_void_pointer_type<_Alloc,void>”的引用
+          with
+          [
+              _Alloc=int
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(371,53): error C2061: 语法错误: 标识符“type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(372,44): error C2065: “_Ptrty”: 未声明的标识符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(372,29): error C2923: "std::pointer_traits": "_Ptrty" 不是参数 "_Ty" 的有效 模板 类型参数
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(372,44):
+  参见“_Ptrty”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(372,62): error C2903: “rebind”: 符号既不是类 模板 也不是函数 模板 
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(382,53): error C2039: "type": 不是 "std::_Get_pointer_type<_Alloc,void>" 的成员
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(382,53): error C2039:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(382,53): error C2039:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(382,53): error C2039:             _Alloc=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(382,53): error C2039:         ]
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(344,8):
+  参见“std::_Get_pointer_type<_Alloc,void>”的声明
+          with
+          [
+              _Alloc=int
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(382,53):
+  模板实例化上下文(最早的实例化上下文)为
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(561,79):
+  	查看对正在编译的 类 模板 实例化“std::_Get_const_void_pointer_type<_Alloc,void>”的引用
+          with
+          [
+              _Alloc=int
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(382,53): error C2061: 语法错误: 标识符“type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(383,44): error C2065: “_Ptrty”: 未声明的标识符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(383,29): error C2923: "std::pointer_traits": "_Ptrty" 不是参数 "_Ty" 的有效 模板 类型参数
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(383,44):
+  参见“_Ptrty”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(383,62): error C2903: “rebind”: 符号既不是类 模板 也不是函数 模板 
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(393,53): error C2039: "type": 不是 "std::_Get_pointer_type<_Alloc,void>" 的成员
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(393,53): error C2039:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(393,53): error C2039:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(393,53): error C2039:             _Alloc=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(393,53): error C2039:         ]
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(344,8):
+  参见“std::_Get_pointer_type<_Alloc,void>”的声明
+          with
+          [
+              _Alloc=int
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(393,53):
+  模板实例化上下文(最早的实例化上下文)为
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(563,62):
+  	查看对正在编译的 类 模板 实例化“std::_Get_size_type<_Alloc,void>”的引用
+          with
+          [
+              _Alloc=int
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(404,70):
+  	查看对正在编译的 类 模板 实例化“std::_Get_difference_type<_Ty,void>”的引用
+          with
+          [
+              _Ty=int
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(393,53): error C2061: 语法错误: 标识符“type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(394,44): error C2065: “_Ptrty”: 未声明的标识符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(394,29): error C2923: "std::pointer_traits": "_Ptrty" 不是参数 "_Ty" 的有效 模板 类型参数
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(394,44):
+  参见“_Ptrty”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(394,53): error C2955: “std::pointer_traits”: 使用 类 模板 需要 模板 参数列表
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(293,8):
+  参见“std::pointer_traits”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(394,53): error C2039: "difference_type": 不是 "std::pointer_traits<_Ty>" 的成员
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(293,8):
+  参见“std::pointer_traits<_Ty>”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(394,53): error C2061: 语法错误: 标识符“difference_type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(404,70): error C2039: "type": 不是 "std::_Get_difference_type<_Ty,void>" 的成员
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(404,70): error C2039:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(404,70): error C2039:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(404,70): error C2039:             _Ty=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(404,70): error C2039:         ]
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(392,8):
+  参见“std::_Get_difference_type<_Ty,void>”的声明
+          with
+          [
+              _Ty=int
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(404,70): error C2146: 语法错误: 缺少“>”(在标识符“type”的前面)
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(564,68): error C2039: "type": 不是 "std::_Get_difference_type<_Ty,void>" 的成员
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(564,68): error C2039:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(564,68): error C2039:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(564,68): error C2039:             _Ty=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(564,68): error C2039:         ]
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(392,8):
+  参见“std::_Get_difference_type<_Ty,void>”的声明
+          with
+          [
+              _Ty=int
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(564,68): error C2061: 语法错误: 标识符“type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(578,9): error C3646: “allocate”: 未知重写说明符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(578,26): error C2065: “_Al”: 未声明的标识符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(578,18): error C2275: “_Alloc”: 应为表达式而不是类型
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(578,31): error C2226: 语法错误: 意外的“std::_Normal_allocator_traits<_Alloc>::size_type”类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(578,31): error C2226:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(578,31): error C2226:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(578,31): error C2226:             _Alloc=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(578,31): error C2226:         ]
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(578,74): error C2334: “{”的前面有意外标记；跳过明显的函数体
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(583,9): error C3646: “allocate”: 未知重写说明符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(583,26): error C2065: “_Al”: 未声明的标识符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(583,18): error C2275: “_Alloc”: 应为表达式而不是类型
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(583,31): error C2226: 语法错误: 意外的“std::_Normal_allocator_traits<_Alloc>::size_type”类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(583,31): error C2226:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(583,31): error C2226:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(583,31): error C2226:             _Alloc=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(583,31): error C2226:         ]
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(583,106): error C2334: “{”的前面有意外标记；跳过明显的函数体
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(602,54): error C2061: 语法错误: 标识符“pointer”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(456,66): error C2027: 使用了未定义类型“std::_Replace_first_parameter<_Other,_Ty>”
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(456,66): error C2027:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(456,66): error C2027:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(456,66): error C2027:             _Other=int,
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(456,66): error C2027:             _Ty=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(456,66): error C2027:         ]
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(203,8):
+  参见“std::_Replace_first_parameter<_Other,_Ty>”的声明
+          with
+          [
+              _Other=int,
+              _Ty=int
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(456,66):
+  模板实例化上下文(最早的实例化上下文)为
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(774,69):
+  	查看对正在编译的 别名 模板 实例化“std::_Normal_allocator_traits<_Alloc>::rebind_alloc<_Ty>”的引用
+          with
+          [
+              _Alloc=int,
+              _Ty=int
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(572,69):
+  	查看对正在编译的 类 模板 实例化“std::_Get_rebind_type<_Alloc,_Ty,void>”的引用
+          with
+          [
+              _Alloc=int,
+              _Ty=int
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(456,66): error C2061: 语法错误: 标识符“type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(572,69): error C2794: “type”: 不是“std::_Get_rebind_type<_Alloc,_Ty,void>”的任何直接或间接基类的成员
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(572,69): error C2794:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(572,69): error C2794:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(572,69): error C2794:             _Alloc=int,
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(572,69): error C2794:             _Ty=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(572,69): error C2794:         ]
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(774,69): error C2938: “std::_Normal_allocator_traits<_Alloc>::rebind_alloc”: 未能使别名模板专用化
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(774,69): error C2938:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(774,69): error C2938:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(774,69): error C2938:             _Alloc=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(774,69): error C2938:         ]
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(442,26): error C2938: “std::_Rebind_alloc_t”: 未能使别名模板专用化
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(446,76): error C2825: '_Alloc': 当后面跟“::”时必须为类或命名空间
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(446,84): error C2510: “_Alloc”:“::”的左边必须是类/结构/联合
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(446,84): error C2146: 语法错误: 缺少“>”(在标识符“value_type”的前面)
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(446,52): error C2062: 意外的类型“unknown-type” 
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(447,68): error C2238: 意外的标记位于“;”之前
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(453,52): error C2955: “std::allocator_traits”: 使用 类 模板 需要 模板 参数列表
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(750,8):
+  参见“std::allocator_traits”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(453,52): error C2039: "pointer": 不是 "std::allocator_traits<_Alloc>" 的成员
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(750,8):
+  参见“std::allocator_traits<_Alloc>”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(453,52): error C2061: 语法错误: 标识符“pointer”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(454,52): error C2955: “std::allocator_traits”: 使用 类 模板 需要 模板 参数列表
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(750,8):
+  参见“std::allocator_traits”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(454,52): error C2039: "const_pointer": 不是 "std::allocator_traits<_Alloc>" 的成员
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(750,8):
+  参见“std::allocator_traits<_Alloc>”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(454,52): error C2061: 语法错误: 标识符“const_pointer”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(457,52): error C2955: “std::allocator_traits”: 使用 类 模板 需要 模板 参数列表
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(750,8):
+  参见“std::allocator_traits”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(457,52): error C2039: "size_type": 不是 "std::allocator_traits<_Alloc>" 的成员
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(750,8):
+  参见“std::allocator_traits<_Alloc>”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(457,52): error C2061: 语法错误: 标识符“size_type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(458,52): error C2955: “std::allocator_traits”: 使用 类 模板 需要 模板 参数列表
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(750,8):
+  参见“std::allocator_traits”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(458,52): error C2039: "difference_type": 不是 "std::allocator_traits<_Alloc>" 的成员
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(750,8):
+  参见“std::allocator_traits<_Alloc>”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(458,52): error C2061: 语法错误: 标识符“difference_type”
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(600,30): error C2065: “size_type”: 未声明的标识符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(600,41): error C2065: “difference_type”: 未声明的标识符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(600,58): error C2065: “pointer”: 未声明的标识符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(600,67): error C2065: “const_pointer”: 未声明的标识符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(600,9): error C2923: "std::_Vec_iter_types": "size_type" 不是参数 "_Size_type" 的有效 模板 类型参数
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(600,30):
+  参见“size_type”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(600,9): error C2923: "std::_Vec_iter_types": "difference_type" 不是参数 "_Difference_type" 的有效 模板 类型参数
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(600,41):
+  参见“difference_type”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(600,9): error C2923: "std::_Vec_iter_types": "pointer" 不是参数 "_Pointer" 的有效 模板 类型参数
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(600,58):
+  参见“pointer”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(600,9): error C2923: "std::_Vec_iter_types": "const_pointer" 不是参数 "_Const_pointer" 的有效 模板 类型参数
+  (编译源文件“oj.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(600,67):
+  参见“const_pointer”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(599,36): error C2993: “unknown-type”: 不是非类型模板参数“_Test”的有效类型
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(603,53): error C3203: "_Vector_val": 未指定的 类 模板 不能用作 模板 参数 "_Myvec" 的 模板 参数，应为真实类型
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(604,59): error C3203: "_Vector_val": 未指定的 类 模板 不能用作 模板 参数 "_Myvec" 的 模板 参数，应为真实类型
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(616,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(616,69): error C2146: 语法错误: 缺少“)”(在标识符“_Count”的前面)
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(616,69): error C3646: “_Count”: 未知重写说明符
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(616,89): error C2143: 语法错误: 缺少“;”(在“&”的前面)
+  (编译源文件“oj.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(616,89): error C1003: 错误计数超过 100；正在停止编译
+  (编译源文件“oj.cpp”)
+  

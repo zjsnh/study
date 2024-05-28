@@ -411,13 +411,66 @@ using namespace std;
 
 
 
+//int main()
+//{
+//	cout << sizeof(int *) << endl;
+//	cout << sizeof(char *) << endl;
+//	cout << sizeof(long *) << endl;
+//	cout << sizeof(long long *) << endl;
+//	cout << sizeof(double *) << endl;
+//
+//	return 0;
+//}
+//#include<stack>
+//
+//struct TreeNode
+//{
+//    TreeNode* right;
+//    TreeNode* left;
+//    int val;
+//};
+//
+//class Solution {
+//public:
+//    vector<int> postorderTraversal(TreeNode* root) {
+//
+//        stack<TreeNode*, bool> s;
+//        vector<int> v;
+//        TreeNode* cur = root;
+//
+//        while (cur || !s.empty())
+//        {
+//            while (cur)
+//            {
+//                s.push(cur, false);
+//                cur = cur->left;
+//            }
+//            TreeNode* top = s.pop()[0];
+//
+//            if(top->right == nullptr)
+//                v.push_back(top->);
+//            s.pop();
+//            else if ()
+//            {
+//
+//            }
+//
+//        }
+//
+//        return v;
+//
+//    }
+//};
+
+
+#include<vector>
+
 int main()
 {
-	cout << sizeof(int *) << endl;
-	cout << sizeof(char *) << endl;
-	cout << sizeof(long *) << endl;
-	cout << sizeof(long long *) << endl;
-	cout << sizeof(double *) << endl;
+	/*vector<int, int> v;
+	v.push_back(2);
 
-	return 0;
+	cout<<v[0];
+
+	return 0;*/
 }
