@@ -68,9 +68,9 @@ namespace vec
 		}
 
 		vector()
-			:_start(nullptr),
+			/*:_start(nullptr),
 			_finish(nullptr),
-			_endofstorage(nullptr)
+			_endofstorage(nullptr)*/
 		{		}
 
 		vector(size_t size, const T& val = T())
