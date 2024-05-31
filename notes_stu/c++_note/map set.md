@@ -1,0 +1,119 @@
+# map set 
+
+![image-20240530160603840](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530160603840.png)
+
+
+
+![image-20240530160857790](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530160857790.png)	![image-20240530162018925](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530162018925.png)
+
+insert 返回值 pair
+
+![image-20240530162520175](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530162520175.png)
+
+对于erase 使用迭代器删除不存在的，将会报错，使用值删除没有报错
+
+同时我们可以通过接收erase返回值判断是否正确删除
+
+## lower_bound upper_bound
+
+![image-20240530163927591](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530163927591.png)
+
+erase右是开区间
+
+## equal_range
+
+![image-20240530164419646](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530164419646.png)
+
+返回这个数存在的左右区间（左闭右开）
+
+## count
+
+也可以判断key在不在，
+
+![image-20240530164557551](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530164557551.png)
+
+**set不支持修改**
+
+# multiset
+
+![image-20240530164814329](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530164814329.png)
+
+允许多个相同的key插入
+
+![image-20240530164852415](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530164852415.png)
+
+## find
+
+![image-20240530165610002](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530165610002.png)
+
+因为multiset允许存在多个相同的值，这时候，equal__range就可以一次性删除所有的val，count也可以在这里找到val右几个
+
+![image-20240530165928932](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530165928932.png)
+
+同时可以通过接收erase的返回值判断删除几个val
+
+```C++
+size_t n=s.erase(2);
+```
+
+这些函数返回size_t的原因就是multiset存在多个相同的val，判断 
+
+# map
+
+key_value类型
+
+![image-20240530170351253](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530170351253.png)
+
+## insert
+
+```c++
+map<string,string> m;
+m.insert(pair<string,string> ("sort","排序"));
+```
+
+![image-20240530170818665](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530170818665.png)
+
+![image-20240530172036091](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530172036091.png)
+
+## nake_pair
+
+函数模板
+
+![image-20240530172444454](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530172444454.png)
+
+![image-20240530172424979](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530172424979.png)
+
+ 
+
+## iterator
+
+![image-20240530173311251](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530173311251.png)
+
+![image-20240530173326634](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530173326634.png)
+
+![image-20240530173332062](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530173332062.png)
+
+![image-20240530173338886](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530173338886.png)
+
+![image-20240530173819747](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530173819747.png)
+
+但是这时候是深拷贝，消耗较大
+
+使用&就不用拷贝了
+
+![image-20240530174009878](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530174009878.png)
+
+## [ ]（重要）
+
+![image-20240530174532328](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530174532328.png)
+
+传入key 返回value的引用
+
+![image-20240530180012788](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530180012788.png)
+
+![image-20240530180254452](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240530180254452.png)
+
+# multi_map
+
+就是允许键值冗余
+
