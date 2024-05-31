@@ -117,3 +117,49 @@ m.insert(pair<string,string> ("sort","排序"));
 
 就是允许键值冗余
 
+![image-20240531184123659](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531184123659.png)
+
+<img src="C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531184200118.png" alt="image-20240531184200118" style="zoom:150%;" />
+
+也不支持[]  因为key可能会一样
+
+![image-20240531190418552](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531190418552.png)
+
+pair支持sort
+
+![image-20240531185820120](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531185820120.png)
+
+但是比较方式是比较一个小就小
+
+![image-20240531190149689](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531190149689.png)
+
+![image-20240531191639954](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531191639954.png)
+
+写仿函数来获取自己需要的比较方式
+
+##  稳定排序库函数
+
+![image-20240531191448280](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531191448280.png)
+
+sort不稳定
+
+![image-20240531191726082](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531191726082.png)
+
+![image-20240531192247761](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531192247761.png)
+
+两个数据类型相同就可以使用迭代器区间初始化
+
+## set的作用：排序+去重
+
+![image-20240531193328624](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531193328624.png)
+
+![image-20240531193443891](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531193443891.png)
+
+![image-20240531193632591](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531193632591.png)
+
+自动备份，自动同步
+
+![image-20240531194424630](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531194424630.png)
+
+![image-20240531194708989](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240531194708989.png)
+
