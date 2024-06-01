@@ -10,3 +10,18 @@
 
 #  旋转！！！！！
 
+![image-20240601154054431](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240601154054431.png)
+
+![image-20240601154927622](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240601154927622.png)
+
+## 左单旋
+
+<img src="C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240601155312777.png" alt="image-20240601155312777" style="zoom:150%;" />
+
+![image-20240601155454398](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240601155454398.png)
+
+![image-20240601160039637](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240601160039637.png)
+
+![image-20240601162044983](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240601162044983.png)
+
+![image-20240601163310617](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240601163310617.png)
