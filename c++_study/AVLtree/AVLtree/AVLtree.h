@@ -12,7 +12,7 @@ struct AVLTreeNode
 	AVLTreeNode<K, V>* _left;
 	
 	pair<K, V> _kv;
-	int _bf;
+	int _bf;  //Balance factor
 
 	AVLTreeNode(const pair<K,V>& kv)
 		:_parent(nullptr)
@@ -301,26 +301,22 @@ public:
 		}
 		return _IsBalance(root->_left) && _IsBalance(root->_right);*/
 
-		bool _IsBalance(Node * root)
+
+		if (root == nullptr)
 		{
-			if (root == nullptr)
-			{
-				return true;
-			}
-
-			// 检查当前节点的平衡因子是否在范围内（-1, 0, 1）
-			int bf = balance(root); // 假设 balance 函数返回节点的平衡因子
-			if (bf < -1 || bf > 1)
-			{
-				cout << "平衡因子异常，节点值：" << root->_kv.first << "，平衡因子：" << bf << endl;
-				return false;
-			}
-
-			// 递归检查左右子树
-			return _IsBalance(root->_left) && _IsBalance(root->_right);
+			return true;
 		}
 
+		// 检查当前节点的平衡因子是否在范围内（-1, 0, 1）
+		int bf = balance(root); // 假设 balance 函数返回节点的平衡因子
+		if (bf < -1 || bf > 1)
+		{
+			cout << "平衡因子异常，节点值：" << root->_kv.first << "，平衡因子：" << bf << endl;
+			return false;
+		}
 
+		// 递归检查左右子树
+		return _IsBalance(root->_left) && _IsBalance(root->_right);
 
 	}
 

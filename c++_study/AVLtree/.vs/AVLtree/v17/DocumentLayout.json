@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\2023_code\\study\\c\u002B\u002B_study\\AVLtree\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AB3E3A6-F00B-450C-87F4-9777962F9501}|AVLtree\\AVLtree.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\AVLtree\\AVLtree\\AVLtree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1AB3E3A6-F00B-450C-87F4-9777962F9501}|AVLtree\\AVLtree.vcxproj|solutionrelative:AVLtree\\AVLtree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1AB3E3A6-F00B-450C-87F4-9777962F9501}|AVLtree\\AVLtree.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\AVLtree\\AVLtree\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1AB3E3A6-F00B-450C-87F4-9777962F9501}|AVLtree\\AVLtree.vcxproj|solutionrelative:AVLtree\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB3E3A6-F00B-450C-87F4-9777962F9501}|AVLtree\\AVLtree.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\AVLtree\\AVLtree\\AVLtree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1AB3E3A6-F00B-450C-87F4-9777962F9501}|AVLtree\\AVLtree.vcxproj|solutionrelative:AVLtree\\AVLtree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 246,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "text.cpp",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\AVLtree\\AVLtree\\text.cpp",
               "RelativeDocumentMoniker": "AVLtree\\text.cpp",
@@ -47,13 +47,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AVLtree.h",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\AVLtree\\AVLtree\\AVLtree.h",
               "RelativeDocumentMoniker": "AVLtree\\AVLtree.h",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\AVLtree\\AVLtree\\AVLtree.h",
               "RelativeToolTip": "AVLtree\\AVLtree.h",
-              "ViewState": "AQIAAPsAAAAAAAAAAAAAwDIBAAAEAAAA",
+              "ViewState": "AQIAAB0BAAAAAAAAAAAIwA4AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-01T08:50:58.58Z",
               "EditorCaption": ""
