@@ -24,4 +24,75 @@
 
 ![image-20240603180714669](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240603180714669.png)
 
-。。
+  ![image-20240604145252466](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240604145252466.png)
+
+ 
+
+```C++
+// 根节点->当前节点这条路径的黑色节点的数量
+bool Check(Node* root, int blacknum, const int refVal)
+{
+    if (root == nullptr)
+    {
+        //cout << balcknum << endl;
+        if (blacknum != refVal)
+        {
+            cout << "存在黑色节点数量不相等的路径" << endl;
+            return false;
+        }
+
+        return true;
+    }
+
+    if (root->_col == RED && root->_parent->_col == RED)
+    {
+        cout << "有连续的红色节点" << endl;
+
+        return false;
+    }
+
+    if (root->_col == BLACK)
+    {
+        ++blacknum;
+    }
+
+    return Check(root->_left, blacknum, refVal)
+        && Check(root->_right, blacknum, refVal);
+}
+
+bool IsBalance()
+{
+    if (_root == nullptr)
+        return true;
+
+    if (_root->_col == RED)
+        return false;
+
+    //参考值
+    int refVal = 0;
+    Node* cur = _root;
+    while (cur)
+    {
+        if (cur->_col == BLACK)
+        {
+            ++refVal;
+        }
+
+        cur = cur->_left;
+    }
+
+    int blacknum = 0;
+    return Check(_root, blacknum, refVal);
+}
+```
+
+set
+
+![image-20240604202800968](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240604202800968.png)
+
+![image-20240604202837267](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240604202837267.png)
+
+typeid  取变量的类型
+
+![image-20240604204057061](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240604204057061.png)
+
