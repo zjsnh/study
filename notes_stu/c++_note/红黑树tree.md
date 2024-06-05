@@ -96,3 +96,14 @@ typeid  取变量的类型
 
 ![image-20240604204057061](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240604204057061.png)
 
+# 带模板参数的构造
+
+![image-20240605213604369](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240605213604369.png)
+
+进行构造的同时，也可以进行不同类型之间的转换
+
+```C++
+iterator  const_iterator//之间的转化
+```
+
+<img src="C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240605213753377.png" alt="image-20240605213753377" style="zoom:150%;" />

@@ -29,7 +29,7 @@ namespace lt
 		typedef __list_iterator<T, T&, T*> iterator;
 		typedef __list_iterator<T, const T&, const T*> const_iterator;
 
-
+		//const_iterator  =  iterator  
 		typedef Ref reference;
 		typedef Ptr pointer;
 
@@ -37,6 +37,10 @@ namespace lt
 
 		__list_iterator(Node node)
 			:_node(node)
+		{	}
+
+		__list_iterator(const sef& it)
+			:_node(it._node)
 		{	}
 
 		__list_iterator(const iterator& it)

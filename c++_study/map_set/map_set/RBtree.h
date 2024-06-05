@@ -33,13 +33,17 @@ struct RBTreeNode
 //key_value   key
 // set->RBTree<K, K, SetKeyOfT> _t;
 // map->RBTree<K, pair<K, T>, MapKeyOfT> _t;
-template<class T>
+template< class T,class Ptr,class Ref>
 struct __Treeiterator
 {
 	//typedef __Treeiterator<T> iterator;
 
 	typedef RBTreeNode<T> Node;
-	typedef __Treeiterator<T> seft;
+	typedef __Treeiterator<T,Ptr,Ref> self;
+	typedef __Treeiterator<T,T*,T&> iterator;
+	// const k
+	// const pair<K,V> 
+	// pair<const K,V>
 
 	Node* _node;
 
@@ -48,19 +52,54 @@ struct __Treeiterator
 		:_node(node)
 	{}
 
-	T& operator*()
+	/*__Treeiterator(const iterator& it)
+		:_node(it._node)
+	{}*/
+	
+	//使用模板对  iterator  或者是 const_iterator 进行二者之间转化 同时还可以进行拷贝构造
+	template<class OtherPtr, class OtherRef>
+	__Treeiterator(const __Treeiterator<T, OtherPtr, OtherRef>& it)
+		: _node(it._node) {}
+
+	Ref operator*() const
 	{
 		return _node->_data;
 	}
 
-	T* operator->()
+	Ptr operator->() const
 	{
 		return &(_node->_data);
 	}
 
-	//seft& operator--();
+	self& operator--()
+	{
+		if (_node->_left)
+		{
+			Node* cur = _node->_left;
+			while (cur->_left)
+			{
+				cur = cur->_left;
+			}
 
-	seft& operator++()
+			_node = cur;
+		}
+		else
+		{
+			Node* cur = _node;
+			Node* parent = cur->_parent;
+			while (parent && parent->_left == cur)
+			{
+				cur = parent;
+				parent = parent->_parent;//往上找到第一个转折的节点
+			}
+
+			_node = parent;
+		}
+
+		return *this;
+	}
+
+	self& operator++()
 	{
 		if (_node->_right)
 		{
@@ -91,12 +130,12 @@ struct __Treeiterator
 		return *this;
 	}
 
-	bool operator!=(const seft& s)
+	bool operator!=(const self& s)
 	{
 		return _node != s._node;
 	}
 
-	bool operator==(const seft& s)
+	bool operator==(const self& s)
 	{
 		return _node == s._node;
 	}
@@ -110,7 +149,8 @@ class RBTree
 	typedef RBTreeNode<V> Node; //pair<K,V> 
 
 public:
-	typedef __Treeiterator<V> iterator;
+	typedef __Treeiterator<V,V*,V&> iterator;
+	typedef __Treeiterator<V,const V*,const V&> const_iterator;
 
 	iterator begin()
 	{
@@ -128,8 +168,26 @@ public:
 		return iterator(nullptr);
 	}
 
+	const_iterator begin() const
+	{
+		Node* cur = _root;
+		while (cur->_left)
+		{
+			cur = cur->_left;
+		}
 
-	pair<iterator,bool> insert(const V& data)
+		return const_iterator(cur);
+	}
+
+	const_iterator end() const
+	{
+		return const_iterator(nullptr);
+	}
+
+
+	//pair<iterator,bool> insert(const V& data)
+	//pair<Node*,bool>insert(const V& data)
+	pair<iterator, bool> insert(const V& data)
 	{
 		if (_root == nullptr)
 		{
