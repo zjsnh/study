@@ -54,8 +54,7 @@
               "RelativeToolTip": "string_vector_list\\string.h",
               "ViewState": "AQIAAKIAAAAAAAAAAAAAABoAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-08T14:27:09.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T14:27:09.608Z"
             },
             {
               "$type": "Document",
@@ -65,7 +64,7 @@
               "RelativeDocumentMoniker": "string_vector_list\\list.h",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\string_vector_list\\string_vector_list\\list.h",
               "RelativeToolTip": "string_vector_list\\list.h",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAG8AAAAAAAAA",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAAAG8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-09T11:05:21.319Z",
               "EditorCaption": ""
@@ -80,8 +79,7 @@
               "RelativeToolTip": "string_vector_list\\iterator.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-13T13:06:11.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T13:06:11.698Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "string_vector_list\\text.cpp",
               "ViewState": "AQIAABUAAAAAAAAAAAAAAC4AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-08T14:26:23.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T14:26:23.363Z"
             },
             {
               "$type": "Document",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "string_vector_list\\vector.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-09T08:27:50.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T08:27:50.222Z"
             }
           ]
         },

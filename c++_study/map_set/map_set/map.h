@@ -15,7 +15,8 @@ namespace mp
 			}
 		};
 		// 对类模板取内嵌类型，加typename告诉编译器这里是类型
-		typedef typename RBTree<K, pair<K, V>, MapKetOfT>::iterator iterator;//迭代器
+		typedef typename RBTree<K, pair<const K, V>, MapKetOfT>::iterator iterator;//迭代器
+		typedef typename RBTree<K, pair<const K, V>, MapKetOfT>::const_iterator const_iterator;//迭代器
 		/*typedef typename RBTree<const K, pair<const K, V>, MapKetOfT>::iterator iterator;
 		typedef typename RBTree<const K, const pair<K, V>, MapKetOfT>::iterator const_iterator;*/
 
@@ -53,7 +54,7 @@ namespace mp
 
 	private:
 
-		RBTree<K, pair<K, V>, MapKetOfT> _t;
+		RBTree<K, pair<const K, V>, MapKetOfT> _t;
 	};
 
 

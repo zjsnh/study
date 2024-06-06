@@ -56,7 +56,7 @@ struct __Treeiterator
 		:_node(it._node)
 	{}*/
 	
-	//使用模板对  iterator  或者是 const_iterator 进行二者之间转化 同时还可以进行拷贝构造
+	//使用模板对  iterator  到  const_iterator 进行二者之间转化 同时还可以进行拷贝构造
 	template<class OtherPtr, class OtherRef>
 	__Treeiterator(const __Treeiterator<T, OtherPtr, OtherRef>& it)
 		: _node(it._node) {}
@@ -143,6 +143,7 @@ struct __Treeiterator
 
 };
 
+//当写find等操作函数时， class K 起到了传递key的类型的作用 
 template<class K,class V,class KetOfT>
 class RBTree
 {
@@ -391,6 +392,15 @@ public:
 				Parent->_right = subL;
 			}
 		}
+	}
+
+	iterator Find(const K& key)
+	{
+		Node* node = _root;
+		/*
+		* ...
+		*/
+		return iterator(node);
 	}
 
 	void InOrder()
