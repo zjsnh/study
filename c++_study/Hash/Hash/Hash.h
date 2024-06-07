@@ -198,7 +198,7 @@ namespace hash_bucket//¹þÏ£Í°
 					return cur;
 				}
 
-				cur = cur->_next;
+				cur = cur->_next;s
 			}
 
 			return false;
@@ -206,6 +206,8 @@ namespace hash_bucket//¹þÏ£Í°
 
 	private:
 		vector<Node* > _tables;
+
+		//¹þÏ£Í°
 		size_t _n = 0;//¼ÇÂ¼Öµ
 	};
 }
