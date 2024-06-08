@@ -1,2 +1,11 @@
 ﻿  text.cpp
-  Hash.vcxproj -> E:\2023_code\study\c++_study\Hash\x64\Debug\Hash.exe
+E:\2023_code\study\c++_study\Hash\Hash\Hash.h(219,22): error C2065: “s”: 未声明的标识符
+  (编译源文件“text.cpp”)
+  E:\2023_code\study\c++_study\Hash\Hash\Hash.h(219,22):
+  模板实例化上下文(最早的实例化上下文)为
+  	E:\2023_code\study\c++_study\Hash\Hash\Hash.h(136,8):
+  	在编译类模板“hash_bucket::Hash”时
+  
+E:\2023_code\study\c++_study\Hash\Hash\Hash.h(230,1): error C1907: 无法从以前的错误中恢复；正在停止编译
+  (编译源文件“text.cpp”)
+  

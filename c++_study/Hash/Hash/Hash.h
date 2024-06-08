@@ -5,6 +5,35 @@
 #include<string>
 
 
+
+//https://www.cnblogs.com/-clq/archive/2012/05/31/2528153.html
+
+template<class K>
+struct hashFuncs
+{
+	size_t operator()(const K& key)
+	{
+		return size_t(key);
+	}
+};
+
+template<>
+struct hashFuncs<string>
+{
+	size_t operator()(const string& key)
+	{
+		size_t hash = 0;
+		for (auto& e : key)
+		{
+			hash *= 31;
+			hash += e;
+		}
+
+		return hash;
+	}
+};
+
+
 namespace hs
 {
 	//¼ÇÂ¼´æ´¢×´Ì¬
@@ -28,25 +57,7 @@ namespace hs
 	};
 
 
-	template<class K>
-	struct hashFuncs
-	{
-		size_t operator()(const K& key)
-		{
-			return size_t(key);
-		}
-	};
-
-	template<>
-	struct hashFuncs<string>
-	{
-		size_t operator()(const string& key)
-		{
-
-		}
-	};
-
-	template<class K, class V>
+	template<class K, class V,class HashFun=hashFuncs<int>>
 	class Hash
 	{
 	public:
@@ -59,6 +70,8 @@ namespace hs
 
 		bool Insert(const pair<K, V>& data)
 		{
+			HashFun hf;
+
 			if (_n * 10 / _tables.size() == 7)
 			{
 				// ¸ºÔØÒò×Ó < 0.7
@@ -78,7 +91,8 @@ namespace hs
 			}
 
 
-			size_t hashi = data.first % _tables.size();
+			//size_t hashi = data.first % _tables.size();
+			size_t hashi = hf(data.first) % _tables.size();
 			while(_tables[hashi]._status == EXIST)
 			{
 				hashi++;
@@ -118,7 +132,7 @@ namespace hash_bucket//¹þÏ£Í°
 		{	}
 	};
 
-	template<class K, class V>
+	template<class K, class V, class HashFun = hashFuncs<int>>
 	class Hash
 	{
 		typedef HashNode<K, V> Node;
@@ -152,9 +166,10 @@ namespace hash_bucket//¹þÏ£Í°
 				return false;
 			}
 
-			if (_n * 10 / _tables.size() == 7)
+			HashFun hf;
+
+			if (_n == _tables.size())
 			{
-				// ¸ºÔØÒò×Ó < 0.7
 				size_t newsize = _tables.size() * 2;
 				Hash<K, V> newHash;
 				newHash._tables.resize(newsize);
@@ -166,8 +181,11 @@ namespace hash_bucket//¹þÏ£Í°
 						/*newHash._tables[i]->_next = cur;
 						cur = cur->_next;*/
 
-						newHash.Insert(cur->_data)
-							cur = cur->next;
+						newHash.Insert(cur->_data);
+						cur = cur->next;
+
+
+						//ÀË·Ñ
 					}
 				}
 
@@ -175,7 +193,7 @@ namespace hash_bucket//¹þÏ£Í°
 
 			}
 
-			size_t hashi = data.first % _tables.size();
+			size_t hashi = hf(data.first) % _tables.size();
 
 			Node* newNode =new Node(data);
 			newNode->_next = _tables[hashi];
@@ -198,7 +216,7 @@ namespace hash_bucket//¹þÏ£Í°
 					return cur;
 				}
 
-				cur = cur->_next;s
+				cur = cur->_next;
 			}
 
 			return false;
