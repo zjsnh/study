@@ -3,6 +3,7 @@ using namespace std;
 #include"hash.h"
 #include"unordered_map.h"
 #include"unordered_set.h"
+#include"bitset.h"
 
 
 //int main()
@@ -53,33 +54,60 @@ using namespace std;
 //	cout << endl;
 //}
 
+//int main()
+//{
+//	unordered_map<string, string> dict;
+//	dict.insert(make_pair("sort", ""));
+//	dict.insert(make_pair("string", "ַ"));
+//	dict.insert(make_pair("insert", ""));
+//
+//	for (auto& kv : dict)
+//	{
+//		/*kv.first += 'x';*/
+//		kv.second += 'x';
+//
+//		cout << kv.first << ":" << kv.second << endl;
+//	}
+//	cout << endl;
+//
+//	string arr[] = { "㽶", "","ƻ", "", "ƻ", "", "ƻ", "ƻ", "", "ƻ", "㽶", "ƻ", "㽶" };
+//	unordered_map<string, int> count_map;
+//	for (auto& e : arr)
+//	{
+//		count_map[e]++;
+//	}
+//
+//	for (auto& kv : count_map)
+//	{
+//		cout << kv.first << ":" << kv.second << endl;
+//	}
+//	cout << endl;
+//	return 0;
+//}
+
 int main()
 {
-	unordered_map<string, string> dict;
-	dict.insert(make_pair("sort", ""));
-	dict.insert(make_pair("string", "ַ"));
-	dict.insert(make_pair("insert", ""));
+	/*bitset<100> b;
+	b.set(41);
+	b.set(42);
+	b.set(49);
 
-	for (auto& kv : dict)
+
+	cout << b.which(40) << endl;
+	cout << b.which(41) << endl;
+	cout << b.which(42) << endl;
+	cout << b.which(49) << endl;*/
+
+	int a[] = { 1,2,44,44,55,66,77,99,33,55,99 };
+	twobitset<100> t;
+
+	for (auto& e : a)
 	{
-		/*kv.first += 'x';*/
-		kv.second += 'x';
-
-		cout << kv.first << ":" << kv.second << endl;
-	}
-	cout << endl;
-
-	string arr[] = { "㽶", "","ƻ", "", "ƻ", "", "ƻ", "ƻ", "", "ƻ", "㽶", "ƻ", "㽶" };
-	unordered_map<string, int> count_map;
-	for (auto& e : arr)
-	{
-		count_map[e]++;
+		t.set(e);
 	}
 
-	for (auto& kv : count_map)
-	{
-		cout << kv.first << ":" << kv.second << endl;
-	}
-	cout << endl;
+	t.Print();
+	
+
 	return 0;
 }
