@@ -1,9 +1,11 @@
 ﻿#include<iostream>
+#include<string>
 using namespace std;
 #include"hash.h"
 #include"unordered_map.h"
 #include"unordered_set.h"
 #include"bitset.h"
+#include"BloomFilter.h"
 
 
 //int main()
