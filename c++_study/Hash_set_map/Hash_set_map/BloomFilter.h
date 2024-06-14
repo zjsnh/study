@@ -87,4 +87,7 @@ public:
 	}
 private:
 	bitset<N> Bloom;
+
+
+	int n;
 };
