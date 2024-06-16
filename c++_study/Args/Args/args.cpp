@@ -28,6 +28,7 @@ int main()
 	ShowList(1);
 	ShowList(1,"xxxx");
 	ShowList(1, "111", 2.2, 9);
+	ShowList(1, "I Love You", 2.2, 9);
 
 	return 0;
 }
