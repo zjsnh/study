@@ -53,20 +53,48 @@ using namespace std;
 
 
 //smartPtr
-
+// share_ptr  最实用，但是还需要考虑线程安全的问题
 template<class T>
 class SmartPtr {
 public:
     SmartPtr(T* ptr = nullptr)
         : _ptr(ptr)
+        ,_pcount(new int(1))
     {}
 
     ~SmartPtr()
     {
-        if (_ptr)
-            delete _ptr;
+        /*if (_ptr)
+            delete _ptr;*/
+
+        release();
     }
 
+    void release()
+    {
+        if (--(*_pcount) == 0)
+        {
+            delete _ptr;
+            delete _pcount;
+        }
+    }
+
+    SmartPtr<T>& operator=(const SmartPtr<T>& sp)
+    {
+        //if (this != &sp)     有问题 对于间接对自己赋值 虽然存储的地址指向堆上的空间是一样的，但是他们在栈上的空间地址并不一样
+        if (_ptr != sp._ptr)
+        {
+            //删除之前数据
+            release();
+
+            _ptr = sp._ptr;
+            _pcount = sp._pcount;
+            //*(sp._pcount)++;
+            *_pcount++:
+        }
+
+        return *this;
+    }
    
     //像指针一样使用
     T& operator*()
@@ -85,6 +113,7 @@ public:
     
 private:
     T* _ptr;
+    int* _pcount;
 };
 
 
