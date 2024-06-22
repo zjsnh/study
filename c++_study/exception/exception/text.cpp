@@ -156,3 +156,32 @@ int main()
     return 0;
 }
 
+class HeapOnly
+{
+public:
+	static HeapOnly* CreateObj()
+	{
+		return new HeapOnly;
+	}
+
+	HeapOnly(const HeapOnly& hp) = delete;
+private:
+	// 方案一：析构函数私有化
+	// 方案二：构造函数私有化
+	HeapOnly()
+	{
+		cout << "HeapOnly()" << endl;
+	}
+};
+
+int main()
+{
+	//HeapOnly hp1;
+	//static HeapOnly hp2;
+	HeapOnly* ptr = HeapOnly::CreateObj();
+	//HeapOnly copy(*ptr);
+
+	return 0;
+}
+
+
