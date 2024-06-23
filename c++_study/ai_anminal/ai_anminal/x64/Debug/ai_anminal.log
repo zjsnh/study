@@ -1,0 +1,3 @@
+﻿  text.cpp
+E:\2023_code\study\c++_study\ai_anminal\ai_anminal\text.cpp(28,13): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+  ai_anminal.vcxproj -> E:\2023_code\study\c++_study\ai_anminal\x64\Debug\ai_anminal.exe

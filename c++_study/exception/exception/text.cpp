@@ -54,134 +54,165 @@ using namespace std;
 
 //smartPtr
 // share_ptr  最实用，但是还需要考虑线程安全的问题
-template<class T>
-class SmartPtr {
-public:
-    SmartPtr(T* ptr = nullptr)
-        : _ptr(ptr)
-        ,_pcount(new int(1))
-    {}
+//template<class T>
+//class SmartPtr {
+//public:
+//    SmartPtr(T* ptr = nullptr)
+//        : _ptr(ptr)
+//        ,_pcount(new int(1))
+//    {}
+//
+//    ~SmartPtr()
+//    {
+//        /*if (_ptr)
+//            delete _ptr;*/
+//
+//        release();
+//    }
+//
+//    void release()
+//    {
+//        if (--(*_pcount) == 0)
+//        {
+//            delete _ptr;
+//            delete _pcount;
+//        }
+//    }
+//
+//    SmartPtr<T>& operator=(const SmartPtr<T>& sp)
+//    {
+//        if (this != &sp)     有问题 对于间接对自己赋值 虽然存储的地址指向堆上的空间是一样的，但是他们在栈上的空间地址并不一样
+//        if (_ptr != sp._ptr)
+//        {
+//            删除之前数据
+//            release();
+//
+//            _ptr = sp._ptr;
+//            _pcount = sp._pcount;
+//            *(sp._pcount)++;
+//            *_pcount++:
+//        }
+//
+//        return *this;
+//    }
+//   
+//    像指针一样使用
+//    T& operator*()
+//    {
+//        return *_ptr;
+//    }
+//
+//    T* operator->()
+//    {
+//        return _ptr;
+//    }
+//
+//    禁止编译器自动生成 拷贝赋值 =运算符重载函数
+//    SmartPtr(const SmartPtr<T>& sp) = delete;
+//    SmartPtr<T>& operator=(const SmartPtr<T>& sp) = delete;
+//    
+//private:
+//    T* _ptr;
+//    int* _pcount;
+//};
+//
+//
+//double Division(int a, int b) /*throw(const char*)*/
+//{
+//     当b == 0时抛出异常
+//    if (b == 0)
+//    {
+//        throw "Division by zero condition!";
+//    }
+//    return (double)a / (double)b;
+//}
+//
+//void func()
+//{
+//    SmartPtr<int> sp(new int);
+//    SmartPtr<double> sp2(new double);
+//
+//
+//    cout << (void*)(new int) << endl;   //new 返回一块内存的指针
+//
+//    int len, time;
+//    cin >> len >> time;
+//    Division(len,time);
+//
+//
+//}
+//
+//
+//int main()
+//{
+//    try{
+//        func();
+//    }
+//    catch (const char* str)
+//    {
+//        cout << str << endl;
+//    }
+//
+//    return 0;
+//}
 
-    ~SmartPtr()
-    {
-        /*if (_ptr)
-            delete _ptr;*/
 
-        release();
-    }
-
-    void release()
-    {
-        if (--(*_pcount) == 0)
-        {
-            delete _ptr;
-            delete _pcount;
-        }
-    }
-
-    SmartPtr<T>& operator=(const SmartPtr<T>& sp)
-    {
-        //if (this != &sp)     有问题 对于间接对自己赋值 虽然存储的地址指向堆上的空间是一样的，但是他们在栈上的空间地址并不一样
-        if (_ptr != sp._ptr)
-        {
-            //删除之前数据
-            release();
-
-            _ptr = sp._ptr;
-            _pcount = sp._pcount;
-            //*(sp._pcount)++;
-            *_pcount++:
-        }
-
-        return *this;
-    }
-   
-    //像指针一样使用
-    T& operator*()
-    {
-        return *_ptr;
-    }
-
-    T* operator->()
-    {
-        return _ptr;
-    }
-
-    //禁止编译器自动生成 拷贝赋值 =运算符重载函数
-    SmartPtr(const SmartPtr<T>& sp) = delete;
-    SmartPtr<T>& operator=(const SmartPtr<T>& sp) = delete;
-    
-private:
-    T* _ptr;
-    int* _pcount;
-};
-
-
-double Division(int a, int b) /*throw(const char*)*/
-{
-    // 当b == 0时抛出异常
-    if (b == 0)
-    {
-        throw "Division by zero condition!";
-    }
-    return (double)a / (double)b;
-}
-
-void func()
-{
-    SmartPtr<int> sp(new int);
-    SmartPtr<double> sp2(new double);
-
-
-    cout << (void*)(new int) << endl;   //new 返回一块内存的指针
-
-    int len, time;
-    cin >> len >> time;
-    Division(len,time);
-
-
-}
-
-
-int main()
-{
-    try{
-        func();
-    }
-    catch (const char* str)
-    {
-        cout << str << endl;
-    }
-
-    return 0;
-}
+//
+//class HeapOnly
+//{
+//public:
+//	static HeapOnly* CreateObj()
+//	{
+//		return new HeapOnly;
+//	}
+//
+//	HeapOnly(const HeapOnly& hp) = delete;
+//private:
+//	// 方案一：析构函数私有化
+//	// 方案二：构造函数私有化
+//	HeapOnly()
+//	{
+//		cout << "HeapOnly()" << endl;
+//	}
+//};
+//
+//int main()
+//{
+//	//HeapOnly hp1;
+//	//static HeapOnly hp2;
+//	HeapOnly* ptr = HeapOnly::CreateObj();
+//	//HeapOnly copy(*ptr);
+//
+//	return 0;
+//}
+//
 
 class HeapOnly
 {
 public:
-	static HeapOnly* CreateObj()
+	static HeapOnly* newH()
 	{
 		return new HeapOnly;
 	}
 
-	HeapOnly(const HeapOnly& hp) = delete;
+
 private:
-	// 方案一：析构函数私有化
-	// 方案二：构造函数私有化
-	HeapOnly()
+	~HeapOnly()
 	{
-		cout << "HeapOnly()" << endl;
+		cout << "~HeapOnly()" << endl;
 	}
+
 };
+
+
 
 int main()
 {
-	//HeapOnly hp1;
-	//static HeapOnly hp2;
-	HeapOnly* ptr = HeapOnly::CreateObj();
-	//HeapOnly copy(*ptr);
+	//HeapOnly hp;
+	HeapOnly* hp;
+	hp->newH();
+
 
 	return 0;
 }
-
 
