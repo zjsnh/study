@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\unordered_map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\unordered_set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\BloomFilter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\BloomFilter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\hash.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -19,8 +15,12 @@
       "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\bitset.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\BloomFilter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\BloomFilter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\unordered_set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\unordered_map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,33 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "BloomFilter.h",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\BloomFilter.h",
               "RelativeDocumentMoniker": "Hash_set_map\\BloomFilter.h",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\BloomFilter.h",
               "RelativeToolTip": "Hash_set_map\\BloomFilter.h",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAFsAAAAHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-12T13:12:46.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "bitset.h",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\bitset.h",
-              "RelativeDocumentMoniker": "Hash_set_map\\bitset.h",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\bitset.h",
-              "RelativeToolTip": "Hash_set_map\\bitset.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-11T12:30:21.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "hash.h",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\hash.h",
               "RelativeDocumentMoniker": "Hash_set_map\\hash.h",
@@ -85,32 +72,6 @@
               "ViewState": "AQIAAFQAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-10T07:50:55.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "unordered_set.h",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_set.h",
-              "RelativeDocumentMoniker": "Hash_set_map\\unordered_set.h",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_set.h",
-              "RelativeToolTip": "Hash_set_map\\unordered_set.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACIAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-10T09:00:33.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "unordered_map.h",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_map.h",
-              "RelativeDocumentMoniker": "Hash_set_map\\unordered_map.h",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_map.h",
-              "RelativeToolTip": "Hash_set_map\\unordered_map.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-10T08:56:58.32Z",
               "EditorCaption": ""
             },
             {
@@ -138,6 +99,108 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "b2de4ca0-d365-420d-8fe8-e6106a435f04",
+        "Display": 1,
+        "X": -4,
+        "Y": 10,
+        "Width": 809,
+        "Height": 815,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "unordered_map.h",
+              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_map.h",
+              "RelativeDocumentMoniker": "Hash_set_map\\unordered_map.h",
+              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_map.h",
+              "RelativeToolTip": "Hash_set_map\\unordered_map.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-10T08:56:58.32Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "f1c6d580-9f58-41f9-bde2-4398bb14e4fb",
+        "Display": 1,
+        "X": -4,
+        "Y": 177,
+        "Width": 809,
+        "Height": 815,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "unordered_set.h",
+              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_set.h",
+              "RelativeDocumentMoniker": "Hash_set_map\\unordered_set.h",
+              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_set.h",
+              "RelativeToolTip": "Hash_set_map\\unordered_set.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-10T09:00:33.997Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "898c62d1-7a61-4341-b109-8fc6f9a8485c",
+        "Display": 1,
+        "X": -4,
+        "Y": 350,
+        "Width": 809,
+        "Height": 815,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "bitset.h",
+              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\bitset.h",
+              "RelativeDocumentMoniker": "Hash_set_map\\bitset.h",
+              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\bitset.h",
+              "RelativeToolTip": "Hash_set_map\\bitset.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-11T12:30:21.639Z",
+              "EditorCaption": ""
             }
           ]
         }
