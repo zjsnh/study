@@ -8,7 +8,7 @@ namespace str
 	class string
 	{
 
-
+	public:
 		string(const char* str = "")
 			:_size(strlen(str))
 		{
@@ -217,7 +217,7 @@ namespace str
 		size_t find(const char* str, size_t pos = npos)
 		{
 			assert(pos >= 0 && pos < _size);
-			const char* p = strstr(_str + pos, str);
+			const char* p = strstr(_str + pos, str);//Æ¥Åä×Ö·û´®
 
 			if (p == nullptr)
 				return npos;
@@ -225,7 +225,7 @@ namespace str
 				return p - _str;//Ö¸ÕëÏà¼õ·µ»Ø¾àÀë
 		}
 
-		string substr(size_t pos = 0, size_t len = npos) const
+		string substr(size_t pos = 0, size_t len = npos) const //È¡×Ó´®
 		{
 			string temp;
 			size_t size = pos + len;
