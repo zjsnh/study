@@ -76,20 +76,20 @@ namespace vec
 		vector(size_t size, const T& val = T())
 		{
 			reserve(size);
-			while (_start != _endofstorage)
+			while (_finish != _endofstorage)
 			{
-				*_start = val;
-				_start++;
+				*_finish = val;
+				_finish++;
 			}
 		}
 
 		vector(int size, const T& val = T())
 		{
 			reserve(size);
-			while (_start != _endofstorage)
+			while (_finish != _endofstorage)
 			{
-				*_start = val;
-				_start++;
+				*_finish = val;
+				_finish++;;
 			}
 		}
 
@@ -207,7 +207,7 @@ namespace vec
 				pos = _start + len;
 			}
 
-			memmove(pos, pos + 1, sizeof(int)*(_finish - pos));
+			memmove(pos + 1, pos, sizeof(int) * (_finish - pos));
 
 			*pos = val;
 			_finish++;
@@ -220,7 +220,7 @@ namespace vec
 			assert(pos >= _start);
 
 
-			memmove(pos+1, pos, sizeof(int) * (_finish - pos));
+			memmove(pos, pos + 1, sizeof(int) * (_finish - pos));
 			_finish--;
 
 			return pos;
@@ -233,6 +233,21 @@ namespace vec
 			/*return *(start + pos);*/
 			return _start[pos];
 		}
+
+		//iterator find(T&& val)
+		//{
+		//	for (size_t i = 0; i < size(); i++)
+		//	{
+		//		if (_start[i] == val)
+		//		{
+		//			return _start + i;
+		//		}
+
+		//		i++;
+		//	}
+
+		//	return nullptr;
+		//}
 
 		const T& operator[](size_t pos) const
 		{
@@ -252,6 +267,7 @@ namespace vec
 		}
 
 	private:
+
 		iterator _start = nullptr;
 		iterator _finish = nullptr;
 		iterator _endofstorage = nullptr;

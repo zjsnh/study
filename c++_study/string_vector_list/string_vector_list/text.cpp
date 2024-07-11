@@ -10,6 +10,7 @@ using namespace std;
 #include"list.h"
 #include"vector.h"
 #include"string.h"
+#include<vector>
 
 
 //int main()
@@ -35,25 +36,25 @@ using namespace std;
 //	return 0;
 //}
 
-int main()
-{
-	lt::list<int> l;
-	l.push_back(1);
-	l.push_back(2);
-	l.push_back(3);
-	l.push_back(4);
-
-
-	lt::list<int>::const_iterator it = l.begin();
-	while (it != l.end())
-	{
-		cout << *it << " ";
-		it++;
-	}
-
-	return 0;
-
-}
+//int main()
+//{
+//	lt::list<int> l;
+//	l.push_back(1);
+//	l.push_back(2);
+//	l.push_back(3);
+//	l.push_back(4);
+//
+//
+//	lt::list<int>::const_iterator it = l.begin();
+//	while (it != l.end())
+//	{
+//		cout << *it << " ";
+//		it++;
+//	}
+//
+//	return 0;
+//
+//}
 
 //void Print(const lt::list<int>& l)
 //{
@@ -122,3 +123,17 @@ int main()
 //
 //	return 0;
 //}
+
+
+int main()
+{
+	vec::vector<int> V(10, 2);
+	V.insert(V.begin(), 8);
+
+
+
+	vec::vector<int>::iterator it = V.find(8);
+	cout << *it;
+
+	return 0;
+}

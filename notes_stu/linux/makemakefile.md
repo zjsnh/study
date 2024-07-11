@@ -75,3 +75,35 @@ ffush  将缓冲区的信息直接刷新输出到 输出流  stdout 是标准输
 make 默认执行第一个目标文件  也可以直接指定目标文件执行
 
 ![image-20240708155749459](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240708155749459.png)
+
+## 转义字符
+
+![image-20240710102916134](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240710102916134.png)
+
+
+
+![image-20240710102933358](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240710102933358.png)
+
+![image-20240710103149700](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240710103149700.png)
+
+![image-20240710105429275](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240710105429275.png)
+
+C语言默认是右对齐 也就是说 100是从右往左，负号就是左对齐，从左开始
+
+![image-20240710111347551](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240710111347551.png)
+
+![image-20240710111906633](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240710111906633.png)
+
+通过外界传的百分比参数，打印进度条
+
+![image-20240710112241407](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240710112241407.png)
+
+![image-20240710112653934](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240710112653934.png)
+
+![image-20240710112848335](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240710112848335.png)
+
+![image-20240710113126988](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240710113126988.png)
+
+初始化bar 因为bar是全局的，第一次进度条完成后，需要初始化
+
+## c语言颜色输出
