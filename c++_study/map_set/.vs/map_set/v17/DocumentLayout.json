@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|solutionrelative:map_set\\set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|solutionrelative:map_set\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|solutionrelative:map_set\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\RBtree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|solutionrelative:map_set\\RBtree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|solutionrelative:map_set\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|solutionrelative:map_set\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A00D226-D306-4A71-AFCF-7081540D90E6}|map_set\\map_set.vcxproj|solutionrelative:map_set\\set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,54 +42,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "set.h",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\set.h",
               "RelativeDocumentMoniker": "map_set\\set.h",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\set.h",
               "RelativeToolTip": "map_set\\set.h",
-              "ViewState": "AQIAACYAAAAAAAAAAAAAACwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-04T12:43:45.6Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "map.h",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\map.h",
               "RelativeDocumentMoniker": "map_set\\map.h",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\map.h",
               "RelativeToolTip": "map_set\\map.h",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAA8AAAAEAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-04T11:34:56.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "RBtree.h",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\RBtree.h",
               "RelativeDocumentMoniker": "map_set\\RBtree.h",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\RBtree.h",
               "RelativeToolTip": "map_set\\RBtree.h",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEUAAAACAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAEUAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-04T11:03:11.451Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "text.cpp",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\text.cpp",
               "RelativeDocumentMoniker": "map_set\\text.cpp",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\map_set\\map_set\\text.cpp",
               "RelativeToolTip": "map_set\\text.cpp",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAQwD4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-04T11:02:36.873Z"
+              "WhenOpened": "2024-06-04T11:02:36.873Z",
+              "EditorCaption": ""
             }
           ]
         },
