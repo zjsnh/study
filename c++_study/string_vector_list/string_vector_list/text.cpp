@@ -125,15 +125,22 @@ using namespace std;
 //}
 
 
+//int main()
+//{
+//	vec::vector<int> V(10, 2);
+//	V.insert(V.begin(), 8);
+//
+//
+//
+//	vec::vector<int>::iterator it = V.find(8);
+//	cout << *it;
+//
+//	return 0;
+//}
+
+
+
 int main()
 {
-	vec::vector<int> V(10, 2);
-	V.insert(V.begin(), 8);
 
-
-
-	vec::vector<int>::iterator it = V.find(8);
-	cout << *it;
-
-	return 0;
 }

@@ -195,7 +195,6 @@ namespace lt
 			while (it != end())
 			{
 				it=erase(it);
-				
 			}
 
 		}
