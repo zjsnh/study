@@ -50,8 +50,7 @@
               "RelativeToolTip": "heap\\text.cpp",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-10T12:05:53.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T12:05:53.681Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "heap\\data.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-19T08:57:37.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T08:57:37.979Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "heap\\heap.h",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-10T11:12:13.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T11:12:13.597Z"
             },
             {
               "$type": "Document",
@@ -87,10 +84,24 @@
               "RelativeDocumentMoniker": "heap\\heap.cpp",
               "ToolTip": "E:\\2023_code\\study\\data structure_c  c\u002B\u002B\\heap\\heap\\heap.cpp",
               "RelativeToolTip": "heap\\heap.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG8AAAABAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAG8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-10T11:12:02.075Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1448,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
