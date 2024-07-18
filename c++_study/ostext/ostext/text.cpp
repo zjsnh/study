@@ -252,75 +252,220 @@ using namespace std;
 //    return 0;
 //}
 
-int main() {
-    //int L;
-   // cin >> L;
+//int main() {
+//    //int L;
+//   // cin >> L;
+//
+//    int critical = 20;
+//   // cin >> critical;
+//
+//    vector<int> V = { 1, 1, 6, 10, 9, 3, 3, 5, 3, 7 };
+//
+//    /*int b;
+//    while (cin >> b)
+//    {
+//        V.push_back(b);
+//    }*/
+//
+//    int mindistance = V.size();
+//    int right = 0;
+//    int left = 0;
+//
+//    pair<int, int> LR_Location;
+//
+//    int num = 0;
+//
+//    /*for (int i = 0; i < V.size(); )
+//    {
+//        if (num >= critical)
+//        {
+//            if (right - left + 1 < mindistance)
+//            {
+//                LR_Location = pair<int, int>(left, right);
+//                mindistance = right - left + 1;
+//            }
+//
+//            while (left <= right && num > critical)
+//            {
+//                num -= V[left];
+//                if (num > critical)
+//                {
+//                    left++;
+//
+//                    LR_Location = pair<int, int>(left, right);
+//                    --mindistance;
+//                }
+//            }
+//        }
+//        else
+//        {
+//            num += V[i];
+//            right = i;
+//            i++;
+//        }
+//    }*/
+//
+//    while (right < V.size()) {
+//        num += V[right];
+//
+//        while (num >= critical) {
+//            if (right - left + 1 < mindistance) {
+//                LR_Location = pair<int, int>(left, right);
+//                mindistance = right - left + 1;
+//            }
+//            num -= V[left];
+//            left++;
+//        }
+//        right++;
+//    }
+//
+//    cout << LR_Location.first + 1 << " " << LR_Location.second + 1 << endl;
+//    return 0;
+//
+//
+//}
 
-    int critical = 20;
-   // cin >> critical;
 
-    vector<int> V = { 1, 1, 6, 10, 9, 3, 3, 5, 3, 7 };
+//int main()
+//{
+//	int a = 1;
+//	int mindistance = 1e5;
+//
+//	vector<int> V;
+//	V.push_back(0);
+//	V.push_back(1);
+//
+//	while (V.back() < a)
+//	{
+//		mindistance = a - V.back();
+//
+//		V.push_back(V[V.size() - 1] + V[V.size() - 2]);
+//	}
+//
+//	mindistance = min(V.back() - a, mindistance);
+//
+//	cout << mindistance << endl;
+//
+//	return 0;
+//}
 
-    /*int b;
-    while (cin >> b)
-    {
-        V.push_back(b);
-    }*/
+//
+//bool judge(vector<string>& board, string& word, int x, int y, int local)
+//{
+//    if (local == word.size()) {
+//        return true;
+//    }
+//
+//    // 确保 x 和 y 在边界内并匹配
+//    if (x - 1 >= 0 && y - 1 >= 0 && y - 1 < board[x - 1].size() && board[x - 1][y - 1] == word[local]) {
+//        if (judge(board, word, x - 1, y - 1, local + 1)) return true;
+//    }
+//    if (x < board.size() && y - 1 >= 0 && y - 1 < board[x].size() && board[x][y - 1] == word[local]) {
+//        if (judge(board, word, x, y - 1, local + 1)) return true;
+//    }
+//    if (x + 1 < board.size() && y - 1 >= 0 && y - 1 < board[x + 1].size() && board[x + 1][y - 1] == word[local]) {
+//        if (judge(board, word, x + 1, y - 1, local + 1)) return true;
+//    }
+//    if (x + 1 < board.size() && y < board[x + 1].size() && board[x + 1][y] == word[local]) {
+//        if (judge(board, word, x + 1, y, local + 1)) return true;
+//    }
+//    if (x + 1 < board.size() && y + 1 < board[x + 1].size() && board[x + 1][y + 1] == word[local]) {
+//        if (judge(board, word, x + 1, y + 1, local + 1)) return true;
+//    }
+//    if (x >= 0 && y + 1 < board[x].size() && board[x][y + 1] == word[local]) {
+//        if (judge(board, word, x, y + 1, local + 1)) return true;
+//    }
+//    if (x - 1 >= 0 && y < board[x - 1].size() && board[x - 1][y] == word[local]) {
+//        if (judge(board, word, x - 1, y, local + 1)) return true;
+//    }
+//    if (x - 1 >= 0 && y + 1 < board[x - 1].size() && board[x - 1][y + 1] == word[local]) {
+//        if (judge(board, word, x - 1, y + 1, local + 1)) return true;
+//    }
+//
+//    return false;
+//}
+//
+//
+//
+//
+//
+//bool exist(vector<string>& board, string& word) {
+//	// write code here
+//
+//
+//	/*int x = board.size();
+//	int y = board[0].size();*/
+//
+//	for (int x = 0; x < board.size(); x++)
+//	{
+//		for (int y = 0; y < board[x].size(); y++)
+//		{
+//			if (board[x][y] == word[0])
+//			{
+//				if (judge(board, word, x, y, 1) == true)
+//					return true;
+//			}
+//		}
+//	}
+//
+//	return false;
+//
+//}
+//
+////["XYZE","SFZS","XDEE"],"XYZZED"
+//
+//
+//int main()
+//{
+//	vector<string> board = { "XYZE","SFZ","XDEE" };
+//	string word("XYZZED");
+//
+//	cout << exist(board, word) << endl;
+//	return 0;
+//}
 
-    int mindistance = V.size();
-    int right = 0;
-    int left = 0;
 
-    pair<int, int> LR_Location;
+void triangle(vector<int>& board, int i)
+{
+	if (i == 1)
+	{
+		cout << 1 << endl;
+		return;
+	}
 
-    int num = 0;
+	if (i == 2)
+	{
+		cout << 1 << " " << 1 << endl;
+		return;
+	}
 
-    /*for (int i = 0; i < V.size(); )
-    {
-        if (num >= critical)
-        {
-            if (right - left + 1 < mindistance)
-            {
-                LR_Location = pair<int, int>(left, right);
-                mindistance = right - left + 1;
-            }
+	vector<int> copy;
+	copy.resize(board.size() + 1);
+	copy[0] = 1;
+	copy[copy.size() - 1] = 1;
 
-            while (left <= right && num > critical)
-            {
-                num -= V[left];
-                if (num > critical)
-                {
-                    left++;
+	cout << 1 << " ";
+	for (int i = 1; i < copy.size()-1; i++)
+	{
+		copy[i] = board[i - 1] + board[i];
+		cout << copy[i] << " ";
+	}
 
-                    LR_Location = pair<int, int>(left, right);
-                    --mindistance;
-                }
-            }
-        }
-        else
-        {
-            num += V[i];
-            right = i;
-            i++;
-        }
-    }*/
+	cout << 1 << " " << endl;
 
-    while (right < V.size()) {
-        num += V[right];
-
-        while (num >= critical) {
-            if (right - left + 1 < mindistance) {
-                LR_Location = pair<int, int>(left, right);
-                mindistance = right - left + 1;
-            }
-            num -= V[left];
-            left++;
-        }
-        right++;
-    }
-
-    cout << LR_Location.first + 1 << " " << LR_Location.second + 1 << endl;
-    return 0;
+	swap(board, copy);
+	return;
+}
 
 
+int main()
+{
+	int i = 0;
+	cin >> i;
+	vector<int> board = { 1,1 };
+	for (int a = 1; a <= i; a++)
+	{
+		triangle(board, a);
+	}
+	return 0;
 }

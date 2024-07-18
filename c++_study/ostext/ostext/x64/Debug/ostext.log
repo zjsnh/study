@@ -1,3 +1,2 @@
 ﻿  text.cpp
-E:\2023_code\study\c++_study\ostext\ostext\text.cpp(271,21): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   ostext.vcxproj -> E:\2023_code\study\c++_study\ostext\x64\Debug\ostext.exe
