@@ -425,47 +425,71 @@ using namespace std;
 //}
 
 
-void triangle(vector<int>& board, int i)
-{
-	if (i == 1)
-	{
-		cout << 1 << endl;
-		return;
-	}
+//void triangle(vector<int>& board, int i)
+//{
+//	if (i == 1)
+//	{
+//		cout << 1 << endl;
+//		return;
+//	}
+//
+//	if (i == 2)
+//	{
+//		cout << 1 << " " << 1 << endl;
+//		return;
+//	}
+//
+//	vector<int> copy;
+//	copy.resize(board.size() + 1);
+//	copy[0] = 1;
+//	copy[copy.size() - 1] = 1;
+//
+//	cout << 1 << " ";
+//	for (int i = 1; i < copy.size()-1; i++)
+//	{
+//		copy[i] = board[i - 1] + board[i];
+//		cout << copy[i] << " ";
+//	}
+//
+//	cout << 1 << " " << endl;
+//
+//	swap(board, copy);
+//	return;
+//}
+//
+//
+//int main()
+//{
+//	int i = 0;
+//	cin >> i;
+//	vector<int> board = { 1,1 };
+//	for (int a = 1; a <= i; a++)
+//	{
+//		triangle(board, a);
+//	}
+//	return 0;
+//}
 
-	if (i == 2)
-	{
-		cout << 1 << " " << 1 << endl;
-		return;
-	}
 
-	vector<int> copy;
-	copy.resize(board.size() + 1);
-	copy[0] = 1;
-	copy[copy.size() - 1] = 1;
-
-	cout << 1 << " ";
-	for (int i = 1; i < copy.size()-1; i++)
-	{
-		copy[i] = board[i - 1] + board[i];
-		cout << copy[i] << " ";
-	}
-
-	cout << 1 << " " << endl;
-
-	swap(board, copy);
-	return;
-}
+//
+//int main()
+//{
+//	int cur = 0;
+//	cin >> cur;
+//	while (cur--)
+//	{
+//		int y, o, u;
+//		cin >> y >> o >> u;
+//
+//		int Min = min(y, min(o, u));
+//		o -= Min;
+//		
+//		cout << Min * 2 + o - 1;
+//
+//	}
+//
+//
+//	return 0;
+//}
 
 
-int main()
-{
-	int i = 0;
-	cin >> i;
-	vector<int> board = { 1,1 };
-	for (int a = 1; a <= i; a++)
-	{
-		triangle(board, a);
-	}
-	return 0;
-}

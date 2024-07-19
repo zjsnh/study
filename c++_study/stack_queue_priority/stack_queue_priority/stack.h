@@ -14,6 +14,18 @@ namespace sk
 
 	public:
 
+		typedef typename std::deque<T>::iterator iterator;
+
+		iterator begin()
+		{
+			return _con.begin();
+		}
+
+		iterator end()
+		{
+			return _con.end();
+		}
+
 		void push(const T& x)
 		{
 			_con.push_back(x);

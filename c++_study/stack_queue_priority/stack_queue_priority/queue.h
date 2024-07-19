@@ -9,6 +9,8 @@ namespace qu
 	class queue
 	{
 	public:
+
+
 		void push(const T& val)
 		{
 			_con.push_front();
