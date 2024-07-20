@@ -138,10 +138,6 @@ using namespace std;
 //    return 0;
 //}
 
-
-#include <iostream>
-#include<vector>
-using namespace std;
 //int main() {
 //    vector<int> V = { 1,100, 1, 1, 1, 90, 1, 1, 80, 1 };
 //    int a = 10;
@@ -492,4 +488,317 @@ using namespace std;
 //	return 0;
 //}
 
+#include<string>
 
+
+//string solve(string s, string t) {
+//    // write code here
+//    string shorts = s;
+//    string longs = t;
+//    if (t.size() < s.size())
+//    {
+//        shorts = t;
+//        longs = s;
+//    }
+//    string re;
+//
+//    int carry_over = 0;
+//    int shorts_subscript = shorts.size() - 1;
+//    int longs_subscript = longs.size() - 1;
+//    while (shorts_subscript >= 0)
+//    {
+//        int digit = (longs[longs_subscript] - '0') + (shorts[shorts_subscript] - '0') + carry_over;
+//        carry_over = digit / 10;
+//        re += to_string(digit % 10);
+//
+//        shorts_subscript--;
+//        longs_subscript--;
+//    }
+//    
+//    while (longs_subscript >= 0)
+//    {
+//        int digit = (longs[longs_subscript] - '0') + carry_over;
+//        carry_over = digit / 10;
+//        re += to_string(digit % 10);
+//
+//        longs_subscript--;
+//    }
+//
+//    if (carry_over > 0) {
+//        re += to_string(carry_over);
+//    }
+//
+//    reverse(re.begin(), re.end());
+//
+//    return re;
+//}
+//
+//int main()
+//{
+//    string cout_re = solve("1005", "999");
+//    cout << cout_re << endl;
+//    return 0;
+//}
+
+//struct ListNode
+//{
+//    int val;
+//    ListNode* next;
+//};
+//
+//ListNode* reverse_list(ListNode* head)
+//{
+//    ListNode* temp = head;
+//    ListNode* prev = nullptr;
+//    while (temp != nullptr)
+//    {
+//        ListNode* _next = temp->next;
+//        
+//        temp->next = prev;
+//        prev = temp;
+//        temp = _next;
+//    }
+//
+//    return prev;
+//}
+//
+//ListNode* addInList(ListNode* head1, ListNode* head2) {
+//    // write code here
+//
+//    head1 = reverse_list(head1);
+//    head2 = reverse_list(head2);
+//
+//    ListNode* temp1 = head1;
+//    ListNode* temp2 = head2;
+//    int digit = 0;
+//    int carry_over = 0;
+//
+//    while (temp1!=nullptr&&temp2==nullptr)
+//    {
+//        digit = temp1->val + temp2->val + carry_over;
+//        carry_over = digit / 10;
+//        temp1->val = digit % 10;
+//
+//        temp1 = temp1->next;
+//        temp2 = temp2->next;
+//    }
+//
+//    ListNode* uncompleted = temp1;
+//    if (temp2 != nullptr) {
+//        uncompleted = temp1;
+//    }
+//
+//    while (uncompleted != nullptr) {
+//        digit = uncompleted->val + carry_over;
+//        carry_over = digit / 10;
+//        uncompleted->val = digit % 10;
+//
+//        if (uncompleted->next == nullptr) {
+//            break;
+//        }
+//
+//        uncompleted = uncompleted->next;
+//    }
+//
+//    if (carry_over != 0) {
+//        ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
+//
+//        newNode->val = 1;
+//        newNode->next = nullptr;
+//
+//        uncompleted->next = newNode;
+//    }
+//
+//    return reverse_list(head1);
+//}
+
+//string solve1(string s, string t) {
+//    // write code here
+//    string shorts = s;
+//    string longs = t;
+//    if (t.size() < s.size()) {
+//        shorts = t;
+//        longs = s;
+//    }
+//    string re;
+//
+//    int carry_over = 0;
+//    int shorts_subscript = shorts.size() - 1;
+//    int longs_subscript = longs.size() - 1;
+//    while (shorts_subscript >= 0) {
+//        int digit = (longs[longs_subscript] - '0') + (shorts[shorts_subscript] - '0') +
+//            carry_over;
+//        carry_over = digit / 10;
+//        re += to_string(digit % 10);
+//
+//        shorts_subscript--;
+//        longs_subscript--;
+//    }
+//
+//    while (longs_subscript >= 0) {
+//        int digit = (longs[longs_subscript] - '0') + carry_over;
+//        carry_over = digit / 10;
+//        re += to_string(digit % 10);
+//
+//        longs_subscript--;
+//    }
+//
+//    if (carry_over > 0) {
+//        re += to_string(carry_over);
+//    }
+//
+//    reverse(re.begin(), re.end());
+//
+//    return re;
+//}
+//
+//
+//string solve(string s, string t) {
+//    // write code here
+//    string shorts = s;
+//    string longs = t;
+//    if (t.size() < s.size()) {
+//        shorts = t;
+//        longs = s;
+//    }
+//
+//    int carry_over = 0;
+//    int shorts_subscript = shorts.size() - 1;
+//    int num = 0;
+//    string result;
+//    
+//
+//    while (shorts_subscript >= 0) {
+//        int longs_subscript = longs.size() - 1;
+//        string re;
+//        while (longs_subscript >= 0 || carry_over) {
+//            int sum = shorts[shorts_subscript] - '0';
+//
+//            /*if (longs_subscript >= 0) {
+//                sum *= longs[longs_subscript--] - '0';
+//            }*/
+//
+//            if (longs_subscript >= 0) {
+//                sum *= longs[longs_subscript--] - '0';
+//            }
+//            else
+//            {
+//                //sum 这时候只需要加上上一次计算的进位即可
+//                num *= 0;
+//            }
+//            
+//
+//            re += to_string((sum + carry_over) % 10);
+//
+//            carry_over = (sum + carry_over) / 10;
+//        }
+//
+//        reverse(re.begin(), re.end());
+//
+//        for (int i = 0; i < num; i++)
+//        {
+//            re += '0';
+//        } 
+//
+//
+//        result = solve1(result, re);
+//
+//        shorts_subscript--;
+//        num++;
+//
+//    }
+//
+//   // return result;
+//
+//    int start_pos = result.find_first_not_of("0");
+//    if (start_pos != string::npos) {
+//        return result.substr(start_pos);
+//    }
+//    return "0";
+//
+//}
+
+//int main()
+//{
+//    cout << solve("10086", "10086");
+//
+//    return 0;
+//}
+
+struct ListNode
+{
+    int val;
+    ListNode* next;
+};
+
+ListNode* reverse_list(ListNode* head) {
+    ListNode* temp = head;
+    ListNode* prev = nullptr;
+    while (temp != nullptr) {
+        ListNode* _next = temp->next;
+
+        temp->next = prev;
+        prev = temp;
+        temp = _next;
+    }
+
+    return prev;
+}
+
+ListNode* addInList(ListNode* head1, ListNode* head2) {
+    // write code here
+
+    head1 = reverse_list(head1);
+    head2 = reverse_list(head2);
+
+    ListNode* temp1 = head1;
+    ListNode* temp2 = head2;
+    int digit = 0;
+    int carry_over = 0;
+
+    while (temp1 != nullptr && temp2 != nullptr) {
+        digit = temp1->val + temp2->val + carry_over;
+        carry_over = digit / 10;
+        temp1->val = digit % 10;
+
+        temp1 = temp1->next;
+        temp2 = temp2->next;
+    }
+
+    ListNode* uncompleted = temp1;
+    if (temp2 != nullptr) {
+        uncompleted = temp1;
+    }
+
+    while (uncompleted != nullptr) {
+        digit = uncompleted->val + carry_over;
+        carry_over = digit / 10;
+        uncompleted->val = digit % 10;
+
+        if (uncompleted->next == nullptr) {
+            break;
+        }
+
+        uncompleted = uncompleted->next;
+    }
+
+    if (carry_over != 0) {
+        ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
+
+        newNode->val = 1;
+        newNode->next = nullptr;
+
+        uncompleted->next = newNode;
+    }
+
+    return reverse_list(head1);
+}
+
+int main()
+{
+    ListNode* list1 = new ListNode;
+    list1->val;
+
+
+    return 0;
+}
