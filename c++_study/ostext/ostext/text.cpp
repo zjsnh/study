@@ -248,78 +248,6 @@ using namespace std;
 //    return 0;
 //}
 
-//int main() {
-//    //int L;
-//   // cin >> L;
-//
-//    int critical = 20;
-//   // cin >> critical;
-//
-//    vector<int> V = { 1, 1, 6, 10, 9, 3, 3, 5, 3, 7 };
-//
-//    /*int b;
-//    while (cin >> b)
-//    {
-//        V.push_back(b);
-//    }*/
-//
-//    int mindistance = V.size();
-//    int right = 0;
-//    int left = 0;
-//
-//    pair<int, int> LR_Location;
-//
-//    int num = 0;
-//
-//    /*for (int i = 0; i < V.size(); )
-//    {
-//        if (num >= critical)
-//        {
-//            if (right - left + 1 < mindistance)
-//            {
-//                LR_Location = pair<int, int>(left, right);
-//                mindistance = right - left + 1;
-//            }
-//
-//            while (left <= right && num > critical)
-//            {
-//                num -= V[left];
-//                if (num > critical)
-//                {
-//                    left++;
-//
-//                    LR_Location = pair<int, int>(left, right);
-//                    --mindistance;
-//                }
-//            }
-//        }
-//        else
-//        {
-//            num += V[i];
-//            right = i;
-//            i++;
-//        }
-//    }*/
-//
-//    while (right < V.size()) {
-//        num += V[right];
-//
-//        while (num >= critical) {
-//            if (right - left + 1 < mindistance) {
-//                LR_Location = pair<int, int>(left, right);
-//                mindistance = right - left + 1;
-//            }
-//            num -= V[left];
-//            left++;
-//        }
-//        right++;
-//    }
-//
-//    cout << LR_Location.first + 1 << " " << LR_Location.second + 1 << endl;
-//    return 0;
-//
-//
-//}
 
 
 //int main()
@@ -346,61 +274,50 @@ using namespace std;
 //}
 
 //
-//bool judge(vector<string>& board, string& word, int x, int y, int local)
+
+//vector<string> buff;
+//
+//bool judge(vector<string>& board, string word, int x, int y, int local)
 //{
 //    if (local == word.size()) {
 //        return true;
 //    }
 //
-//    // 确保 x 和 y 在边界内并匹配
-//    if (x - 1 >= 0 && y - 1 >= 0 && y - 1 < board[x - 1].size() && board[x - 1][y - 1] == word[local]) {
-//        if (judge(board, word, x - 1, y - 1, local + 1)) return true;
-//    }
-//    if (x < board.size() && y - 1 >= 0 && y - 1 < board[x].size() && board[x][y - 1] == word[local]) {
-//        if (judge(board, word, x, y - 1, local + 1)) return true;
-//    }
-//    if (x + 1 < board.size() && y - 1 >= 0 && y - 1 < board[x + 1].size() && board[x + 1][y - 1] == word[local]) {
-//        if (judge(board, word, x + 1, y - 1, local + 1)) return true;
-//    }
-//    if (x + 1 < board.size() && y < board[x + 1].size() && board[x + 1][y] == word[local]) {
-//        if (judge(board, word, x + 1, y, local + 1)) return true;
-//    }
-//    if (x + 1 < board.size() && y + 1 < board[x + 1].size() && board[x + 1][y + 1] == word[local]) {
-//        if (judge(board, word, x + 1, y + 1, local + 1)) return true;
-//    }
-//    if (x >= 0 && y + 1 < board[x].size() && board[x][y + 1] == word[local]) {
-//        if (judge(board, word, x, y + 1, local + 1)) return true;
-//    }
-//    if (x - 1 >= 0 && y < board[x - 1].size() && board[x - 1][y] == word[local]) {
-//        if (judge(board, word, x - 1, y, local + 1)) return true;
-//    }
-//    if (x - 1 >= 0 && y + 1 < board[x - 1].size() && board[x - 1][y + 1] == word[local]) {
-//        if (judge(board, word, x - 1, y + 1, local + 1)) return true;
+//    // 确保 x 和 y 在边界内并匹配,不能斜着走
+//    if (x >= 0 && x < board.size() && y>=0 && y < board[x].size() && board[x][y] == word[local])
+//    {
+//        board[x][y] = '0';//防止重复
+//
+//        if (judge(board, word, x - 1, y, local + 1))
+//            return true;
+//        else if (judge(board, word, x + 1, y, local + 1))
+//            return true;
+//        else if (judge(board, word, x, y - 1, local + 1))
+//            return true;
+//        else if (judge(board, word, x, y + 1, local + 1))
+//            return true;
+//
+//		board[x][y] = buff[x][y];// 路径失败，将值重新带回去
 //    }
 //
 //    return false;
 //}
 //
-//
-//
-//
-//
-//bool exist(vector<string>& board, string& word) {
+//bool exist(vector<string>& board, string word) {
 //	// write code here
 //
 //
 //	/*int x = board.size();
 //	int y = board[0].size();*/
-//
+//	buff = board;
 //	for (int x = 0; x < board.size(); x++)
 //	{
 //		for (int y = 0; y < board[x].size(); y++)
 //		{
-//			if (board[x][y] == word[0])
-//			{
-//				if (judge(board, word, x, y, 1) == true)
+//			
+//			if (judge(board, word, x, y, 0) == true)
 //					return true;
-//			}
+//
 //		}
 //	}
 //
@@ -413,8 +330,8 @@ using namespace std;
 //
 //int main()
 //{
-//	vector<string> board = { "XYZE","SFZ","XDEE" };
-//	string word("XYZZED");
+//	vector<string> board = { "CAA","AAA","BCD" };
+//	string word("AAB");
 //
 //	cout << exist(board, word) << endl;
 //	return 0;
@@ -540,77 +457,127 @@ using namespace std;
 //    return 0;
 //}
 
-//struct ListNode
-//{
-//    int val;
-//    ListNode* next;
-//};
-//
-//ListNode* reverse_list(ListNode* head)
-//{
-//    ListNode* temp = head;
-//    ListNode* prev = nullptr;
-//    while (temp != nullptr)
-//    {
-//        ListNode* _next = temp->next;
-//        
-//        temp->next = prev;
-//        prev = temp;
-//        temp = _next;
-//    }
-//
-//    return prev;
-//}
-//
-//ListNode* addInList(ListNode* head1, ListNode* head2) {
-//    // write code here
-//
-//    head1 = reverse_list(head1);
-//    head2 = reverse_list(head2);
-//
-//    ListNode* temp1 = head1;
-//    ListNode* temp2 = head2;
-//    int digit = 0;
-//    int carry_over = 0;
-//
-//    while (temp1!=nullptr&&temp2==nullptr)
-//    {
-//        digit = temp1->val + temp2->val + carry_over;
-//        carry_over = digit / 10;
-//        temp1->val = digit % 10;
-//
-//        temp1 = temp1->next;
-//        temp2 = temp2->next;
-//    }
-//
-//    ListNode* uncompleted = temp1;
-//    if (temp2 != nullptr) {
-//        uncompleted = temp1;
-//    }
-//
-//    while (uncompleted != nullptr) {
-//        digit = uncompleted->val + carry_over;
-//        carry_over = digit / 10;
-//        uncompleted->val = digit % 10;
-//
-//        if (uncompleted->next == nullptr) {
-//            break;
-//        }
-//
-//        uncompleted = uncompleted->next;
-//    }
-//
-//    if (carry_over != 0) {
-//        ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
-//
-//        newNode->val = 1;
-//        newNode->next = nullptr;
-//
-//        uncompleted->next = newNode;
-//    }
-//
-//    return reverse_list(head1);
-//}
+struct ListNode
+{
+    int val;
+    ListNode* next;
+};
+
+ListNode* reverse_list(ListNode* head)
+{
+    ListNode* temp = head;
+    ListNode* prev = nullptr;
+    while (temp != nullptr)
+    {
+        ListNode* _next = temp->next;
+        
+        temp->next = prev;
+        prev = temp;
+        temp = _next;
+    }
+
+    return prev;
+}
+
+ListNode* addInList(ListNode* head1, ListNode* head2) {
+    // write code here
+
+    head1 = reverse_list(head1);
+    head2 = reverse_list(head2);
+
+    ListNode* temp1 = head1;
+    ListNode* temp2 = head2;
+    
+    int digit = 0;
+    int carry_over = 0;
+
+    while (temp1!=nullptr&&temp2!=nullptr)
+    {
+        digit = temp1->val + temp2->val + carry_over;
+        carry_over = digit / 10;
+        temp1->val = digit % 10;
+
+        temp1 = temp1->next;
+        temp2 = temp2->next;
+    }
+
+    ListNode* uncompleted = temp1;
+    //if (temp2 != nullptr) {
+    //    uncompleted = temp1;
+    //}
+
+    while (uncompleted != nullptr) {
+        digit = uncompleted->val + carry_over;
+        carry_over = digit / 10;
+        uncompleted->val = digit % 10;
+
+        if (uncompleted->next == nullptr) {
+            break;
+        }
+
+        uncompleted = uncompleted->next;
+    }
+
+    if (carry_over != 0) {
+        ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
+        newNode->val = 1;
+        newNode->next = nullptr;
+
+        uncompleted->next = newNode;
+    }
+
+    return reverse_list(head1);
+}
+
+void push_back(ListNode** head, int* array, int size) {
+    ListNode* temp = *head;
+
+
+    if (temp == nullptr) {
+        *head = new ListNode;
+        (*head)->val = array[0];
+        (*head)->next = nullptr;
+        temp = *head;
+    }
+
+    while (temp->next != nullptr) {
+        temp = temp->next;
+    }
+
+    for (int i = 1; i < size; i++) {
+        temp->next = new ListNode;
+        temp = temp->next;
+        temp->val = array[i];
+        temp->next = nullptr;
+    }
+}
+
+int main()
+{
+    ListNode* head1 = nullptr;
+    int array1[] = {4,6,0,2,6,6,3,6,3,0,7,8,0,4,1,7,0,5,6,5,2,4,9,9,1,5,1,5};
+
+    int size1 = sizeof(array1) / 4;
+
+    ListNode* head2 = nullptr;
+    int array2[]= { 6,2,7,8,6,4,7,0,9,3,0,3,6,2,5,6,0,9,6,2,7,4,2,7,1,0,9,0,5,6,5,4,9,1,8,9,3,4,0,2,1,8,8,2,2,0 };
+
+    int size2 = sizeof(array2) / 4;
+    push_back(&head1, array1, size1);
+    push_back(&head2, array2, size2);
+
+    head2 = addInList(head2, head1);
+
+    while (head2 != nullptr)
+    {
+        cout << head2->val << " ";
+        head2 = head2->next;
+    }
+
+    cout << endl;
+
+    return 0;
+}
 
 //string solve1(string s, string t) {
 //    // write code here
@@ -725,80 +692,159 @@ using namespace std;
 //    return 0;
 //}
 
-struct ListNode
-{
-    int val;
-    ListNode* next;
-};
+//struct ListNode
+//{
+//    int val;
+//    ListNode* next;
+//};
+//
+//ListNode* reverse_list(ListNode* head) {
+//    ListNode* temp = head;
+//    ListNode* prev = nullptr;
+//    while (temp != nullptr) {
+//        ListNode* _next = temp->next;
+//
+//        temp->next = prev;
+//        prev = temp;
+//        temp = _next;
+//    }
+//
+//    return prev;
+//}
+//
+//ListNode* addInList(ListNode* head1, ListNode* head2) {
+//    // write code here
+//
+//    head1 = reverse_list(head1);
+//    head2 = reverse_list(head2);
+//
+//    ListNode* temp1 = head1;
+//    ListNode* temp2 = head2;
+//    int digit = 0;
+//    int carry_over = 0;
+//
+//    while (temp1 != nullptr && temp2 != nullptr) {
+//        digit = temp1->val + temp2->val + carry_over;
+//        carry_over = digit / 10;
+//        temp1->val = digit % 10;
+//
+//        temp1 = temp1->next;
+//        temp2 = temp2->next;
+//    }
+//
+//    ListNode* uncompleted = temp1;
+//    if (temp2 != nullptr) {
+//        uncompleted = temp1;
+//    }
+//
+//    while (uncompleted != nullptr) {
+//        digit = uncompleted->val + carry_over;
+//        carry_over = digit / 10;
+//        uncompleted->val = digit % 10;
+//
+//        if (uncompleted->next == nullptr) {
+//            break;
+//        }
+//
+//        uncompleted = uncompleted->next;
+//    }
+//
+//    if (carry_over != 0) {
+//        ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
+//
+//        newNode->val = 1;
+//        newNode->next = nullptr;
+//
+//        uncompleted->next = newNode;
+//    }
+//
+//    return reverse_list(head1);
+//}
+//
+//int main()
+//{
+//    ListNode* list1 = new ListNode;
+//    list1->val;
+//
+//
+//    return 0;
+//}
 
-ListNode* reverse_list(ListNode* head) {
-    ListNode* temp = head;
-    ListNode* prev = nullptr;
-    while (temp != nullptr) {
-        ListNode* _next = temp->next;
 
-        temp->next = prev;
-        prev = temp;
-        temp = _next;
-    }
-
-    return prev;
-}
-
-ListNode* addInList(ListNode* head1, ListNode* head2) {
-    // write code here
-
-    head1 = reverse_list(head1);
-    head2 = reverse_list(head2);
-
-    ListNode* temp1 = head1;
-    ListNode* temp2 = head2;
-    int digit = 0;
-    int carry_over = 0;
-
-    while (temp1 != nullptr && temp2 != nullptr) {
-        digit = temp1->val + temp2->val + carry_over;
-        carry_over = digit / 10;
-        temp1->val = digit % 10;
-
-        temp1 = temp1->next;
-        temp2 = temp2->next;
-    }
-
-    ListNode* uncompleted = temp1;
-    if (temp2 != nullptr) {
-        uncompleted = temp1;
-    }
-
-    while (uncompleted != nullptr) {
-        digit = uncompleted->val + carry_over;
-        carry_over = digit / 10;
-        uncompleted->val = digit % 10;
-
-        if (uncompleted->next == nullptr) {
-            break;
-        }
-
-        uncompleted = uncompleted->next;
-    }
-
-    if (carry_over != 0) {
-        ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
-
-        newNode->val = 1;
-        newNode->next = nullptr;
-
-        uncompleted->next = newNode;
-    }
-
-    return reverse_list(head1);
-}
-
-int main()
-{
-    ListNode* list1 = new ListNode;
-    list1->val;
+//#include<vector>
+//#include <iostream>
+//using namespace std;
+//
+//int main() {
+//    /*int n = 0;
+//    cin >> n;*/
+//    vector<int> cost = { 55 ,89, 84, 47, 76, 71, 75, 63, 18, 9 };
+//    /*int b = 0;
+//    while (cin >> b)
+//    {
+//        cost.push_back(b);
+//    }*/
+//
+//    vector<int> dp;
+//    dp.resize(cost.size() + 1);
+//    dp[0] = 0;
+//    dp[1] = 0;
+//
+//    for (int i = 2; i <= cost.size(); i++)
+//    {
+//        dp[i] = min(dp[i - 1] + cost[i - 1], dp[i - 2] + cost[i - 2]);
+//    }
+//
+//    cout << dp[cost.size()] << endl;
+//    return 0;
+//
+//}
 
 
-    return 0;
-}
+//int main() {
+//    int L;
+//    cin >> L;
+//
+//    int critical;
+//    cin >> critical;
+//
+//    vector<int> V ;
+//
+//    int b;
+//    while (cin >> b)
+//    {
+//        V.push_back(b);
+//    }
+//
+//    int mindistance = V.size();
+//    int right = 0;
+//    int left = 0;
+//
+//    pair<int, int> LR_Location;
+//
+//    int num = 0;
+//
+//    while (right < V.size())
+//    {
+//        num += V[right];
+//        while (left < right && num >= critical)
+//        {
+//            if (mindistance > right - left + 1)
+//            {
+//                LR_Location = pair<int, int>(left, right);
+//                mindistance = right - left + 1;
+//            }
+//            num -= V[left]; // 1 1 6 10 9 3 3 5 3 7
+//
+//            left++;
+//        }
+//
+//        right++;
+//    }
+//
+//    
+//    cout << LR_Location.first + 1 << " " << LR_Location.second + 1 << endl;
+//    return 0;
+//
+//
+//}
