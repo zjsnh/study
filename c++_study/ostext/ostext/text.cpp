@@ -457,127 +457,127 @@ using namespace std;
 //    return 0;
 //}
 
-struct ListNode
-{
-    int val;
-    ListNode* next;
-};
-
-ListNode* reverse_list(ListNode* head)
-{
-    ListNode* temp = head;
-    ListNode* prev = nullptr;
-    while (temp != nullptr)
-    {
-        ListNode* _next = temp->next;
-        
-        temp->next = prev;
-        prev = temp;
-        temp = _next;
-    }
-
-    return prev;
-}
-
-ListNode* addInList(ListNode* head1, ListNode* head2) {
-    // write code here
-
-    head1 = reverse_list(head1);
-    head2 = reverse_list(head2);
-
-    ListNode* temp1 = head1;
-    ListNode* temp2 = head2;
-    
-    int digit = 0;
-    int carry_over = 0;
-
-    while (temp1!=nullptr&&temp2!=nullptr)
-    {
-        digit = temp1->val + temp2->val + carry_over;
-        carry_over = digit / 10;
-        temp1->val = digit % 10;
-
-        temp1 = temp1->next;
-        temp2 = temp2->next;
-    }
-
-    ListNode* uncompleted = temp1;
-    //if (temp2 != nullptr) {
-    //    uncompleted = temp1;
-    //}
-
-    while (uncompleted != nullptr) {
-        digit = uncompleted->val + carry_over;
-        carry_over = digit / 10;
-        uncompleted->val = digit % 10;
-
-        if (uncompleted->next == nullptr) {
-            break;
-        }
-
-        uncompleted = uncompleted->next;
-    }
-
-    if (carry_over != 0) {
-        ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
-        newNode->val = 1;
-        newNode->next = nullptr;
-
-        uncompleted->next = newNode;
-    }
-
-    return reverse_list(head1);
-}
-
-void push_back(ListNode** head, int* array, int size) {
-    ListNode* temp = *head;
-
-
-    if (temp == nullptr) {
-        *head = new ListNode;
-        (*head)->val = array[0];
-        (*head)->next = nullptr;
-        temp = *head;
-    }
-
-    while (temp->next != nullptr) {
-        temp = temp->next;
-    }
-
-    for (int i = 1; i < size; i++) {
-        temp->next = new ListNode;
-        temp = temp->next;
-        temp->val = array[i];
-        temp->next = nullptr;
-    }
-}
-
-int main()
-{
-    ListNode* head1 = nullptr;
-    int array1[] = {4,6,0,2,6,6,3,6,3,0,7,8,0,4,1,7,0,5,6,5,2,4,9,9,1,5,1,5};
-
-    int size1 = sizeof(array1) / 4;
-
-    ListNode* head2 = nullptr;
-    int array2[]= { 6,2,7,8,6,4,7,0,9,3,0,3,6,2,5,6,0,9,6,2,7,4,2,7,1,0,9,0,5,6,5,4,9,1,8,9,3,4,0,2,1,8,8,2,2,0 };
-
-    int size2 = sizeof(array2) / 4;
-    push_back(&head1, array1, size1);
-    push_back(&head2, array2, size2);
-
-    head2 = addInList(head2, head1);
-
-    while (head2 != nullptr)
-    {
-        cout << head2->val << " ";
-        head2 = head2->next;
-    }
-
-    cout << endl;
-
-    return 0;
-}
+//struct ListNode
+//{
+//    int val;
+//    ListNode* next;
+//};
+//
+//ListNode* reverse_list(ListNode* head)
+//{
+//    ListNode* temp = head;
+//    ListNode* prev = nullptr;
+//    while (temp != nullptr)
+//    {
+//        ListNode* _next = temp->next;
+//        
+//        temp->next = prev;
+//        prev = temp;
+//        temp = _next;
+//    }
+//
+//    return prev;
+//}
+//
+//ListNode* addInList(ListNode* head1, ListNode* head2) {
+//    // write code here
+//
+//    head1 = reverse_list(head1);
+//    head2 = reverse_list(head2);
+//
+//    ListNode* temp1 = head1;
+//    ListNode* temp2 = head2;
+//    
+//    int digit = 0;
+//    int carry_over = 0;
+//
+//    while (temp1!=nullptr&&temp2!=nullptr)
+//    {
+//        digit = temp1->val + temp2->val + carry_over;
+//        carry_over = digit / 10;
+//        temp1->val = digit % 10;
+//
+//        temp1 = temp1->next;
+//        temp2 = temp2->next;
+//    }
+//
+//    ListNode* uncompleted = temp1;
+//    //if (temp2 != nullptr) {
+//    //    uncompleted = temp1;
+//    //}
+//
+//    while (uncompleted != nullptr) {
+//        digit = uncompleted->val + carry_over;
+//        carry_over = digit / 10;
+//        uncompleted->val = digit % 10;
+//
+//        if (uncompleted->next == nullptr) {
+//            break;
+//        }
+//
+//        uncompleted = uncompleted->next;
+//    }
+//
+//    if (carry_over != 0) {
+//        ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
+//        newNode->val = 1;
+//        newNode->next = nullptr;
+//
+//        uncompleted->next = newNode;
+//    }
+//
+//    return reverse_list(head1);
+//}
+//
+//void push_back(ListNode** head, int* array, int size) {
+//    ListNode* temp = *head;
+//
+//
+//    if (temp == nullptr) {
+//        *head = new ListNode;
+//        (*head)->val = array[0];
+//        (*head)->next = nullptr;
+//        temp = *head;
+//    }
+//
+//    while (temp->next != nullptr) {
+//        temp = temp->next;
+//    }
+//
+//    for (int i = 1; i < size; i++) {
+//        temp->next = new ListNode;
+//        temp = temp->next;
+//        temp->val = array[i];
+//        temp->next = nullptr;
+//    }
+//}
+//
+//int main()
+//{
+//    ListNode* head1 = nullptr;
+//    int array1[] = {4,6,0,2,6,6,3,6,3,0,7,8,0,4,1,7,0,5,6,5,2,4,9,9,1,5,1,5};
+//
+//    int size1 = sizeof(array1) / 4;
+//
+//    ListNode* head2 = nullptr;
+//    int array2[]= { 6,2,7,8,6,4,7,0,9,3,0,3,6,2,5,6,0,9,6,2,7,4,2,7,1,0,9,0,5,6,5,4,9,1,8,9,3,4,0,2,1,8,8,2,2,0 };
+//
+//    int size2 = sizeof(array2) / 4;
+//    push_back(&head1, array1, size1);
+//    push_back(&head2, array2, size2);
+//
+//    head2 = addInList(head2, head1);
+//
+//    while (head2 != nullptr)
+//    {
+//        cout << head2->val << " ";
+//        head2 = head2->next;
+//    }
+//
+//    cout << endl;
+//
+//    return 0;
+//}
 
 //string solve1(string s, string t) {
 //    // write code here
@@ -835,16 +835,177 @@ int main()
 //                mindistance = right - left + 1;
 //            }
 //            num -= V[left]; // 1 1 6 10 9 3 3 5 3 7
-//
+      
 //            left++;
 //        }
 //
 //        right++;
-//    }
+//    }   
 //
 //    
 //    cout << LR_Location.first + 1 << " " << LR_Location.second + 1 << endl;
 //    return 0;
 //
 //
+//}
+
+//int main()
+//{
+//	string str("abcd12345ed125ss123");
+//
+//
+//
+//	int right = 0;
+//	pair<int, int> maxdistance(0, 0);
+//
+//
+//	while (right < str.size())
+//	{
+//		int left = right;
+//		while (str[right] <= '9' && str[right] >='0' && right< str.size())
+//		{
+//			if (right - left > maxdistance.second - maxdistance.first)
+//			{
+//				maxdistance.second = right;
+//				maxdistance.first = left;
+//			}
+//			right++;
+//		}
+//		
+//		right++;
+//	}
+//
+//	cout << str.substr(maxdistance.first, maxdistance.second - maxdistance.first + 1);
+//
+//	return 0;
+//
+//}
+
+
+
+
+//void solve(vector<vector<char> >& grid, int x , int y)
+//{
+//
+//    // 确保 x 和 y 在边界内并匹配,不能斜着走
+//    if (x >= 0 && x < grid.size() && y>=0 && y < grid[x].size() && grid[x][y] == '1')
+//    {
+//        grid[x][y] = '0';//将相连的  ' 1 ' 全部置为 ' 0 '
+//        
+//        solve(grid, x - 1, y);
+//        solve(grid, x + 1, y);
+//        solve(grid, x, y - 1);
+//        solve(grid, x, y + 1);
+//    }
+//
+//    return ;
+//}
+//
+//int solve(vector<vector<char> >& grid) {
+//    // write code here
+// 
+//
+//    //vector<vector<char>> copy = grid;
+//    int count = 0;
+//    for (int i = 0; i < grid.size(); i++)
+//    {
+//        for (int j = 0; j < grid[i].size(); j++)
+//        {
+//            if (grid[i][j] == '1')
+//            {
+//                solve(grid, i, j);
+//                count++;
+//            }
+//        }
+//    }
+//
+//    return count;
+//}
+//
+////[[1, 1, 0, 0, 0], [0, 1, 0, 1, 1], [0, 0, 0, 1, 1], [0, 0, 0, 0, 0], [0, 0, 1, 1, 1]]
+//int main()
+//{
+//    vector<vector<char> > grid = { { '1', '1', '0' , '0', '0'},{'0', '1','0', '1', '1'},{'0', '0', '0', '1', '1' },{'0' , '0', '0','0', '0'},{'0', '0', '1', '1', '1'} };
+//    std::cout << solve(grid) << endl;
+//    return 0;
+//}
+
+bool istriangle(const vector<long long>& triangle, int i, int j, int z) {
+    return (triangle[i] + triangle[j] > triangle[z] &&
+        triangle[i] + triangle[z] > triangle[j] &&
+        triangle[j] + triangle[z] > triangle[i]);
+}
+
+bool areBothTriangles(const vector<long long>& triangle, int i, int j, int z) {
+    if (!istriangle(triangle, i, j, z)) {
+        return false;
+    }
+
+    vector<int> remainingIndices;
+    for (int k = 0; k < triangle.size(); ++k) {
+        if (k != i && k != j && k != z) {
+            remainingIndices.push_back(k);
+        }
+    }
+
+    return istriangle(triangle, remainingIndices[0], remainingIndices[1], remainingIndices[2]);
+}
+
+int main() {
+    int cycle_index;
+    cin >> cycle_index;
+
+    while (cycle_index > 0) {
+        vector<long long> triangle;
+        long long b;
+        while (cin >> b) {
+            triangle.push_back(b);
+            if (cin.peek() == '\n' || cin.peek() == EOF) {
+                break;
+            }
+        }
+
+        bool found = false;
+
+        for (int i = 0; i < triangle.size() - 2 && !found; ++i) {
+            for (int j = i + 1; j < triangle.size() - 1 && !found; ++j) {
+                for (int z = j + 1; z < triangle.size(); ++z) {
+                    if (areBothTriangles(triangle, i, j, z)) {
+                        cout << "Yes" << endl;
+                        found = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        if (!found) {
+            cout << "No" << endl;
+        }
+
+        --cycle_index;
+    }
+
+    return 0;
+}
+
+//bool found = false;
+//for (int i = 0; i < triangle.size() - 2; i++) {
+//    int j = i + 1;
+//    int z = j + 1;
+//    //对于 j 并没有循环
+//    while (z < triangle.size()) {
+//        if (areBothTriangles(triangle, i, j, z)) {
+//            cout << "Yes" << endl;
+//            found = true;
+//            goto _break;
+//        }
+//
+//        z++;
+//    }
+//
+//    i++;//重复加
+//
+//_break:
+//    break;
 //}
