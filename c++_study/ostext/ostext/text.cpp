@@ -930,64 +930,64 @@ using namespace std;
 //    return 0;
 //}
 
-bool istriangle(const vector<long long>& triangle, int i, int j, int z) {
-    return (triangle[i] + triangle[j] > triangle[z] &&
-        triangle[i] + triangle[z] > triangle[j] &&
-        triangle[j] + triangle[z] > triangle[i]);
-}
-
-bool areBothTriangles(const vector<long long>& triangle, int i, int j, int z) {
-    if (!istriangle(triangle, i, j, z)) {
-        return false;
-    }
-
-    vector<int> remainingIndices;
-    for (int k = 0; k < triangle.size(); ++k) {
-        if (k != i && k != j && k != z) {
-            remainingIndices.push_back(k);
-        }
-    }
-
-    return istriangle(triangle, remainingIndices[0], remainingIndices[1], remainingIndices[2]);
-}
-
-int main() {
-    int cycle_index;
-    cin >> cycle_index;
-
-    while (cycle_index > 0) {
-        vector<long long> triangle;
-        long long b;
-        while (cin >> b) {
-            triangle.push_back(b);
-            if (cin.peek() == '\n' || cin.peek() == EOF) {
-                break;
-            }
-        }
-
-        bool found = false;
-
-        for (int i = 0; i < triangle.size() - 2 && !found; ++i) {
-            for (int j = i + 1; j < triangle.size() - 1 && !found; ++j) {
-                for (int z = j + 1; z < triangle.size(); ++z) {
-                    if (areBothTriangles(triangle, i, j, z)) {
-                        cout << "Yes" << endl;
-                        found = true;
-                        break;
-                    }
-                }
-            }
-        }
-
-        if (!found) {
-            cout << "No" << endl;
-        }
-
-        --cycle_index;
-    }
-
-    return 0;
-}
+//bool istriangle(const vector<long long>& triangle, int i, int j, int z) {
+//    return (triangle[i] + triangle[j] > triangle[z] &&
+//        triangle[i] + triangle[z] > triangle[j] &&
+//        triangle[j] + triangle[z] > triangle[i]);
+//}
+//
+//bool areBothTriangles(const vector<long long>& triangle, int i, int j, int z) {
+//    if (!istriangle(triangle, i, j, z)) {
+//        return false;
+//    }
+//
+//    vector<int> remainingIndices;
+//    for (int k = 0; k < triangle.size(); ++k) {
+//        if (k != i && k != j && k != z) {
+//            remainingIndices.push_back(k);
+//        }
+//    }
+//
+//    return istriangle(triangle, remainingIndices[0], remainingIndices[1], remainingIndices[2]);
+//}
+//
+//int main() {
+//    int cycle_index;
+//    cin >> cycle_index;
+//
+//    while (cycle_index > 0) {
+//        vector<long long> triangle;
+//        long long b;
+//        while (cin >> b) {
+//            triangle.push_back(b);
+//            if (cin.peek() == '\n' || cin.peek() == EOF) {
+//                break;
+//            }
+//        }
+//
+//        bool found = false;
+//
+//        for (int i = 0; i < triangle.size() - 2 && !found; ++i) {
+//            for (int j = i + 1; j < triangle.size() - 1 && !found; ++j) {
+//                for (int z = j + 1; z < triangle.size(); ++z) {
+//                    if (areBothTriangles(triangle, i, j, z)) {
+//                        cout << "Yes" << endl;
+//                        found = true;
+//                        break;
+//                    }
+//                }
+//            }
+//        }
+//
+//        if (!found) {
+//            cout << "No" << endl;
+//        }
+//
+//        --cycle_index;
+//    }
+//
+//    return 0;
+//}
 
 //bool found = false;
 //for (int i = 0; i < triangle.size() - 2; i++) {
@@ -1009,3 +1009,252 @@ int main() {
 //_break:
 //    break;
 //}
+
+
+
+//#include <iostream>
+//using namespace std;
+//#include<unordered_map>
+//
+//int main() {
+//    int a, b;
+//    cin >> a;
+//    cin >> b;
+//
+//    int least_com_mul = a * b;
+//
+//    vector<int> a_mul;
+//    for (int i = 1; i <= least_com_mul / a; i++)
+//    {
+//        a_mul.push_back(i * a);
+//    }
+//
+//    vector<int> b_mul;
+//    for (int i = 1; i <= least_com_mul / b; i++)
+//    {
+//        b_mul.push_back(i * b);
+//    }
+//
+//
+//    unordered_map<int, int> com_mul;
+//
+//    for (const auto& e : a_mul) {
+//        com_mul[e]++;
+//    }
+//
+//    for (const auto& e : b_mul) {
+//        if (com_mul.find(e) != com_mul.end()) {
+//            cout << e << endl;
+//            break;
+//        }
+//    }
+//
+//
+//
+//    return 0;
+//}
+
+//struct Less
+//{
+//    bool operator()(int a, int b)
+//    {
+//        return a > b;
+//    }
+//};
+//#include<algorithm>
+//
+//int MLS(vector<int>& arr) {
+//    // write code here
+//
+//    sort(arr.begin(), arr.end(),Less());
+//
+//    int right = 1;
+//    int count = 1;
+//    int max_str = 1;
+//
+//    while (right < arr.size())
+//    {
+//        if (arr[right] == arr[right - 1])
+//            continue;
+//
+//        if (arr[right] == arr[right - 1] + 1)
+//            count++;
+//        else
+//            count = 1;
+//
+//        max_str = max(count, max_str);
+//
+//        right++;
+//    }
+//
+//    return max_str;
+//}
+//
+////[100,4,200,1,3,2]
+//
+//int main()
+//{
+//    vector<int> arr = { 100,4,200,1,3,2 };
+//    cout << MLS(arr);
+//    return 0;
+//}
+
+#include<unordered_map>
+
+//enum love_score
+//{
+//    e = 1,
+//    v,
+//    o,
+//    l,
+//};
+
+//unordered_map<char, int> love_map = { {'l',4},{'o',3},{'v',2},{'e',1} };
+//
+//
+//int solve(vector<vector<char>>& board,int x,int y)
+//{
+//    if (x < 0 || x >= board.size() || y < 0 || y >= board[x].size())
+//    {
+//        return 0;
+//    }
+//
+//    int score = 0;
+//
+//    if (love_map.count(board[x][y]) == 1)
+//        score = love_map[board[x][y]];
+//
+//
+//    int below = solve(board,  x + 1, y);
+//    int right = solve(board,  x, y + 1);
+//    
+//    return score + max(right, below);
+//}
+//
+////3 2
+////ab
+////cd
+////ef
+//
+////{"a" , "b"},
+////{"c" , "d" },
+////{"e" , "f" }
+//
+//int main()
+//{
+//    /*vector<vector<char>> board = {
+//
+//        {"a","b"},
+//        {"c","d"},
+//        {"e","f"}
+//
+//    };*/
+//
+//    vector<vector<char>> board;
+//
+//    int length;
+//    int wide;
+//    cin >> length;
+//    cin >> wide;
+//
+//    board.resize(wide);
+//
+//    string str;
+//
+//    /*vector<char> V;
+//    V.push_back('e');*/
+//
+//    //board[0].push_back('e');
+//
+//
+//    for (int i = 0; i < wide; i++)
+//    {
+//        cin >> str;
+//        for (auto e : str)
+//        {
+//            board[i].push_back(e);
+//        }
+//    }
+//
+//    int score = 0;
+//
+//    score = solve(board, 0, 0);
+//    cout << score << endl;
+//    return 0;
+//}
+
+//{
+//    2 , 1 , 0 , 0
+//    0 , 1 , 0 , 2
+//    0 , 1 , 1 , 1
+//    0 , 2 , 1 , 0
+//}
+
+#include<queue>
+
+
+int rotApple(vector<vector<int> >& grid) {
+
+    int dx[] = { 0,0,1,-1 };
+    int dy[] = { 1,-1,0,0 };
+    queue<pair<int, int>> level;
+    
+
+    for (int i = 0; i < grid.size(); i++)
+    {
+        for (int j = 0; j < grid[i].size(); j++)
+        {
+            if (grid[i][j] == 2)
+            {
+                level.push(make_pair(i, j));
+            }
+        }
+    }
+
+    
+    int ret = 0;
+    while (!level.empty())
+    {
+        int sz = level.size();//记录每一层的个数
+        ret++;
+        while (sz--)
+        {
+            auto [a, b] = level.front();//c++ 17 新语法
+
+            for (int i = 0; i < 4; i++)
+            {
+                int x = a + dx[i];
+                int y = b + dy[i];
+
+                if (x >= 0 && x < grid.size() && y >= 0 && y < grid[0].size() && grid[x][y] == 1)
+                {
+                    grid[x][y] = 2;
+                    level.push(make_pair(x, y));
+                }
+            }
+            level.pop();
+        }
+    }
+
+    ret -= 1;//ret多统计一次
+
+    for (int i = 0; i < grid.size(); i++)
+    {
+        for (int j = 0; j < grid[i].size(); j++)
+        {
+            if (grid[i][j] == 1)
+            {
+                ret = -1;
+            }
+        }
+    }
+
+    return ret;
+}
+
+int main()
+{
+    vector<vector<int> > grid = { {2,1,1},{1,0,1},{1,1,1} };
+    rotApple(grid);
+    return 0;
+}
