@@ -1190,71 +1190,288 @@ using namespace std;
 //    0 , 2 , 1 , 0
 //}
 
-#include<queue>
+//#include<queue>
+//
+//
+//int rotApple(vector<vector<int> >& grid) {
+//
+//    int dx[] = { 0,0,1,-1 };
+//    int dy[] = { 1,-1,0,0 };
+//    queue<pair<int, int>> level;
+//    
+//
+//    for (int i = 0; i < grid.size(); i++)
+//    {
+//        for (int j = 0; j < grid[i].size(); j++)
+//        {
+//            if (grid[i][j] == 2)
+//            {
+//                level.push(make_pair(i, j));
+//            }
+//        }
+//    }
+//
+//    
+//    int ret = 0;
+//    while (!level.empty())
+//    {
+//        int sz = level.size();//记录每一层的个数
+//        ret++;
+//        while (sz--)
+//        {
+//            auto [a, b] = level.front();//c++ 17 新语法
+//
+//            for (int i = 0; i < 4; i++)
+//            {
+//                int x = a + dx[i];
+//                int y = b + dy[i];
+//
+//                if (x >= 0 && x < grid.size() && y >= 0 && y < grid[0].size() && grid[x][y] == 1)
+//                {
+//                    grid[x][y] = 2;
+//                    level.push(make_pair(x, y));
+//                }
+//            }
+//            level.pop();
+//        }
+//    }
+//
+//    ret -= 1;//ret多统计一次
+//
+//    for (int i = 0; i < grid.size(); i++)
+//    {
+//        for (int j = 0; j < grid[i].size(); j++)
+//        {
+//            if (grid[i][j] == 1)
+//            {
+//                ret = -1;
+//            }
+//        }
+//    }
+//
+//    return ret;
+//}
+//
+//int main()
+//{
+//    vector<vector<int> > grid = { {2,1,1},{1,0,1},{1,1,1} };
+//    rotApple(grid);
+//    return 0;
+//}
 
 
-int rotApple(vector<vector<int> >& grid) {
+//int main()
+//{
+//    long long b;
+//    cin >> b;
+//
+//    string V;
+//    V += to_string(b);
+//
+//    reverse(V.begin(),V.end());
+//
+//    string S;
+//    int count = 3;
+//
+//    int i = 0;
+//
+//    while (i < V.size())
+//    {
+//        S += V[i];
+//        count--;
+//        if (count == 0 && i + 1 < V.size())
+//        {
+//            S += ',';
+//            count = 3;
+//        }
+//
+//        i++;
+//    }
+//
+//    reverse(S.begin(), S.end());
+//
+//    cout << S << endl;
+//    return 0;
+//}
 
-    int dx[] = { 0,0,1,-1 };
-    int dy[] = { 1,-1,0,0 };
-    queue<pair<int, int>> level;
-    
 
-    for (int i = 0; i < grid.size(); i++)
-    {
-        for (int j = 0; j < grid[i].size(); j++)
-        {
-            if (grid[i][j] == 2)
-            {
-                level.push(make_pair(i, j));
-            }
-        }
-    }
+//int main()
+//{
+//    int n = 0;
+//    cin >> n;
+//
+//
+//    int dp[40];
+//    dp[0] = 1;
+//    dp[1] = 2;
+//
+//
+//    for (int i = 2; i < n; i++)
+//    {
+//        dp[i] = (dp[i - 1] ) + (dp[i - 2] );
+//    }
+//
+//    cout << dp[n - 1] << endl;
+//    return 0;
+//}
+//#include<algorithm>
+//
+//bool IsContinuous(vector<int>& numbers) {
+//    // write code here
+//    sort(numbers.begin(), numbers.end());
+//
+//    for (int i = 0; i < numbers.size(); i++)
+//    {
+//        if (numbers[i] != 0 && i + 1 < numbers.size() && numbers[i] == numbers[i + 1])
+//            return false;
+//    }
+//
+//    int min = -1;
+//    for (auto& e : numbers)
+//    {
+//        if (e != 0)
+//        {
+//            min = e;
+//
+//            if (numbers.back() - min - 1 <= 3 )
+//            {
+//                return true;
+//            }
+//
+//            return false;
+//        }
+//    }
+//    
+//
+//
+//}
+//
+////[6,0,2,0,4]
+//int main()
+//{
+//    vector<int> numbers = { 6,0,2,0,4 };
+//    cout << IsContinuous(numbers) << endl;
+//    return 0;
+//}
 
-    
-    int ret = 0;
-    while (!level.empty())
-    {
-        int sz = level.size();//记录每一层的个数
-        ret++;
-        while (sz--)
-        {
-            auto [a, b] = level.front();//c++ 17 新语法
+//7
+//8 9 2 5 4 7 1
 
-            for (int i = 0; i < 4; i++)
-            {
-                int x = a + dx[i];
-                int y = b + dy[i];
+//int main()
+//{
+//    vector<int> prices = { 8,7,9,2,5,4,7,1 };
+//    int maxprices = 0;
+//    int minprice = 1e5;
+//
+//    for (auto price : prices)
+//    {
+//        if (minprice > price)
+//        {
+//            minprice = price;
+//        }
+//
+//        maxprices = max(maxprices, price - minprice );
+//
+//    }
+//    cout << maxprices << endl;
+//
+//    return 0;
+//}
 
-                if (x >= 0 && x < grid.size() && y >= 0 && y < grid[0].size() && grid[x][y] == 1)
-                {
-                    grid[x][y] = 2;
-                    level.push(make_pair(x, y));
-                }
-            }
-            level.pop();
-        }
-    }
+//bool horse_board(vector<pair<int, int>>& horse, int x, int y);
+//
+//int path(int x,int y, vector<pair<int, int>>& horse, pair<int, int>& soldier)
+//{
+//    if (x < 0 || x > soldier.first || y < 0 || y > soldier.second) {
+//        return 0;
+//    }
+//
+//    if (x == soldier.first && y == soldier.second)
+//        return 1;
+//
+//    if (horse_board(horse, x, y))
+//        return 0;
+//
+//    return path(x + 1, y, horse, soldier) + path(x, y + 1, horse, soldier);
+//    
+//}
+//
+//bool horse_board(vector<pair<int, int>>& horse, int x, int y) {
+//    for (const auto& h : horse) {
+//        if (h.first == x && h.second == y) {
+//            return true;
+//        }
+//    }
+//    return false;
+//}
+//
+//int main()
+//{
+//    pair<int, int> soldier;
+//    //cin >> soldier.first >> soldier.second;
+//    soldier.first = 5;
+//    soldier.second = 4;
+//    int a = 3;
+//    vector<pair<int, int>> horse;
+//    horse.push_back(make_pair(2, 3));
+//    //先存入本身位置
+//    int dx_horse[] = { 1,2,2,1,-1,-2,-2,-1 };
+//    int dy_horse[] = { -2,-1,1,2,2,1,-1,-2 };
+//
+//    for (int i = 0; i < 8; i++) {
+//        int x = horse[0].first + dx_horse[i];
+//        int y = horse[0].second + dy_horse[i];
+//
+//        if (x >= 0 && x <= soldier.first && y >= 0 && y <= soldier.second) {
+//            horse.push_back(make_pair(x, y));
+//        }
+//    }
+//
+//    cout << path(0, 0, horse, soldier) << endl;
+//
+//    return 0;
+//}
 
-    ret -= 1;//ret多统计一次
+#include<algorithm>
 
-    for (int i = 0; i < grid.size(); i++)
-    {
-        for (int j = 0; j < grid[i].size(); j++)
-        {
-            if (grid[i][j] == 1)
-            {
-                ret = -1;
-            }
-        }
-    }
+bool palindromic(string str)
+{
+    string copy = str;
 
-    return ret;
+    reverse(str.begin(), str.end());
+
+    if (copy == str)
+        return true;
+
+    return false;
 }
 
 int main()
 {
-    vector<vector<int> > grid = { {2,1,1},{1,0,1},{1,1,1} };
-    rotApple(grid);
+    string Str("abbba");
+
+    int max_distance = 1;
+
+    for(int i=1;i<Str.size();i++)
+    {
+        int left = 1;
+        int right = i;
+        string str = Str.substr(0, i + 1);
+        if (palindromic(str))
+            max_distance = i + 1;
+
+        for (; left < right; left++)
+        {
+            if (right - left + 1 > max_distance)
+            {
+                str = Str.substr(left, right - left + 1);
+                if (palindromic(str))
+                    max_distance = right - left + 1;
+            }
+        }
+
+    }
+
+    cout << max_distance << endl;
     return 0;
 }
