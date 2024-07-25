@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\2023_code\\study\\c\u002B\u002B_study\\stack_queue_priority\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{476713BF-E640-415C-98A2-FB01B3C05293}|stack_queue_priority\\stack_queue_priority.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\stack_queue_priority\\stack_queue_priority\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{476713BF-E640-415C-98A2-FB01B3C05293}|stack_queue_priority\\stack_queue_priority.vcxproj|solutionrelative:stack_queue_priority\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{476713BF-E640-415C-98A2-FB01B3C05293}|stack_queue_priority\\stack_queue_priority.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\stack_queue_priority\\stack_queue_priority\\priority_queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{476713BF-E640-415C-98A2-FB01B3C05293}|stack_queue_priority\\stack_queue_priority.vcxproj|solutionrelative:stack_queue_priority\\priority_queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{476713BF-E640-415C-98A2-FB01B3C05293}|stack_queue_priority\\stack_queue_priority.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\stack_queue_priority\\stack_queue_priority\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{476713BF-E640-415C-98A2-FB01B3C05293}|stack_queue_priority\\stack_queue_priority.vcxproj|solutionrelative:stack_queue_priority\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{476713BF-E640-415C-98A2-FB01B3C05293}|stack_queue_priority\\stack_queue_priority.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\stack_queue_priority\\stack_queue_priority\\queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 246,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,13 +42,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "priority_queue.h",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\stack_queue_priority\\stack_queue_priority\\priority_queue.h",
               "RelativeDocumentMoniker": "stack_queue_priority\\priority_queue.h",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\stack_queue_priority\\stack_queue_priority\\priority_queue.h",
               "RelativeToolTip": "stack_queue_priority\\priority_queue.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAADAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAFQAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-11T12:00:20.511Z",
               "EditorCaption": ""
@@ -63,12 +63,11 @@
               "RelativeToolTip": "stack_queue_priority\\queue.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-11T11:45:21.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T11:45:21.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "text.cpp",
               "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\stack_queue_priority\\stack_queue_priority\\text.cpp",
               "RelativeDocumentMoniker": "stack_queue_priority\\text.cpp",

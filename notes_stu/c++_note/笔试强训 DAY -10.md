@@ -40,7 +40,7 @@ bool palindromic(string str) {
     }
 ```
 
-
+**使用最佳排列的组合循环，同时判断当前最长字符串长度，如果小于，就直接跳过该循环**
 
 ## 买卖股票的最佳时机
 
@@ -81,7 +81,7 @@ int main()
 }
 ```
 
-
+记录最小价格，和最佳买差距价格，同时进行更新
 
 ## 过河卒
 
@@ -148,3 +148,56 @@ int main() {
 ```
 
 ![image-20240724215319248](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240724215319248.png)
+
+**我将第一位设为 1 到达最后就是把所有路径上可到达该位置的 1 加到一起**
+
+![image-20240725221543235](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240725221543235.png)
+
+```c++
+#include<bits/stdc++.h>
+using namespace std;
+int n, m, x, y;
+long long dp[50][50];
+int lab[50][50];
+int dir[8][2] = { -1,-2,1,-2,-2,-1,2,-1,-2,1,-1,2,1,2,2,1 };
+int main()
+{
+    cin >> n >> m >> x >> y;
+    dp[0][0] = 1;
+    lab[x][y] = 1;
+    for (int i = 0; i < 8; i++) {
+        int xx = x + dir[i][0];
+        int yy = y + dir[i][1];
+        lab[xx][yy] = 1;
+    }
+
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j <= m; j++)
+        {
+            if (i == 0 && j == 0)
+                continue;
+
+            if (lab[i][j])
+            {
+                dp[i][j] = 0;
+                continue;
+            }
+            if (i == 0)
+            {
+                dp[i][j] = dp[i][j - 1];
+                continue;
+            }
+            if (j == 0)
+            {
+                dp[i][j] = dp[i - 1][j];
+                continue;
+            }
+            dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+        }
+    }
+    cout << dp[n][m] << endl;
+    return 0;
+}
+```
+

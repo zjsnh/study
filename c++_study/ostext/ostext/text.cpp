@@ -1432,46 +1432,96 @@ using namespace std;
 //    return 0;
 //}
 
-#include<algorithm>
+//#include<algorithm>
+//
+//bool palindromic(string str)
+//{
+//    string copy = str;
+//
+//    reverse(str.begin(), str.end());
+//
+//    if (copy == str)
+//        return true;
+//
+//    return false;
+//}
+//
+//int main()
+//{
+//    string Str("abbba");
+//
+//    int max_distance = 1;
+//
+//    for(int i=1;i<Str.size();i++)
+//    {
+//        int left = 1;
+//        int right = i;
+//        string str = Str.substr(0, i + 1);
+//        if (palindromic(str))
+//            max_distance = i + 1;
+//
+//        for (; left < right; left++)
+//        {
+//            if (right - left + 1 > max_distance)
+//            {
+//                str = Str.substr(left, right - left + 1);
+//                if (palindromic(str))
+//                    max_distance = right - left + 1;
+//            }
+//        }
+//
+//    }
+//
+//    cout << max_distance << endl;
+//    return 0;
+//}
 
-bool palindromic(string str)
-{
-    string copy = str;
-
-    reverse(str.begin(), str.end());
-
-    if (copy == str)
-        return true;
-
-    return false;
-}
-
+int n, m, x, y;
+long long dp[50][50];
+int lab[50][50];
+int dir[8][2] = { -1,-2,1,-2,-2,-1,2,-1,-2,1,-1,2,1,2,2,1 };
 int main()
 {
-    string Str("abbba");
-
-    int max_distance = 1;
-
-    for(int i=1;i<Str.size();i++)
-    {
-        int left = 1;
-        int right = i;
-        string str = Str.substr(0, i + 1);
-        if (palindromic(str))
-            max_distance = i + 1;
-
-        for (; left < right; left++)
-        {
-            if (right - left + 1 > max_distance)
-            {
-                str = Str.substr(left, right - left + 1);
-                if (palindromic(str))
-                    max_distance = right - left + 1;
-            }
-        }
-
+    cin >> n >> m >> x >> y;
+    dp[0][0] = 1;
+    lab[x][y] = 1;
+    for (int i = 0; i < 8; i++) {
+        int xx = x + dir[i][0];
+        int yy = y + dir[i][1];
+        lab[xx][yy] = 1;
     }
 
-    cout << max_distance << endl;
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j <= m; j++)
+        {
+            if (i == 0 && j == 0)
+                continue;
+
+            if (lab[i][j])
+            {
+                dp[i][j] = 0;
+                continue;
+            }
+
+            if (i == 0)
+            {
+                dp[i][j] = dp[i][j - 1];
+                continue;
+            }
+
+            if (j == 0)
+            {
+                dp[i][j] = dp[i - 1][j];
+                continue;
+            }
+
+
+            dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+        }
+    }
+
+    cout << dp[n][m] << endl;
+
     return 0;
 }
