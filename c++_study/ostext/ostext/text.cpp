@@ -1476,52 +1476,122 @@ using namespace std;
 //    return 0;
 //}
 
-int n, m, x, y;
-long long dp[50][50];
-int lab[50][50];
-int dir[8][2] = { -1,-2,1,-2,-2,-1,2,-1,-2,1,-1,2,1,2,2,1 };
-int main()
-{
-    cin >> n >> m >> x >> y;
-    dp[0][0] = 1;
-    lab[x][y] = 1;
-    for (int i = 0; i < 8; i++) {
-        int xx = x + dir[i][0];
-        int yy = y + dir[i][1];
-        lab[xx][yy] = 1;
-    }
+//int n, m, x, y;
+//long long dp[50][50];
+//int lab[50][50];
+//int dir[8][2] = { -1,-2,1,-2,-2,-1,2,-1,-2,1,-1,2,1,2,2,1 };
+//int main()
+//{
+//    cin >> n >> m >> x >> y;
+//    dp[0][0] = 1;
+//    lab[x][y] = 1;
+//    for (int i = 0; i < 8; i++) {
+//        int xx = x + dir[i][0];
+//        int yy = y + dir[i][1];
+//        lab[xx][yy] = 1;
+//    }
+//
+//    for (int i = 0; i <= n; i++)
+//    {
+//        for (int j = 0; j <= m; j++)
+//        {
+//            if (i == 0 && j == 0)
+//                continue;
+//
+//            if (lab[i][j])
+//            {
+//                dp[i][j] = 0;
+//                continue;
+//            }
+//
+//            if (i == 0)
+//            {
+//                dp[i][j] = dp[i][j - 1];
+//                continue;
+//            }
+//
+//            if (j == 0)
+//            {
+//                dp[i][j] = dp[i - 1][j];
+//                continue;
+//            }
+//
+//
+//            dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+//        }
+//    }
+//
+//    cout << dp[n][m] << endl;
+//
+//    return 0;
+//}
 
-    for (int i = 0; i <= n; i++)
-    {
-        for (int j = 0; j <= m; j++)
-        {
-            if (i == 0 && j == 0)
-                continue;
+//int main()
+//{
+//    pair<int, int> apple;
+//    pair<int, int> peach;
+//
+//    //first -> price second -> quantity
+//
+//    cin >> apple.first >> peach.first;
+//    cin >> apple.second >> peach.second;
+//
+//
+//    pair<int, int> expensive = apple;
+//    pair<int, int> cheap = peach;
+// 
+//
+//    int real_first_E = expensive.first % 2 == 0 ? expensive.first : expensive.first - 1;
+//    int real_first_C = cheap.first % 2 == 0 ? cheap.first : cheap.first - 1;
+//
+//    if (real_first_E * expensive.second < real_first_C * cheap.second)
+//    {
+//        expensive = peach;
+//        cheap = apple;
+//    }
+//
+//
+//    long long total = 0;
+//
+//    while (expensive.first - 2 >= 0 && cheap.first - 1 >= 0)
+//    {
+//        expensive.first -= 2;
+//        cheap.first -= 2;
+//
+//        total += expensive.second;
+//    }
+//
+//    if (cheap.first == 0 || expensive.first == 0||(expensive.first == 1 && cheap.first==1))
+//        cout << total << endl;
+//
+//    if (expensive.first == 1 && cheap.first - 2 >= 0)
+//    {
+//        total += cheap.second;
+//        cout << total << endl;
+//    }
+//   
+//    return 0;
+//
+//}
+#include<algorithm>
+int main() {
+    string str;
+    getline(cin, str);
 
-            if (lab[i][j])
-            {
-                dp[i][j] = 0;
-                continue;
-            }
-
-            if (i == 0)
-            {
-                dp[i][j] = dp[i][j - 1];
-                continue;
-            }
-
-            if (j == 0)
-            {
-                dp[i][j] = dp[i - 1][j];
-                continue;
-            }
-
-
-            dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+    string _str;
+    for (string::reverse_iterator it = str.rbegin(); it != str.rend(); ++it) {
+        if (*it == ' ') {
+            reverse(_str.begin(), _str.end());
+            cout << _str << " ";
+            _str.clear();
+        }
+        else {
+            _str += *it;
         }
     }
 
-    cout << dp[n][m] << endl;
+    reverse(_str.begin(), _str.end());
+    cout << _str << endl;
 
     return 0;
 }
