@@ -55,3 +55,33 @@ int main()
 ```
 
 ![image-20240726114024664](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240726114024664.png)
+
+## 倒置字符串
+
+![image-20240727172558399](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240727172558399.png)
+
+```C++
+#include<algorithm>
+int main() {
+    string str;
+    getline(cin, str);
+
+    string _str;
+    for (string::reverse_iterator it = str.rbegin(); it != str.rend(); ++it) {
+        if (*it == ' ') {
+            reverse(_str.begin(), _str.end());
+            cout << _str << " ";
+            _str.clear();
+        }
+        else {
+            _str += *it;
+        }
+    }
+
+    reverse(_str.begin(), _str.end());
+    cout << _str << endl;
+
+    return 0;
+}
+```
+
