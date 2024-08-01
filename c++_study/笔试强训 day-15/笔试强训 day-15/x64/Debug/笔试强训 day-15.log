@@ -1,0 +1,5 @@
+﻿  源.cpp
+E:\2023_code\study\c++_study\笔试强训 day-15\笔试强训 day-15\源.cpp(69,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\2023_code\study\c++_study\笔试强训 day-15\笔试强训 day-15\源.cpp(94,23): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+E:\2023_code\study\c++_study\笔试强训 day-15\笔试强训 day-15\源.cpp(106,22): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  笔试强训 day-15.vcxproj -> E:\2023_code\study\c++_study\笔试强训 day-15\x64\Debug\笔试强训 day-15.exe
