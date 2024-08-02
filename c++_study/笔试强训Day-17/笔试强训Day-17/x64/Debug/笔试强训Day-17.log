@@ -1,0 +1,14 @@
+﻿  text.cpp
+E:\2023_code\study\c++_study\笔试强训Day-17\笔试强训Day-17\text.cpp(155,14): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+E:\2023_code\study\c++_study\笔试强训Day-17\笔试强训Day-17\text.cpp(156,13): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+E:\2023_code\study\c++_study\笔试强训Day-17\笔试强训Day-17\text.cpp(159,32): warning C4244: “=”: 从“_Ty”转换到“int”，可能丢失数据
+E:\2023_code\study\c++_study\笔试强训Day-17\笔试强训Day-17\text.cpp(159,32): warning C4244:         with
+E:\2023_code\study\c++_study\笔试强训Day-17\笔试强训Day-17\text.cpp(159,32): warning C4244:         [
+E:\2023_code\study\c++_study\笔试强训Day-17\笔试强训Day-17\text.cpp(159,32): warning C4244:             _Ty=__int64
+E:\2023_code\study\c++_study\笔试强训Day-17\笔试强训Day-17\text.cpp(159,32): warning C4244:         ]
+E:\2023_code\study\c++_study\笔试强训Day-17\笔试强训Day-17\text.cpp(160,31): warning C4244: “=”: 从“_Ty”转换到“int”，可能丢失数据
+E:\2023_code\study\c++_study\笔试强训Day-17\笔试强训Day-17\text.cpp(160,31): warning C4244:         with
+E:\2023_code\study\c++_study\笔试强训Day-17\笔试强训Day-17\text.cpp(160,31): warning C4244:         [
+E:\2023_code\study\c++_study\笔试强训Day-17\笔试强训Day-17\text.cpp(160,31): warning C4244:             _Ty=__int64
+E:\2023_code\study\c++_study\笔试强训Day-17\笔试强训Day-17\text.cpp(160,31): warning C4244:         ]
+  笔试强训Day-17.vcxproj -> E:\2023_code\study\c++_study\笔试强训Day-17\x64\Debug\笔试强训Day-17.exe
