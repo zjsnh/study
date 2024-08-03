@@ -128,7 +128,9 @@ using namespace std;
 
 //4 2
 //3 5 1 7
-//4 6 5 1
+//4 6 5 1¡¢
+
+
 
 
 #include <iostream>
