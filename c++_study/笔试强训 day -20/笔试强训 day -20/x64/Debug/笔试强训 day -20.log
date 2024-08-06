@@ -1,0 +1,3 @@
+﻿  text.cpp
+E:\2023_code\study\c++_study\笔试强训 day -20\笔试强训 day -20\text.cpp(151,13): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  笔试强训 day -20.vcxproj -> E:\2023_code\study\c++_study\笔试强训 day -20\x64\Debug\笔试强训 day -20.exe
