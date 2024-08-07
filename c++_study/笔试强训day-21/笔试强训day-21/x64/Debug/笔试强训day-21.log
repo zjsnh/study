@@ -1,0 +1,5 @@
+﻿  text.cpp
+D:\code\study\c++_study\笔试强训day-21\笔试强训day-21\text.cpp(111,36): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  笔试强训day-21.vcxproj -> D:\code\study\c++_study\笔试强训day-21\x64\Debug\笔试强训day-21.exe
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
