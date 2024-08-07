@@ -1,6 +1,6 @@
 # 笔试强训 Day—12
 
-![image-20240727190140633](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240727190140633.png)
+![image-20240727190140633](picture/image-20240727190140633.png)
 
 使用暴力是一定超时的，时间限制只有1秒，也就是说，肯定是动态规划或者是算法只有0（n）的算法
 

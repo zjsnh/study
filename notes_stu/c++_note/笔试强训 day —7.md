@@ -2,9 +2,9 @@
 
 ## 字符串中连续的最长数字串
 
-![image-20240722153402623](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240722153402623.png)
+![image-20240722153402623](picture/image-20240722153402623.png)
 
-![image-20240722153408810](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240722153408810.png)
+![image-20240722153408810](picture/image-20240722153408810.png)
 
 ```C++
 string str("abcd12345ed125ss123");
@@ -38,9 +38,9 @@ cout << str.substr(maxdistance.first, maxdistance.second - maxdistance.first + 1
 
 ## 岛屿数量
 
-![image-20240722155649302](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240722155649302.png)
+![image-20240722155649302](picture/image-20240722155649302.png)
 
-![image-20240722155657345](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240722155657345.png)
+![image-20240722155657345](picture/image-20240722155657345.png)
 
 ```c++
 void solve(vector<vector<char> >& grid, int x , int y)
@@ -93,9 +93,9 @@ int main()
 
 ## 拼三角
 
-![image-20240722165358106](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240722165358106.png)
+![image-20240722165358106](picture/image-20240722165358106.png)
 
-![image-20240722165112603](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240722165112603.png)
+![image-20240722165112603](picture/image-20240722165112603.png)
 
 ```C++
 bool istriangle(const vector<long long>& triangle, int i, int j, int z) {
@@ -179,8 +179,8 @@ int main() {
 }
 ```
 
-![image-20240722165922873](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240722165922873.png)
+![image-20240722165922873](picture/image-20240722165922873.png)
 
 ### [**使用库函数 <algorithm>**]()
 
-![image-20240722171105013](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240722171105013.png)
+![image-20240722171105013](picture/image-20240722171105013.png)

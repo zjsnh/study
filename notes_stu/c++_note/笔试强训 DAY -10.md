@@ -2,7 +2,7 @@
 
 ## 最长回文子串
 
-![image-20240724215017448](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240724215017448.png)
+![image-20240724215017448](picture/image-20240724215017448.png)
 
 ```C++
 bool palindromic(string str) {
@@ -44,7 +44,7 @@ bool palindromic(string str) {
 
 ## 买卖股票的最佳时机
 
-![](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240724215129347.png)
+![](picture/image-20240724215129347.png)
 
 ```C++
 #include <iostream>
@@ -85,7 +85,7 @@ int main()
 
 ## 过河卒
 
-![image-20240724215150082](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240724215150082.png)
+![image-20240724215150082](picture/image-20240724215150082.png)
 
 ```C++
 #include <iostream>
@@ -147,11 +147,11 @@ int main() {
 }
 ```
 
-![image-20240724215319248](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240724215319248.png)
+![image-20240724215319248](picture/image-20240724215319248.png)
 
 **我将第一位设为 1 到达最后就是把所有路径上可到达该位置的 1 加到一起**
 
-![image-20240725221543235](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240725221543235.png)
+![image-20240725221543235](picture/image-20240725221543235.png)
 
 ```c++
 #include<bits/stdc++.h>

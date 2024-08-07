@@ -1,6 +1,6 @@
 # 笔试强训 Day-11
 
-![image-20240726111326204](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240726111326204.png)
+![image-20240726111326204](picture/image-20240726111326204.png)
 
 
 
@@ -54,11 +54,11 @@ int main()
 }
 ```
 
-![image-20240726114024664](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240726114024664.png)
+![image-20240726114024664](picture/image-20240726114024664.png)
 
 ## 倒置字符串
 
-![image-20240727172558399](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240727172558399.png)
+![image-20240727172558399](picture/image-20240727172558399.png)
 
 ```C++
 #include<algorithm>

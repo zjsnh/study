@@ -2,7 +2,7 @@
 
 ## 重排字符串
 
-![image-20240729103654877](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240729103654877.png)
+![image-20240729103654877](picture/image-20240729103654877.png)
 
 我们只需要获取长度最长的最符串，他的长度如果大于所有字符串长度之和+1 这就不可能存在 不相邻的字符串组合，
 
@@ -97,7 +97,7 @@ int main() {
 
 ## 最长无重复子数组
 
-![image-20240729103920776](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240729103920776.png)
+![image-20240729103920776](picture/image-20240729103920776.png)
 
 **需要注意，我使用哈希表映射后，滑动窗口移动后，哈希表同时也需要判断后面在哈希表内的元素是不是处于当前滑动窗口下**
 

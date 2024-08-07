@@ -2,13 +2,13 @@
 
 ## STL六大组键
 
-![image-20240414164141334](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240414164141334.png)
+![image-20240414164141334](picture/image-20240414164141334.png)
 
 类似于数据结构
 
 ## string
 
-![image-20240414165216928](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240414165216928.png)
+![image-20240414165216928](picture/image-20240414165216928.png)
 
 - [C++98](javascript:switch1.select(1)) 构造函数
 
@@ -139,7 +139,7 @@ int main()
 }
 ```
 
-![image-20240414203247400](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240414203247400.png)
+![image-20240414203247400](picture/image-20240414203247400.png)
 
 但是不会缩小capacity
 
@@ -170,7 +170,7 @@ cout << endl;
 
 可以先理解为指针，，范围for  本质来说就是迭代器
 
-![image-20240414205340662](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240414205340662.png)
+![image-20240414205340662](picture/image-20240414205340662.png)
 
 反向迭代器
 
@@ -178,13 +178,13 @@ cout << endl;
 reverse_iterator 
 ```
 
-![image-20240417134655412](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417134655412.png)
+![image-20240417134655412](picture/image-20240417134655412.png)
 
 const_iterator
 
 不能修改，只能读，遍历
 
-![image-20240417135320376](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417135320376.png)
+![image-20240417135320376](picture/image-20240417135320376.png)
 
 ## []  at
 
@@ -216,7 +216,7 @@ std::[string](https://legacy.cplusplus.com/reference/string/string/)::insert
 
 插入空格,但
 
-![image-20240417141816701](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417141816701.png)
+![image-20240417141816701](picture/image-20240417141816701.png)
 
 ## erase
 
@@ -229,21 +229,21 @@ std::[string](https://legacy.cplusplus.com/reference/string/string/)::insert
 
 len 长度
 
-![image-20240417141336171](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417141336171.png)
+![image-20240417141336171](picture/image-20240417141336171.png)
 
 ## find/rfind
 
 返回第一次匹配的位置
 
-![image-20240417153721048](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417153721048.png)
+![image-20240417153721048](picture/image-20240417153721048-172300238228710.png)
 
-![image-20240417153928433](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417153928433.png)
+![image-20240417153928433](picture/image-20240417153928433.png)
 
-![image-20240417154100930](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417154100930.png)
+![image-20240417154100930](picture/image-20240417154100930-172300238996114.png)
 
 ## swap
 
-![image-20240417154649562](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417154649562.png)
+![image-20240417154649562](picture/image-20240417154649562.png)
 
 一个是类模板，一个是string单独实现的swap
 
@@ -255,15 +255,15 @@ c_str()返回字符串的指针，但是打印是按字符串打印
 
 c_str(）遇到  \0 截至 
 
-![image-20240417155334441](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417155334441.png)
+![image-20240417155334441](picture/image-20240417155334441.png)
 
-![image-20240417155405754](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417155405754.png)
+![image-20240417155405754](picture/image-20240417155405754.png)
 
 c_str(),是为了与c语言的函数接口兼容比如 
 
 fopen  
 
-![ ](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417155643532.png)
+![ ](picture/image-20240417155643532.png)
 
 ## substr
 
@@ -275,17 +275,17 @@ fopen
 string substr (size_t pos = 0, size_t len = npos) const;
 ```
 
-![image-20240417160236622](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417160236622.png)
+![image-20240417160236622](picture/image-20240417160236622.png)
 
 ## find_first_of
 
 ![image-20240417161218434](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417161218434.png)
 
-![image-20240417161201217](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417161201217.png)
+![image-20240417161201217](picture/image-20240417161201217.png)
 
 ## ==
 
-![image-20240417161658870](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417161658870.png)
+![image-20240417161658870](picture/image-20240417161658870.png)
 
 ## getline
 
@@ -297,7 +297,7 @@ string substr (size_t pos = 0, size_t len = npos) const;
 
 cin>> 在输入有空格的时候，就会分割，getline只会因为换行分割
 
-![image-20240417162548280](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417162548280.png)
+![image-20240417162548280](picture/image-20240417162548280.png)
 
 
 
@@ -305,21 +305,21 @@ cin>> 在输入有空格的时候，就会分割，getline只会因为换行分�
 
 
 
-![image-20240417163710085](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417163710085.png)
+![image-20240417163710085](picture/image-20240417163710085.png)
 
-![image-20240417163727720](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417163727720.png)
+![image-20240417163727720](picture/image-20240417163727720.png)
 
  
 
-![image-20240417164011859](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417164011859.png)
+![image-20240417164011859](picture/image-20240417164011859.png)
 
 转换为字符
 
-![image-20240417164113747](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417164113747.png)
+![image-20240417164113747](picture/image-20240417164113747.png)
 
 额外处理
 
-![image-20240417164724180](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417164724180.png)
+![image-20240417164724180](picture/image-20240417164724180.png)
 
 ![image-20240417164737766](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240417164737766.png)
 

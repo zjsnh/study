@@ -1,30 +1,30 @@
 # 红黑树
 
-![image-20240603164513944](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240603164513944.png)
+![image-20240603164513944](picture/image-20240603164513944.png)
 
-![image-20240603170645308](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240603170645308.png)
+![image-20240603170645308](picture/image-20240603170645308.png)
 
 ## 路径是根节点走到空
 
-![image-20240603170656552](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240603170656552.png)
+![image-20240603170656552](picture/image-20240603170656552.png)
 
-![image-20240603172834585](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240603172834585.png)
+![image-20240603172834585](picture/image-20240603172834585.png)
 
 新增插入红色
 
-![image-20240603173735629](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240603173735629.png)
+![image-20240603173735629](picture/image-20240603173735629.png)
 
 # 新增处理
 
-![image-20240603173918143](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240603173918143.png)
+![image-20240603173918143](picture/image-20240603173918143.png)
 
 旋转  变色
 
-![image-20240603174837800](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240603174837800.png)
+![image-20240603174837800](picture/image-20240603174837800.png)
 
-![image-20240603180714669](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240603180714669.png)
+![image-20240603180714669](picture/image-20240603180714669.png)
 
-  ![image-20240604145252466](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240604145252466.png)
+  ![image-20240604145252466](picture/image-20240604145252466.png)
 
  
 
@@ -88,17 +88,17 @@ bool IsBalance()
 
 set
 
-![image-20240604202800968](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240604202800968.png)
+![image-20240604202800968](picture/image-20240604202800968.png)
 
-![image-20240604202837267](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240604202837267.png)
+![image-20240604202837267](picture/image-20240604202837267.png)
 
 typeid  取变量的类型
 
-![image-20240604204057061](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240604204057061.png)
+![image-20240604204057061](picture/image-20240604204057061.png)
 
 # 带模板参数的构造
 
-![image-20240605213604369](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240605213604369.png)
+![image-20240605213604369](picture/image-20240605213604369.png)
 
 进行构造的同时，也可以进行不同类型之间的转换
 
@@ -106,10 +106,10 @@ typeid  取变量的类型
 iterator  const_iterator//之间的转化
 ```
 
-<img src="C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240605213753377.png" alt="image-20240605213753377" style="zoom:150%;" />
+<img src="picture/image-20240605213753377.png" alt="image-20240605213753377" style="zoom:150%;" />
 
-![image-20240605213902491](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240605213902491.png)
+![image-20240605213902491](picture/image-20240605213902491.png)
 
-![image-20240605220339561](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240605220339561.png)
+![image-20240605220339561](picture/image-20240605220339561.png)
 
-![image-20240605220356108](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240605220356108.png)
+![image-20240605220356108](picture/image-20240605220356108.png)

@@ -2,7 +2,7 @@
 
 ## 最小公倍数
 
-![image-20240723102729555](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240723102729555.png)
+![image-20240723102729555](picture/image-20240723102729555.png)
 
 ```C++
 #include <iostream>
@@ -49,7 +49,7 @@ int main() {
 
 ## 数组中最长连续的子序列
 
-![image-20240723110432587](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240723110432587.png)
+![image-20240723110432587](picture/image-20240723110432587.png)
 
 有重复的，排完序，需要跳过重复的
 
@@ -82,12 +82,12 @@ int MLS(vector<int>& arr) {
 }
 ```
 
-![image-20240723122421390](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240723122421390.png)
+![image-20240723122421390](picture/image-20240723122421390.png)
 
-![image-20240723122426068](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240723122426068.png)
+![image-20240723122426068](picture/image-20240723122426068.png)
 
 **使用路径递归 超时**
 
-![image-20240723170708418](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240723170708418.png)
+![image-20240723170708418](picture/image-20240723170708418.png)
 
 **动态规划**
