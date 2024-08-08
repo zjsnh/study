@@ -2,7 +2,7 @@
 
 编写代码，只负责写 
 
-![image-20240411192228176](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240411192228176.png)
+![image-20240411192228176](../c++_note/picture/image-20240411192228176.png)
 
 不可以直接从编辑模式直接进入底行模式 相反同理不可以
 
@@ -10,9 +10,9 @@
 
 ### 命令模式
 
-![image-20240411203438268](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240411203438268.png)
+![image-20240411203438268](../c++_note/picture/image-20240411203438268.png)
 
-<img src="C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240411203526177.png" alt="image-20240411203526177" style="zoom:80%;" />
+<img src="../c++_note/picture/image-20240411203526177.png" alt="image-20240411203526177" style="zoom:80%;" />
 
 ### 底行模式
 
@@ -20,7 +20,7 @@ set nu/nonu 调出行号/去掉
 
 vs+其他文件  对比模式（ctrl+w+w，更换光标所在的屏幕）分屏操作
 
-![image-20240411204255258](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240411204255258.png)
+![image-20240411204255258](../c++_note/picture/image-20240411204255258.png)
 
 ### 配置
 
@@ -30,11 +30,11 @@ curl -sLf https://gitee.com/HGtz2222/VimForCpp/raw/master/install.sh -o ./instal
 
 
 
-<img src="C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240411214911277.png" alt="image-20240411214911277" style="zoom:50%;" />
+<img src="../c++_note/picture/image-20240411214911277.png" alt="image-20240411214911277" style="zoom:50%;" />
 
 将用户加入sudo
 
-<img src="C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240411215801996.png" alt="image-20240411215801996" style="zoom:50%;" />
+<img src="../c++_note/picture/image-20240411215801996.png" alt="image-20240411215801996" style="zoom:50%;" />
 
 w!    q!  强制写入
 
@@ -48,8 +48,8 @@ w!    q!  强制写入
 
 # GCC/G++
 
-![image-20240411221852760](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240411221852760.png)
+![image-20240411221852760](../c++_note/picture/image-20240411221852760.png)
 
 64位平台int类型为 8 
 
-![image-20240411222557878](C:\Users\30780\AppData\Roaming\Typora\typora-user-images\image-20240411222557878.png)+
+![image-20240411222557878](../c++_note/picture/image-20240411222557878.png)+
