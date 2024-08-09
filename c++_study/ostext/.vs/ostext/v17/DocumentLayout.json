@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\2023_code\\study\\c\u002B\u002B_study\\ostext\\",
+  "WorkspaceRootPath": "D:\\code\\study\\c\u002B\u002B_study\\ostext\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC0BAE5B-E25F-4EEA-BEA2-AEC355031A18}|ostext\\ostext.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\ostext\\ostext\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EC0BAE5B-E25F-4EEA-BEA2-AEC355031A18}|ostext\\ostext.vcxproj|solutionrelative:ostext\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\ostext\\ostext\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ostext\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "text.cpp",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\ostext\\ostext\\text.cpp",
+              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\ostext\\ostext\\text.cpp",
               "RelativeDocumentMoniker": "ostext\\text.cpp",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\ostext\\ostext\\text.cpp",
+              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\ostext\\ostext\\text.cpp",
               "RelativeToolTip": "ostext\\text.cpp",
-              "ViewState": "AQIAAE0EAAAAAAAAAAAAAOYFAAAPAAAA",
+              "ViewState": "AQIAAGgDAAAAAAAAAAAAAHYDAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-29T11:19:04.292Z",
               "EditorCaption": ""
