@@ -36,10 +36,24 @@
               "RelativeDocumentMoniker": "string\\string.cpp",
               "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\string\\string\\string.cpp",
               "RelativeToolTip": "string\\string.cpp",
-              "ViewState": "AQIAAMsAAAAAAAAAAADwv/MAAAAKAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAPMAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-14T11:11:27.338Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1448,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
