@@ -165,7 +165,7 @@ int citys(vector<vector<int>>& m) {
                 }
                 
             }
-        }
+        }   
     }
 
     int _size = size.size() - amend;
