@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\2023_code\\study\\c\u002B\u002B_study\\Args\\",
+  "WorkspaceRootPath": "D:\\code\\study\\c\u002B\u002B_study\\Args\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE632487-3010-47B7-9461-68D4D73D0AB3}|Args\\Args.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Args\\Args\\args.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DE632487-3010-47B7-9461-68D4D73D0AB3}|Args\\Args.vcxproj|solutionrelative:Args\\args.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\Args\\Args\\args.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Args\\args.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,9 +32,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "args.cpp",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Args\\Args\\args.cpp",
+              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\Args\\Args\\args.cpp",
               "RelativeDocumentMoniker": "Args\\args.cpp",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Args\\Args\\args.cpp",
+              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\Args\\Args\\args.cpp",
               "RelativeToolTip": "Args\\args.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",

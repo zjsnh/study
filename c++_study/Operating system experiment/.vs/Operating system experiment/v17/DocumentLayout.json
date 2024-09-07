@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\2023_code\\study\\c\u002B\u002B_study\\Operating system experiment\\",
+  "WorkspaceRootPath": "D:\\code\\study\\c\u002B\u002B_study\\Operating system experiment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64B56F67-56A7-4530-A89F-D6298143C7B3}|Operating system experiment\\Operating system experiment.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Operating system experiment\\Operating system experiment\\experiment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{64B56F67-56A7-4530-A89F-D6298143C7B3}|Operating system experiment\\Operating system experiment.vcxproj|solutionrelative:Operating system experiment\\experiment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\Operating system experiment\\Operating system experiment\\experiment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Operating system experiment\\experiment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "experiment.cpp",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Operating system experiment\\Operating system experiment\\experiment.cpp",
+              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\Operating system experiment\\Operating system experiment\\experiment.cpp",
               "RelativeDocumentMoniker": "Operating system experiment\\experiment.cpp",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Operating system experiment\\Operating system experiment\\experiment.cpp",
+              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\Operating system experiment\\Operating system experiment\\experiment.cpp",
               "RelativeToolTip": "Operating system experiment\\experiment.cpp",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAcAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-19T13:34:01.547Z",
               "EditorCaption": ""

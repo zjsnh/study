@@ -34,10 +34,10 @@ int main()
 	ts2.Node.next = &(ts1.Node);
 	ts2.Node.prev = &(ts1.Node);
 
-	//cout << ((task_struct2*)(((int*)ts1.Node.next - (int*)(&(((task_struct2*)(0))->Node)))))->a;
+	cout << ((task_struct2*)(((char*)ts1.Node.next - (char*)(&(((task_struct2*)(0))->Node)))))->a;
 
 	// 使用指针运算来计算 task_struct2 指针
-	task_struct2* ts2_ptr = (task_struct2*)((char*)ts1.Node.next - (char*)(&(((task_struct2*)0)->Node)));
+	//task_struct2* ts2_ptr = (task_struct2*)((char*)ts1.Node.next - (char*)(&(((task_struct2*)0)->Node)));
 	cout << ts2_ptr->a;
 
 	return 0;

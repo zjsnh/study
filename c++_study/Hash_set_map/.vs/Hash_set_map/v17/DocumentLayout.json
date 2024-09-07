@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\",
+  "WorkspaceRootPath": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\hash.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\hash.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\hash.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hash_set_map\\hash.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\unordered_map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hash_set_map\\unordered_set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hash_set_map\\unordered_map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\unordered_set.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\bitset.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hash_set_map\\bitset.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\bitset.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\bitset.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\BloomFilter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hash_set_map\\BloomFilter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\BloomFilter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73690E82-370B-4AFD-8C25-AFC277D04849}|Hash_set_map\\Hash_set_map.vcxproj|solutionrelative:Hash_set_map\\BloomFilter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hash_set_map\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,11 +50,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "unordered_set.h",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_set.h",
+              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_set.h",
               "RelativeDocumentMoniker": "Hash_set_map\\unordered_set.h",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_set.h",
+              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_set.h",
               "RelativeToolTip": "Hash_set_map\\unordered_set.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -62,24 +62,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "unordered_map.h",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_map.h",
+              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_map.h",
               "RelativeDocumentMoniker": "Hash_set_map\\unordered_map.h",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_map.h",
+              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\unordered_map.h",
               "RelativeToolTip": "Hash_set_map\\unordered_map.h",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-19T03:18:43.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-19T03:18:43.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "bitset.h",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\bitset.h",
+              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\bitset.h",
               "RelativeDocumentMoniker": "Hash_set_map\\bitset.h",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\bitset.h",
+              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\bitset.h",
               "RelativeToolTip": "Hash_set_map\\bitset.h",
               "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -87,11 +86,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "BloomFilter.h",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\BloomFilter.h",
+              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\BloomFilter.h",
               "RelativeDocumentMoniker": "Hash_set_map\\BloomFilter.h",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\BloomFilter.h",
+              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\BloomFilter.h",
               "RelativeToolTip": "Hash_set_map\\BloomFilter.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -101,27 +100,26 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "hash.h",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\hash.h",
+              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\hash.h",
               "RelativeDocumentMoniker": "Hash_set_map\\hash.h",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\hash.h",
+              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\hash.h",
               "RelativeToolTip": "Hash_set_map\\hash.h",
-              "ViewState": "AQIAANUAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-10T07:50:55.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "text.cpp",
-              "DocumentMoniker": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\text.cpp",
+              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\text.cpp",
               "RelativeDocumentMoniker": "Hash_set_map\\text.cpp",
-              "ToolTip": "E:\\2023_code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\text.cpp",
+              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\Hash_set_map\\Hash_set_map\\text.cpp",
               "RelativeToolTip": "Hash_set_map\\text.cpp",
               "ViewState": "AQIAADYAAAAAAAAAAAAAAHIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-10T07:55:16.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T07:55:16.198Z"
             }
           ]
         },
