@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DFBB1C0E-5707-4C4A-A03B-94B954885AE3}|\u6A21\u677F_bolg\\\u6A21\u677F_bolg.vcxproj|D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_bolg\\\u6A21\u677F_bolg\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DFBB1C0E-5707-4C4A-A03B-94B954885AE3}|\u6A21\u677F_bolg\\\u6A21\u677F_bolg.vcxproj|solutionrelative:\u6A21\u677F_bolg\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFBB1C0E-5707-4C4A-A03B-94B954885AE3}|\u6A21\u677F_bolg\\\u6A21\u677F_bolg.vcxproj|D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_bolg\\\u6A21\u677F_bolg\\hong.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DFBB1C0E-5707-4C4A-A03B-94B954885AE3}|\u6A21\u677F_bolg\\\u6A21\u677F_bolg.vcxproj|solutionrelative:\u6A21\u677F_bolg\\hong.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 246,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,26 +30,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "hong.c",
-              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_bolg\\\u6A21\u677F_bolg\\hong.c",
-              "RelativeDocumentMoniker": "\u6A21\u677F_bolg\\hong.c",
-              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_bolg\\\u6A21\u677F_bolg\\hong.c",
-              "RelativeToolTip": "\u6A21\u677F_bolg\\hong.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-09-09T03:12:41.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "text.cpp",
               "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_bolg\\\u6A21\u677F_bolg\\text.cpp",
               "RelativeDocumentMoniker": "\u6A21\u677F_bolg\\text.cpp",
               "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_bolg\\\u6A21\u677F_bolg\\text.cpp",
               "RelativeToolTip": "\u6A21\u677F_bolg\\text.cpp",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADQAAAARAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAF4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-09T01:07:35.266Z",
               "EditorCaption": ""

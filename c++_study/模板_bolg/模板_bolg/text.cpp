@@ -33,64 +33,82 @@
 //}
 
 
-//C++ 11
-#include <iostream>
+////C++ 11
+//#include <iostream>
+//using namespace std;
+//template<typename T>
+//class aTMP {
+//public: typedef const T reType;
+//};
+//
+//void f() { std::cout << "global f()\n"; }
+//
+//template<typename T>
+//class Base {
+//public:
+//    template <int N = 99>
+//    void f() { std::cout << "member f(): " << N << '\n'; }
+//};
+//
+//template<class T>
+//class Derived : public Base<T> {
+//public:
+//    typename T::reType m; // typename 不能省略     如果T作为类空间，就需要在模板实例化时传入 实例化的类
+//    Derived(typename T::reType a) : m(a) { }
+//    void df1() { f(); }                       // 调用全局 f()，而非想象中的基类 f()
+//    void df2() { this-> template f(); }        // 基类 f<99>() 显示传递
+//    void df3() { Base<T>::template f<22>(); } // 强制基类 f<22>()
+//    void df4() { ::f(); }                     // 强制全局 f()
+//};
+//
+//int main() {
+//    //Derived<int> b(10);
+//    //b.m;
+//
+//
+//    Derived<aTMP<int>> a(10);
+//    a.m;
+//    a.df1(); 
+//    a.df2(); 
+//    a.df3(); a.df4();
+//    std::cin.get(); return 0;
+//}
+//
+//
+//template<typename T>
+//T add(T a, T b)
+//{
+//    return a + b;
+//}
+//
+//
+//int main()
+//{
+//    cout << add(1, 2) << endl;
+//    cout << add(1.1, 1.2) << endl;
+//    //cout << add(1.2, 1) << endl;
+//
+//    return 0;
+//}
+
+
+#include<iostream>
 using namespace std;
-template<typename T>
-class aTMP {
-public: typedef const T reType;
-};
 
-void f() { std::cout << "global f()\n"; }
-
-template<typename T>
-class Base {
-public:
-    template <int N = 99>
-    void f() { std::cout << "member f(): " << N << '\n'; }
-};
-
-template<class T>
-class Derived : public Base<T> {
-public:
-    typename T::reType m; // typename 不能省略     如果T作为类空间，就需要在模板实例化时传入 实例化的类
-    Derived(typename T::reType a) : m(a) { }
-    void df1() { f(); }                       // 调用全局 f()，而非想象中的基类 f()
-    void df2() { this-> template f(); }        // 基类 f<99>() 显示传递
-    void df3() { Base<T>::template f<22>(); } // 强制基类 f<22>()
-    void df4() { ::f(); }                     // 强制全局 f()
-};
-
-int main() {
-    //Derived<int> b(10);
-    //b.m;
-
-
-    Derived<aTMP<int>> a(10);
-    a.m;
-    a.df1(); 
-    a.df2(); 
-    a.df3(); a.df4();
-    std::cin.get(); return 0;
-}
-
-
-
-int add(int a, int b)
+template<typename T0
+	,typename T1
+	,typename T2
+	,typename T3
+	,typename T4>
+T2 fun(T1 v1, T3 v3, T4 v4)
 {
-    return a + b;
-}
-
-double add(double a, double b)
-{
-    return a + b;
+	return 0;
 }
 
 int main()
 {
-    cout << add(1, 2) << endl;
-    cout << add(1.1, 1.2) << endl;
-    cout << add(1.2, 1) << endl;
+	//实例化时，我们必须要给出无法被推导出来的那些函数模板的类型  例如 TO T1 T2 ；
+	int a = fun<double, int, int, float, char>(1, 2, 3);
 
-    return 0;
+	return 0;
 }

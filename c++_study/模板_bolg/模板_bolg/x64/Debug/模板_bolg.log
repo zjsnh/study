@@ -1,2 +1,4 @@
-﻿  text.cpp
-D:\code\study\c++_study\模板_bolg\模板_bolg\text.cpp(59,25): error C2187: 语法错误: 此处出现意外的“template”
+﻿  hong.c
+  text.cpp
+text.obj : error LNK2005: main 已经在 hong.obj 中定义
+D:\code\study\c++_study\模板_bolg\x64\Debug\模板_bolg.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
