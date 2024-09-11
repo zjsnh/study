@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_blog\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9869843D-7AB4-44C9-BAA6-912D89599ECA}|\u6A21\u677F_blog\\\u6A21\u677F_blog.vcxproj|D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_blog\\\u6A21\u677F_blog\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9869843D-7AB4-44C9-BAA6-912D89599ECA}|\u6A21\u677F_blog\\\u6A21\u677F_blog.vcxproj|solutionrelative:\u6A21\u677F_blog\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9869843D-7AB4-44C9-BAA6-912D89599ECA}|\u6A21\u677F_blog\\\u6A21\u677F_blog.vcxproj|D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_blog\\\u6A21\u677F_blog\\text3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9869843D-7AB4-44C9-BAA6-912D89599ECA}|\u6A21\u677F_blog\\\u6A21\u677F_blog.vcxproj|solutionrelative:\u6A21\u677F_blog\\text3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9869843D-7AB4-44C9-BAA6-912D89599ECA}|\u6A21\u677F_blog\\\u6A21\u677F_blog.vcxproj|D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_blog\\\u6A21\u677F_blog\\text1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9869843D-7AB4-44C9-BAA6-912D89599ECA}|\u6A21\u677F_blog\\\u6A21\u677F_blog.vcxproj|solutionrelative:\u6A21\u677F_blog\\text1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 246,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "text3.cpp",
+              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_blog\\\u6A21\u677F_blog\\text3.cpp",
+              "RelativeDocumentMoniker": "\u6A21\u677F_blog\\text3.cpp",
+              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_blog\\\u6A21\u677F_blog\\text3.cpp",
+              "RelativeToolTip": "\u6A21\u677F_blog\\text3.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-10T01:17:56.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "text1.h",
+              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_blog\\\u6A21\u677F_blog\\text1.h",
+              "RelativeDocumentMoniker": "\u6A21\u677F_blog\\text1.h",
+              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_blog\\\u6A21\u677F_blog\\text1.h",
+              "RelativeToolTip": "\u6A21\u677F_blog\\text1.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-10T00:46:17.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "text.cpp",
+              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_blog\\\u6A21\u677F_blog\\text.cpp",
+              "RelativeDocumentMoniker": "\u6A21\u677F_blog\\text.cpp",
+              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\\u6A21\u677F_blog\\\u6A21\u677F_blog\\text.cpp",
+              "RelativeToolTip": "\u6A21\u677F_blog\\text.cpp",
+              "ViewState": "AQIAALsAAAAAAAAAAAAAAMoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-10T00:32:03.563Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 11,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

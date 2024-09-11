@@ -1,0 +1,2 @@
+﻿  text.cpp
+D:\code\study\c++_study\模板_blog\模板_blog\text2.h(3,6): error C2995: “void fun(const T &)”: 函数模板已经定义
