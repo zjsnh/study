@@ -1,5 +1,4 @@
 ﻿  text.cpp
-D:\code\study\c++_study\继承blog\继承blog\text.cpp(53,9): warning C4477: “printf”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“int”
   继承blog.vcxproj -> D:\code\study\c++_study\继承blog\Debug\继承blog.exe
   'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
   或批处理文件。
