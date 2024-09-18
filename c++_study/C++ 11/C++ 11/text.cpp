@@ -124,3 +124,83 @@ using namespace std;
 //}
 
 
+//#include<stack>
+//#include<string>
+//#include<list>
+//#include<unordered_map>
+//#include<vector>
+//
+//
+//int main()
+//{
+//	stack<int> S;
+//	S.push(1);
+//
+//
+//
+//
+//	return 0;
+//}
+
+void _List()
+{
+	cout << "end" << endl;
+}
+
+//template<class ...Args>
+//void _List(Args... args)
+//{
+//	_List(args...);
+//}
+
+//template<class T, class ...Args>
+//void _List(const T& val, Args... args)
+//{
+//
+//	//cout <<  typeid(val).name() << " " << val << endl;
+//	_List(args...);
+//}
+//
+//template<typename T>
+//T sum(T t)
+//{
+//	return t ;
+//}
+//template<typename T, typename ... Types>
+//T sum(T first, Types ... rest)
+//{
+//	return first + sum<T>(rest...);
+//
+//	//   1  +  (2,3,4)  ->  1  +  (2 + (3,4)) ->  
+//}
+//
+//int main()
+//{
+//	//_List(1, 2, 3, 4);
+//
+//	cout << sum(1, 2, 3, 4) << endl;
+//
+//	return 0;
+//}
+
+//   ... 也就是将参数包展开，依次调用
+
+template <class T>
+void printarg(T t)
+{
+	cout << t << endl;
+}
+
+template <class ...Args>
+void expand(Args... args)
+{
+	int arr[] = { (printarg(args), 0)... };
+}
+
+int main()
+{
+	expand(1, 2, 3, 4, 5);
+
+
+	return 0;
+}
