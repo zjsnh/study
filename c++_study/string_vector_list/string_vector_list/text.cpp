@@ -1,16 +1,16 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
 
-#include<iostream>
-using namespace std;
+//#include<iostream>
+//using namespace std;
 //#include"string.h"
 //#include"vector.h"
 
 
-#include"list.h"
-#include"vector.h"
-#include"string.h"
-#include<vector>
+//#include"list.h"
+//#include"vector.h"
+//#include"string.h"
+//#include<vector>
 
 
 //int main()
@@ -138,9 +138,26 @@ using namespace std;
 //	return 0;
 //}
 
+#include<iostream>
+using namespace std;
+#include"string.h"
+#include"list.h"
+
 
 
 int main()
 {
+	/*str::string r1("hello");
+	str::string r2 = r1;
+	str::string r3 = move(r1);*/
 
+	lt::list<int> L = { 1,2,3,4 };
+
+	/*lt::list<int> L;
+	L.push_back(1);
+	L.push_back(2);
+	L.push_back(3);*/
+
+
+	return 0;
 }

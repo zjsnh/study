@@ -29,9 +29,16 @@ namespace str
 			_size(0),
 			_capacity(0)
 		{
+
+			cout << "拷贝构造" << endl;//新开辟内存
 			string temp(str._str);
 			swap(temp);
+		}
 
+		string(string&& str)
+		{
+			cout << "移动赋值" << endl;//不新开辟
+			swap(str);
 		}
 
 		~string()

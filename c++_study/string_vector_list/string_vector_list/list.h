@@ -43,9 +43,9 @@ namespace lt
 			:_node(it._node)
 		{	}
 
-		__list_iterator(const iterator& it)
+		/*__list_iterator(const iterator& it)
 			:_node(it._node)
-		{	}
+		{	}*/
 
 		bool operator==(const sef& it)
 		{
@@ -180,13 +180,31 @@ namespace lt
 			clear();
 		}
 
-		list(const list& l)
+		list(initializer_list<T> _list)
+		{
+			I_empty();
+
+			typename std::initializer_list<T>::iterator it = _list.begin();
+			while (it != _list.end())
+			{
+				push_back(*it);
+				it++;
+			}
+		}
+
+		list(const list<T>& l)
 		{
 			I_empty();
 			for (auto it : l)
 			{
 				push_back(it);
 			}
+		}
+
+		list(list<T>&& l)
+		{
+			cout << "ÒÆ¶¯¹¹Ôì" << endl;
+			swap(l);
 		}
 
 		void clear()
@@ -213,7 +231,7 @@ namespace lt
 
 		void I_empty()
 		{
-			_head = new Node;
+			_head = new Node(T());
 			_head->_next = _head;
 			_head->_prev = _head;
 
@@ -229,6 +247,11 @@ namespace lt
 		void push_back(const T& val)
 		{
 			insert(end(), val);
+		}
+
+		void push_back(T&& val)
+		{
+			insert(end(), forward<T>(val));
 		}
 
 		void pop_front()
@@ -250,6 +273,26 @@ namespace lt
 		{
 			Node* cur = pos._node;
 			Node* newnode = new Node(x);
+
+			Node* prev = cur->_prev;
+
+			// prev newnode cur
+			prev->_next = newnode;
+			newnode->_prev = prev;
+
+			newnode->_next = cur;
+			cur->_prev = newnode;
+
+			++_size;
+
+			return iterator(newnode);
+		}
+
+
+		iterator insert(iterator pos, T&& x)
+		{
+			Node* cur = pos._node;
+			Node* newnode = new Node(forward<T>(x));
 
 			Node* prev = cur->_prev;
 

@@ -40,28 +40,44 @@
 //
 //	return 0;
 //}
-
+//
+//#include <iostream>
+//
+//struct X {
+//    X() { std::cout << "1"; }
+//
+//    X(const X& )  
+//    { 
+//        std::cout << "3"; 
+//    }
+//
+//    ~X() { std::cout << "2"; }
+//
+//    void f() { std::cout << "4"; }
+//
+//} object;
+//
+//int main() {
+//    X(object);
+//
+//    object.f();
+//
+//    return 0;
+//}
+//
 #include <iostream>
+using namespace std;
 
-struct X {
-    X() { std::cout << "1"; }
-
-    X(const X& )  
-    { 
-        std::cout << "3"; 
-    }
-
-    ~X() { std::cout << "2"; }
-
-    void f() { std::cout << "4"; }
-
-} object;
 
 int main() {
-    X(object);
+    
+    unsigned char zero = 0, one = 1;
+    //decltype可以获取表达式类型  
+    decltype(zero - one) ret;
 
-    object.f();
+    cout << typeid(zero - one).name() << endl;
+    cout << typeid(ret).name() << endl;
 
-    return 0;
+    //typeid(ret).before();
+
 }
-
