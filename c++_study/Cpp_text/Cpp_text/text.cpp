@@ -65,19 +65,80 @@
 //    return 0;
 //}
 //
-#include <iostream>
+//#include <iostream>
+//using namespace std;
+//
+//
+//int main() {
+//    
+//    unsigned char zero = 0, one = 1;
+//    //decltype可以获取表达式类型  
+//    decltype(zero - one) ret;
+//
+//    cout << typeid(zero - one).name() << endl;
+//    cout << typeid(ret).name() << endl;
+//
+//    //typeid(ret).before();
+//
+//}
+
+
+
+//#include <iostream>
+//using namespace std;
+//#include <string>
+//int main()
+//{
+//	string s;
+//	cin >> s;
+//	int length = 1189, with = 841;
+//	int index = s[1] - '0';
+//	for (int i = 0; i < index; i++)
+//	{
+//		int temp;
+//		if (with > length) {
+//			swap(with, length);
+//		}
+//		length = length / 2;
+//	}
+//	if(with>length)
+//		swap(with, length);
+//
+//	cout << length << endl;
+//	cout << with;
+//	return 0;
+//}
+
+
+#include<algorithm>
+#include<string>
+#include<iostream>
 using namespace std;
+#include<vector>
+#include<set>
 
 
-int main() {
-    
-    unsigned char zero = 0, one = 1;
-    //decltype可以获取表达式类型  
-    decltype(zero - one) ret;
+//int main()
+//{
+//	string s;
+//	cin >> s;
+//	sort(s.begin(), s.end());
+//	cout << s << endl;
+//
+//	return 0;
+//}
 
-    cout << typeid(zero - one).name() << endl;
-    cout << typeid(ret).name() << endl;
+int removeDuplicates(vector<int>& nums) {
 
-    //typeid(ret).before();
+	set<int> s(nums.begin(), nums.end());
+	return s.size();
 
+
+}
+
+int main()
+{
+	vector<int> nums;
+	removeDuplicates(nums);
+	return 0;
 }

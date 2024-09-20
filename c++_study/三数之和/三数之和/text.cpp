@@ -1,8 +1,8 @@
-#include<iostream>
-using namespace std;
-
-#include<vector>
-#include<algorithm>
+//#include<iostream>
+//using namespace std;
+//
+//#include<vector>
+//#include<algorithm>
 
 //vector<vector<int>> threeSum(vector<int>& nums) {
 //    vector<vector<int>> Nums;
@@ -157,17 +157,138 @@ using namespace std;
 //	return 0;
 //}
 
-#include <iostream>
+//#include <iostream>
+//
+//int main() {
+//    const int i = 0;
+//    int& r = const_cast<int&>(i);
+//    r = 1;
+//    std::cout << &r << endl;
+//    std::cout << &i << endl;
+//
+//    std::cout << r << endl;
+//    std::cout << i;
+//
+//    return 0;
+//}
 
-int main() {
-    const int i = 0;
-    int& r = const_cast<int&>(i);
-    r = 1;
-    std::cout << &r << endl;
-    std::cout << &i << endl;
+#include<iostream>
+using namespace std;
 
-    std::cout << r << endl;
-    std::cout << i;
+#include<vector>
+#include<algorithm>
+#include<unordered_set>
 
-    return 0;
+//
+//vector<vector<int>> threeSum(vector<int>& nums) {
+//
+//    sort(nums.begin(), nums.end());
+//    //unordered_set<unordered_set<int>> un_repeat;
+//
+//    vector<vector<int>> un_repeat;
+//
+//    for (int i = 0; i < nums.size() - 2; i++)
+//    {
+//        if (i > 0 && nums[i] == nums[i - 1]) continue;
+//
+//        int left = i + 1;
+//        int right = nums.size() - 1;
+//        while (left < right)
+//        {
+//            int num = nums[i] + nums[left] + nums[right];
+//
+//            if (num < 0)
+//            {
+//                left++;
+//            }
+//            else if (num == 0)
+//            {
+//                //unordered_set<int> s = { nums[i],nums[left,nums[right]] };
+//                //un_repeat.insert(s);
+//
+//                vector<int> s{ nums[i],nums[left,nums[right]] };
+//                un_repeat.push_back(s);
+//                while (left < right && nums[left] == nums[left + 1]) left++;
+//                while (left < right && nums[right] == nums[right - 1]) right--;
+//
+//                left++;
+//                right--;
+//            }
+//            else
+//            {
+//                right--;
+//            }
+//        }
+//         
+//    }
+//
+//    return un_repeat;
+//
+//}
+//
+//int main()
+//{
+//    vector<int> nums { -1,0,1,2,-1,-4 };
+//    threeSum(nums);
+//
+//    return 0;
+//}
+
+int rain_Con(std::vector<int>::iterator begin,
+    std::vector<int>::iterator end) {
+    if (begin >= end)
+        return 0;
+
+    int minHeight = *begin;
+    if (*begin > *end) {
+        minHeight = *end;
+    }
+
+    int trappedWater = 0;
+    while (begin != end) {
+        trappedWater += minHeight - *(++begin);
+        ++begin;
+    }
+
+    return trappedWater;
+}
+
+int trap(std::vector<int>& nums) {
+    std::vector<std::pair<int, int>> segments;
+    int left = 0;
+
+    while (left < nums.size()) {
+        if (nums[left] == 0) {
+            left++;
+            continue;
+        }
+
+        int right = left + 1;
+        int maxIndex = right;
+
+        while (right < nums.size()&& nums[maxIndex] < nums[left]) {
+            if (nums[maxIndex] < nums[right]) {
+                maxIndex = right;
+            }
+            right++;
+        }
+
+        segments.push_back(std::make_pair(left, maxIndex));
+        left = maxIndex;
+    }
+
+    int totalTrappedWater = 0;
+    for (const auto& segment : segments) {
+        totalTrappedWater += rain_Con(nums.begin() + segment.first,
+            nums.begin() + segment.second);
+    }
+
+    return totalTrappedWater;
+}
+
+int main()
+{
+    vector<int> nums{ 0,1,0,2,1,0,1,3,2,1,2,1 };
+    cout << trap(nums);
+	return 0;
 }
