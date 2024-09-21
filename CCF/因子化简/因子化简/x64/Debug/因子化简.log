@@ -1,0 +1,5 @@
+﻿  text.cpp
+D:\code\study\CCF\因子化简\因子化简\text.cpp(26,11): warning C4244: “参数”: 从“ll”转换到“int”，可能丢失数据
+  因子化简.vcxproj -> D:\code\study\CCF\因子化简\x64\Debug\因子化简.exe
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。

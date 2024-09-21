@@ -128,17 +128,45 @@ using namespace std;
 //	return 0;
 //}
 
-int removeDuplicates(vector<int>& nums) {
+//int removeDuplicates(vector<int>& nums) {
+//
+//	set<int> s(nums.begin(), nums.end());
+//	return s.size();
+//
+//
+//}
+//
+//int main()
+//{
+//	vector<int> nums;
+//	removeDuplicates(nums);
+//	return 0;
+//}
 
-	set<int> s(nums.begin(), nums.end());
-	return s.size();
 
-
-}
+//int main()
+//{
+//	char buffer[1024];
+//
+//	buffer[12] = '\0';
+//	cout << sizeof(buffer) << endl;
+//	cout << strlen(buffer) << endl;
+//
+//	return 0;
+//}
+struct A
+{
+	int _a;
+	double _b;
+};
 
 int main()
 {
-	vector<int> nums;
-	removeDuplicates(nums);
+	int n = 5;
+	vector<int> V(n);
+	/*for (int i = 0; i < 10; i++)
+	{
+		cin >> V[i] ;
+	}*/
 	return 0;
 }
