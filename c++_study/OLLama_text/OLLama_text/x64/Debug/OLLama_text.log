@@ -1,0 +1,5 @@
+﻿  text.cpp
+D:\code\study\c++_study\OLLama_text\OLLama_text\text.cpp(73,56): warning C4267: “参数”: 从“size_t”转换到“DWORD”，可能丢失数据
+  OLLama_text.vcxproj -> D:\code\study\c++_study\OLLama_text\x64\Debug\OLLama_text.exe
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
