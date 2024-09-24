@@ -50,7 +50,7 @@ namespace str
 		}
 
 		/*Lose one's mind*/
-		/*string& operator=(const string& str)
+		string& operator=(const string& str)
 		{
 			if (this != &str)
 			{
@@ -62,9 +62,9 @@ namespace str
 				_size = str._size;
 				_capacity = str._capacity;
 			}
-		}*/
+		}
 
-		string& operator=(string& str)
+		string& operator=(string&& str)
 		{
 			swap(str);
 			return *this;
