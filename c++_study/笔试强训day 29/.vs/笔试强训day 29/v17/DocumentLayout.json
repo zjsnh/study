@@ -13,7 +13,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 189,
+          "DockedHeight": 230,
           "SelectedChildIndex": 4,
           "Children": [
             {
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "text.cpp",
               "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\\u7B14\u8BD5\u5F3A\u8BADday 29\\text.cpp",
               "RelativeToolTip": "text.cpp",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAAAKEAAAARAAAA",
+              "ViewState": "AQIAAN4AAAAAE9hk8fMiwPUAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-26T12:59:24.402Z",
               "EditorCaption": ""
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "DockedHeight": 50,
+          "DockedHeight": 9,
           "SelectedChildIndex": -1,
           "Children": [
             {

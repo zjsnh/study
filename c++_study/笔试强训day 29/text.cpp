@@ -131,55 +131,135 @@
 //	return 0;
 //}
 
+//13
+//1 1 2 2 1 1 2 2 1 1 2 2 3
+
+
 #include <iostream>
 #include <vector>
 using namespace std;
 using ll = long long;
 
-int main()
-{
-    int size;
-    cin >> size; 
+//int min_sorted_subsequences(const std::vector<ll>& arr) {
+//    if (arr.size() <= 1) return 1;
+//
+//    int count = 1;
+//    int n = arr.size();
+//    bool increasing = false;  // 判断当前序列是递增还是递减
+//    bool defined = false;     // 判断是否已经确定了当前趋势
+//
+//    for (int i = 1; i < n; ++i) {
+//        if (arr[i] > arr[i - 1]) {
+//            // 当前是递增
+//            if (defined && !increasing) {
+//                count++;  // 从递减变为递增，分段
+//                defined = false;  // 重置趋势定义
+//            }
+//            increasing = true;
+//            defined = true;
+//        }
+//        else if (arr[i] < arr[i - 1]) {
+//            // 当前是递减
+//            if (defined && increasing) {
+//                count++;  // 从递增变为递减，分段
+//                defined = false;  // 重置趋势定义
+//            }
+//            increasing = false;
+//            defined = true;
+//        }
+//        // 如果 arr[i] == arr[i - 1]，不需要改变趋势，继续遍历
+//    }
+//    return count;
+//}
 
-    if (size == 1) 
+//int main()
+//{
+//    int size;
+//    cin >> size;
+//
+//    if (size == 1)
+//    {
+//        cout << 1 << endl;
+//        return 0;
+//    }
+//
+//    vector<ll> v(size);
+//    for (int i = 0; i < size; i++)
+//    {
+//        cin >> v[i];
+//    }
+//
+//    //cout << min_sorted_subsequences(v) << endl;
+//
+//    //int num = 0;
+//    //int direction = 0;
+//
+//    //int flag = 0;
+//    //for (int i = 1; i < size; i++)
+//    //{
+//    //    int new_direction = 0;
+//    //    if (v[i] == v[i - 1])
+//    //    {
+//    //        new_direction = direction;
+//    //    }
+//    //    else
+//    //    {
+//    //        if (v[i] > v[i - 1])
+//    //        {
+//    //            new_direction = 1;
+//    //        }
+//    //        else
+//    //        {
+//    //            new_direction = -1;
+//    //        }
+//
+//    //    }
+//
+//    //    if (new_direction != direction && !flag)//转变了  ->   flag == 1   
+//    //    {
+//    //        flag = 1;
+//    //        continue;
+//    //    }
+//
+//    //    if (flag == 1)
+//    //    {
+//    //        num++;
+//    //        flag = 0;
+//    //        direction = new_direction;
+//    //    }
+//    //}
+//
+//    //if (flag == 1)
+//    //{
+//    //    num++;
+//    //}
+//
+//    //cout << num << endl;
+//    return 0;
+//}
+
+
+
+
+#include<algorithm>
+int LIS(vector<int>& a) {
+    // write code here
+
+    vector<int> dp;
+
+    for (int i = 0; i < a.size(); i++)
     {
-        cout << 1 << endl;
-        return 0;
+        auto it = lower_bound(dp.begin(), dp.end(), a[i]);
+
+        if (it == dp.end())
+        {
+            dp.push_back(a[i]);
+        }
+        else
+        {
+            *it = a[i];
+        }
     }
 
-    vector<ll> v(size);
-    for (int i = 0; i < size; i++)
-    {
-        cin >> v[i];
-    }
-
-    int num = 0; 
-    int direction = 0; 
-
-    int flag = 1;
-    for (int i = 1; i < size; i++)
-    {
-        flag = 1;
-
-        if (v[i] == v[i - 1]) 
-        {
-            continue;
-        }
-
-        int new_direction = (v[i] > v[i - 1]) ? 1 : -1; 
-
-        if (new_direction != direction )
-        {
-            flag = 0;
-        }
-
-        if(flag)
-        {
-            num++;
-            direction = new_direction; 
-        }
-    }
-
-    cout << num << endl;
-    return 0;
+    return dp.size();
 }
