@@ -87,84 +87,212 @@
 //}
 
 
-#include<iostream>
-using namespace std;
-#include<string>
-#include<algorithm>
-#include<vector>
-
-
-//else
+//#include<iostream>
+//using namespace std;
+//#include<string>
+//#include<algorithm>
+//#include<vector>
+//
+//
+////else
+////{
+////	num = max(num, (int)v.size());
+////	v.clear();
+////	++_num;
+////	i = _num;
+////}
+//
+////短的是s1
+//int length_s(const string& s1, const string& s2) {
+//    int num = 0;
+//    vector<char> v;
+//    int _num = 0;
+//
+//    int circulate = 0;
+//    int pos = 0;
+//
+//    for (int i = 0; i < s1.size(); i++) {
+//        v.push_back(s1[i]);
+//
+//        for (int j = pos; j < s2.size(); j++) {
+//            if (s2[j] == v.back()) {
+//                pos = j + 1;
+//                _num++; 
+//                break; 
+//            }
+//
+//            if (i == s1.size() - 1 && j == s2.size() - 1)
+//            {
+//
+//                num = max(_num, num);
+//                if (++circulate == s1.size())
+//                {
+//                    return num;
+//                }
+//
+//                i = circulate - 1;
+//                _num = 0;
+//                pos = 0;
+//                v.clear();
+//                break;
+//            }
+//
+//        }
+//
+//    }
+//
+//    return num; 
+//}
+//
+//int main()
 //{
-//	num = max(num, (int)v.size());
-//	v.clear();
-//	++_num;
-//	i = _num;
+//	int a, b;
+//	cin >> a >> b;
+//
+//    string _short;
+//    string _long;
+//
+//
+//    if (a > b)
+//    {
+//        cin >> _long >> _short;
+//    }
+//    else
+//    {
+//        cin >> _short >> _long;
+//    }
+//
+//
+//
+//	cout << length_s(_short, _long) << endl;
+//
+//	return 0;
 //}
 
-//短的是s1
-int length_s(const string& s1, const string& s2) {
-    int num = 0;
-    vector<char> v;
-    int _num = 0;
+//#include<iostream>
+//using namespace std;
+//#include<vector>
+//#include<algorithm>
 
-    int circulate = 0;
-    int pos = 0;
+//vector<vector<int>> merge(vector<vector<int>>& intervals) {
+//
+//    sort(intervals.begin(), intervals.end(),
+//        [](const vector<int>& p1, const vector<int>& p2) {
+//            return p1[0] < p2[0];
+//        });
+//
+//    for (int i = 1; i < intervals.size();) {
+//        if (intervals[i - 1][1] >= intervals[i][0]) {
+//            intervals[i - 1][1] = max(intervals[i][1], intervals[i - 1][1]);
+//            i = (intervals.erase(intervals.begin() + i)) - intervals.begin();
+//        }
+//        else
+//        {
+//            i++;
+//        }
+//    }
+//
+//    return intervals;
+//}
 
-    for (int i = 0; i < s1.size(); i++) {
-        v.push_back(s1[i]);
-
-        for (int j = pos; j < s2.size(); j++) {
-            if (s2[j] == v.back()) {
-                pos = j + 1;
-                _num++; 
-                break; 
-            }
-
-            if (i == s1.size() - 1 && j == s2.size() - 1)
-            {
-
-                num = max(_num, num);
-                if (++circulate == s1.size())
-                {
-                    return num;
-                }
-
-                i = circulate - 1;
-                _num = 0;
-                pos = 0;
-                v.clear();
-                break;
-            }
-
-        }
-
-    }
-
-    return num; 
-}
-
-int main()
-{
-	int a, b;
-	cin >> a >> b;
-
-    string _short;
-    string _long;
-
-
-    if (a > b)
-    {
-        cin >> _long >> _short;
-    }
-    else
-    {
-        cin >> _short >> _long;
-    }
+//void rotate(vector<int>& nums, int k) {
+//
+//    k %= nums.size();
+//
+//    reverse(nums.begin(), nums.begin() + k);
+//    reverse(nums.begin() + k + 1, nums.end());
+//
+//    reverse(nums.begin(), nums.end());
+//
+//}
 
 
 
-	cout << length_s(_short, _long) << endl;
+//vector<int> productExceptSelf(vector<int>& nums) {
+//
+//	int zero_num = 0;
+//	int multiply = 1;
+//
+//
+//	for (int i = 0; i < nums.size(); i++)
+//	{
+//		if (nums[i] == 0 && !zero_num)
+//		{
+//			zero_num++;
+//			continue;
+//		}
+//
+//		
+//		multiply *= nums[i];
+//
+//	}
+//
+//	for (int i = 0; i < nums.size(); i++)
+//	{
+//		if (zero_num && (nums[i] != 0))
+//		{
+//			nums[i] = 0;
+//		}
+//		else if(zero_num && (nums[i] == 0))
+//		{
+//			nums[i] = multiply;
+//		}
+//		else
+//		{
+//			nums[i] = multiply / nums[i];
+//		}
+//	}
+//
+//
+//	return nums;
+//
+//}
+//
+//int main()
+//{
+//	vector<int> nums = { 0,4,0 };
+//	productExceptSelf(nums);
+//
+//
+//	return 0;
+//}
 
-	return 0;
+
+//#include <vector>
+//#include <algorithm>
+//using namespace std;
+//
+//int firstMissingPositive(vector<int>& nums) {
+//    sort(nums.begin(), nums.end());
+//
+//    int expected = 1; 
+//    for (int i = 0; i < nums.size(); i++) {
+//        if (nums[i] == expected) {
+//            expected++;
+//        }
+//    }
+//
+//    return expected; 
+//}
+
+#include<iostream>
+using namespace std;
+#include<vector>
+#include<algorithm>
+
+void setZeroes(vector<vector<int>>& matrix) {
+
+
+	vector<int> line;
+
+	for (int i = 0; i < matrix.size(); i++)
+	{
+		for (int j = 0; j < matrix[0].size(); j++)
+		{
+
+		}
+	}
+
+
+
 }
