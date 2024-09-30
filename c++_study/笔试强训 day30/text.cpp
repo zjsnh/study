@@ -275,24 +275,106 @@
 //    return expected; 
 //}
 
+//#include<iostream>
+//using namespace std;
+//#include<vector>
+//#include<algorithm>
+//
+//void setZeroes(vector<vector<int>>& matrix) {
+//
+//
+//	vector<int> line;
+//
+//	for (int i = 0; i < matrix.size(); i++)
+//	{
+//		for (int j = 0; j < matrix[0].size(); j++)
+//		{
+//
+//		}
+//	}
+//
+//
+//
+//}
+
+
+//struct ListNode {
+//    int val;
+//    ListNode *next;
+//    ListNode() : val(0), next(nullptr) {}
+//    ListNode(int x) : val(x), next(nullptr) {}
+//    ListNode(int x, ListNode *next) : val(x), next(next) {}
+//};
+// 
+//
+//
+//ListNode* removeNthFromEnd(ListNode* head, int n) {
+//    ListNode* root = head;
+//    ListNode* _root = head;
+//
+//    while (n-- > 0 && _root != nullptr) {
+//        _root = _root->next;
+//    }
+//
+//    if (_root == nullptr) {
+//        return head->next; 
+//    }
+//
+//    while (_root->next != nullptr) {
+//        root = root->next;
+//        _root = _root->next;
+//    }
+//
+//    if (root->next != nullptr) {
+//        root->next = root->next->next;
+//    }
+//
+//    return head;
+//}
+//
+//
+//int main()
+//{
+//	return 0;
+//}
+
 #include<iostream>
 using namespace std;
-#include<vector>
-#include<algorithm>
 
-void setZeroes(vector<vector<int>>& matrix) {
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+
+void _swap(ListNode*& root, ListNode*& _root)
+{
+    root->next = _root->next;
+    _root->next = root;
+
+    //swap(root, _root);
+}
 
 
-	vector<int> line;
+ListNode* swapPairs(ListNode* head) {
 
-	for (int i = 0; i < matrix.size(); i++)
-	{
-		for (int j = 0; j < matrix[0].size(); j++)
-		{
+    if (head == nullptr && head->next == nullptr)
+    {
+        return head;
+    }
 
-		}
-	}
+    ListNode* root = head;
+    ListNode* newhead = head->next;
 
+    while (root->next != nullptr)
+    {
+        _swap(root, root->next);
+        
+        root = root->next;
+    }
 
+    return newhead;
 
 }
