@@ -338,43 +338,49 @@
 //	return 0;
 //}
 
+//#include<iostream>
+//using namespace std;
+//
+//struct ListNode {
+//    int val;
+//    ListNode *next;
+//    ListNode() : val(0), next(nullptr) {}
+//    ListNode(int x) : val(x), next(nullptr) {}
+//    ListNode(int x, ListNode *next) : val(x), next(next) {}
+//};
+//
+//void _swap(ListNode*& root, ListNode*& _root)
+//{
+//    root->next = _root->next;
+//    _root->next = root;
+//
+//    //swap(root, _root);
+//}
+//
+//
+//ListNode* swapPairs(ListNode* head) {
+//
+//    if (head == nullptr && head->next == nullptr)
+//    {
+//        return head;
+//    }
+//
+//    ListNode* root = head;
+//    ListNode* newhead = head->next;
+//
+//    while (root->next != nullptr)
+//    {
+//        _swap(root, root->next);
+//        
+//        root = root->next;
+//    }
+//
+//    return newhead;
+//
+//}
+
+
 #include<iostream>
 using namespace std;
 
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
-};
 
-void _swap(ListNode*& root, ListNode*& _root)
-{
-    root->next = _root->next;
-    _root->next = root;
-
-    //swap(root, _root);
-}
-
-
-ListNode* swapPairs(ListNode* head) {
-
-    if (head == nullptr && head->next == nullptr)
-    {
-        return head;
-    }
-
-    ListNode* root = head;
-    ListNode* newhead = head->next;
-
-    while (root->next != nullptr)
-    {
-        _swap(root, root->next);
-        
-        root = root->next;
-    }
-
-    return newhead;
-
-}
