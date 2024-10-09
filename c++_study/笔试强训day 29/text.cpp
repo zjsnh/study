@@ -134,11 +134,11 @@
 //13
 //1 1 2 2 1 1 2 2 1 1 2 2 3
 
-
-#include <iostream>
-#include <vector>
-using namespace std;
-using ll = long long;
+//
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//using ll = long long;
 
 //int min_sorted_subsequences(const std::vector<ll>& arr) {
 //    if (arr.size() <= 1) return 1;
@@ -240,26 +240,191 @@ using ll = long long;
 
 
 
+//
+//#include<algorithm>
+//int LIS(vector<int>& a) {
+//    // write code here
+//
+//    vector<int> dp;
+//
+//    for (int i = 0; i < a.size(); i++)
+//    {
+//        auto it = lower_bound(dp.begin(), dp.end(), a[i]);
+//
+//        if (it == dp.end())
+//        {
+//            dp.push_back(a[i]);
+//        }
+//        else
+//        {
+//            *it = a[i];
+//        }
+//    }
+//
+//    return dp.size();
+//}
 
-#include<algorithm>
-int LIS(vector<int>& a) {
-    // write code here
 
-    vector<int> dp;
 
-    for (int i = 0; i < a.size(); i++)
-    {
-        auto it = lower_bound(dp.begin(), dp.end(), a[i]);
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//
+//
+//
+//bool canJump(vector<int>& nums) {
+//
+//    vector<int> dp;
+//    dp.push_back(1);
+//    int pos = 1;
+//
+//    for (int i = 0; i < nums.size(); i++)
+//    {
+//        if ((nums[i] + i + 1) > pos) 
+//        {
+//            pos = nums[i] + i + 1;
+//            dp.resize(pos, 1);
+//            
+//        }
+//
+//        if (nums[i] == 0 && pos == i + 1)
+//        {
+//            break;
+//        }
+//        
+//    }
+//
+//    if (pos >= nums.size())
+//    {
+//        return true;
+//    }
+//
+//    return false;
+//
+//}
+//
+//int main()
+//{
+//
+//    vector<int> text = { 3, 2, 1, 0, 4 };
+//
+//    cout << canJump(text);
+//
+//
+//    return 0;
+//}
 
-        if (it == dp.end())
-        {
-            dp.push_back(a[i]);
-        }
-        else
-        {
-            *it = a[i];
-        }
-    }
+//#include<iostream>
+//using namespace std;
+//#include<vector>
+//
+//
+//int jump(vector<int>& nums) {
+//    if (nums.size() < 2) return 0;
+//
+//    int pos = 0;
+//    int jumps = 0;
+//
+//    while (pos < nums.size() - 1) {
+//
+//        int max_reach = pos + nums[pos];
+//        if (max_reach >= nums.size() - 1) {
+//            jumps++;
+//            break;
+//        }
+//
+//        pair<int, int> _max = { 0, pos };
+//        for (int _pos = pos + 1; _pos <= max_reach; ++_pos) {
+//            if (_pos < nums.size() && nums[_pos] + _pos > _max.first) {
+//                _max.first = nums[_pos] + _pos;
+//                _max.second = _pos;
+//            }
+//        }
+//
+//        pos = _max.second;
+//        jumps++;
+//    }
+//
+//    return jumps;
+//}
+//
+//
+//int main()
+//{
+//	return 0;
+//}
 
-    return dp.size();
+//#include<iostream>
+//#include<unordered_set>
+//using namespace std;
+//
+//
+//class RandomizedSet {
+//public:
+//    RandomizedSet() {
+//
+//    }
+//
+//    bool insert(int val) {
+//
+//        return _set.insert(val).second;
+//
+//    }
+//
+//    bool remove(int val) {
+//
+//        return _set.erase(val);
+//
+//    }
+//
+//    int getRandom() {
+//
+//        int i = rand() % _set.size();
+//        unordered_set<int>::iterator it = _set.begin();
+//
+//        while (i--)
+//        {
+//            it++;
+//        }
+//
+//        return *it;
+//
+//    }
+//
+//    unordered_set<int> _set;
+//
+//};
+//
+//int main()
+//{
+//    unordered_set<int> i;
+//}
+
+#include<vector>
+#include<iostream>
+#include<string>
+using namespace std;
+
+//int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
+//
+//	
+//
+//
+//}
+
+bool isPalindrome(int x) {
+
+    if (x < 0)
+        return false;
+
+    string s = to_string(x);
+    string _s = s;
+    reverse(s.begin(), s.end());
+
+    if (s == _s )
+        return true;
+
+    return false;
+
 }
+
