@@ -400,31 +400,78 @@
 //    unordered_set<int> i;
 //}
 
-#include<vector>
-#include<iostream>
-#include<string>
-using namespace std;
-
-//int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
+//#include<vector>
+//#include<iostream>
+//#include<string>
+//using namespace std;
 //
-//	
+////int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
+////
+////	
+////
+////
+////}
 //
+//bool isPalindrome(int x) {
+//
+//    if (x < 0)
+//        return false;
+//
+//    string s = to_string(x);
+//    string _s = s;
+//    reverse(s.begin(), s.end());
+//
+//    if (s == _s )
+//        return true;
+//
+//    return false;
 //
 //}
 
-bool isPalindrome(int x) {
+#include<iostream>
+using namespace std;
+#include<vector>
+#include<unordered_map>
 
-    if (x < 0)
-        return false;
+void clear(unordered_map<string, int>& words_map)
+{
+	for (auto e : words_map)
+	{
+		e.second = 0;
+	}
+}
 
-    string s = to_string(x);
-    string _s = s;
-    reverse(s.begin(), s.end());
 
-    if (s == _s )
-        return true;
+vector<int> findSubstring(string s, vector<string>& words) {
 
-    return false;
+	unordered_map<string, int> words_map(words.begin(), words.end());
 
+	for (int i = 0; i < s.size(); i++)
+	{
+		int pos = i;
+		for (int j = 0; j < words.size(); j++)
+		{
+			if (words_map.find(s.substr(4, pos)) != words_map.end() && (words_map.find(s.substr(4, i)))->second == 0)
+			{
+				(words_map.find(s.substr(4, pos)))->second == 1;
+
+				pos += 4;
+
+			}
+			else
+			{
+				break;
+			}
+		}
+	
+	}
+
+
+
+}
+
+int main()
+{
+	return 0;
 }
 
