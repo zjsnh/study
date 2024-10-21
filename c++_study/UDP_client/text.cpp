@@ -39,15 +39,17 @@ int main() {
         return 1;
     }
 
-    src_init();
+   /* src_init();
     
     for (int j = 0; j <= i; j++)
     {
         sendto(clientSocket, _src[j].c_str(), _src[j].length(), 0, (sockaddr*)&serverAddr, sizeof(serverAddr));
-    }
+    }*/
 
     // 循环发送和接收数据
     while(true) {
+
+        memset(buffer, 0, sizeof(buffer));
 
         std::cout << "client send: ";
         std::string message;

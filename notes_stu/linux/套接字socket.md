@@ -174,6 +174,8 @@ UDP读取数据（因为UDP是面向数据报的，read等接口是面向字节�
 
 ![image-20241019194217036](D:\code\study\notes_stu\c++_note\picture\image-20241019194217036.png)
 
+![image-20241019215221993](D:\code\study\notes_stu\c++_note\picture\image-20241019215221993.png)
+
 ![image-20241019195707548](D:\code\study\notes_stu\c++_note\picture\image-20241019195707548.png)
 
 ![image-20241019201018346](D:\code\study\notes_stu\c++_note\picture\image-20241019201018346.png)
@@ -187,3 +189,67 @@ UDP读取数据（因为UDP是面向数据报的，read等接口是面向字节�
 ## TCP
 
 ![image-20241019201302528](D:\code\study\notes_stu\c++_note\picture\image-20241019201302528.png)
+
+![image-20241021090342333](D:\code\study\notes_stu\c++_note\picture\image-20241021090342333.png)
+
+将套接字设置为监听状态，因为TCP需要稳定链接，服务器需要一直等待连接
+
+![image-20241021090909173](D:\code\study\notes_stu\c++_note\picture\image-20241021090909173.png)
+
+![image-20241021091140600](D:\code\study\notes_stu\c++_note\picture\image-20241021091140600.png)
+
+![image-20241021091238519](D:\code\study\notes_stu\c++_note\picture\image-20241021091238519.png)
+
+![image-20241021091402549](D:\code\study\notes_stu\c++_note\picture\image-20241021091402549.png)
+
+对于新创建的套接字只是为了监听连接，而对于accept返回的套接字是为了io
+
+![image-20241021093137611](D:\code\study\notes_stu\c++_note\picture\image-20241021093137611.png)
+
+可以用来测试连接服务器，TCP在云服务器上，也不能绑定公网ip，可以绑定127. 0.0.1
+
+![image-20241021104405659](D:\code\study\notes_stu\c++_note\picture\image-20241021104405659.png)
+
+通信接口会自动转化序列，我们只需要把交给操作系统的转化
+
+![image-20241021094935182](D:\code\study\notes_stu\c++_note\picture\image-20241021094935182.png)
+
+![image-20241021095015047](D:\code\study\notes_stu\c++_note\picture\image-20241021095015047.png)
+
+![image-20241021095614395](D:\code\study\notes_stu\c++_note\picture\image-20241021095614395.png)
+
+![](D:\code\study\notes_stu\c++_note\picture\image-20241021110125381.png)
+
+**直接退出使用孙子进程处理，这个进程退出时会被操作系统回收**
+
+![image-20241021110651758](D:\code\study\notes_stu\c++_note\picture\image-20241021110651758.png)
+
+**使用信号处理将该信号忽略掉**
+
+
+
+![image-20241021105750630](D:\code\study\notes_stu\c++_note\picture\image-20241021105750630.png)
+
+创建进程的成本太高了，使用线程来处理
+
+![image-20241021111756869](D:\code\study\notes_stu\c++_note\picture\image-20241021111756869.png)
+
+![image-20241021111921206](D:\code\study\notes_stu\c++_note\picture\image-20241021111921206.png)
+
+静态方法只能访问静态成员，或者方法
+
+![image-20241021112254412](D:\code\study\notes_stu\c++_note\picture\image-20241021112254412.png)
+
+我们也可以使用传入类进行访问
+
+![image-20241021112316092](D:\code\study\notes_stu\c++_note\picture\image-20241021112316092.png)
+
+但是对于系统来说，创建线程也会消耗时间，
+
+**使用线程池**
+
+![image-20241021155231857](D:\code\study\notes_stu\c++_note\picture\image-20241021155231857.png)
+
+![image-20241021160359869](D:\code\study\notes_stu\c++_note\picture\image-20241021160359869.png)
+
+![image-20241021160444458](D:\code\study\notes_stu\c++_note\picture\image-20241021160444458.png)
