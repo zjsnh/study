@@ -253,3 +253,87 @@ UDP读取数据（因为UDP是面向数据报的，read等接口是面向字节�
 ![image-20241021160359869](D:\code\study\notes_stu\c++_note\picture\image-20241021160359869.png)
 
 ![image-20241021160444458](D:\code\study\notes_stu\c++_note\picture\image-20241021160444458.png)
+
+设置socket属性
+
+![image-20241022161532078](D:\code\study\notes_stu\c++_note\picture\image-20241022161532078.png)
+
+![image-20241022161836944](D:\code\study\notes_stu\c++_note\picture\image-20241022161836944.png)
+
+### 守护进程
+
+**防止因为xshell窗口关掉导致进程关闭**
+
+![image-20241022165323741](D:\code\study\notes_stu\c++_note\picture\image-20241022165323741.png)
+
+**谁拥有标准输入谁是前台进程**
+
+![image-20241022170349678](D:\code\study\notes_stu\c++_note\picture\image-20241022170349678.png)
+
+**fg + 任务号   ：将后台进程提到前台**
+
+jobs查看后台任务数量
+
+![image-20241022171539176](D:\code\study\notes_stu\c++_note\picture\image-20241022171539176.png)
+
+![image-20241022171732693](D:\code\study\notes_stu\c++_note\picture\image-20241022171732693.png)
+
+当前台任务被暂停了，操作系统会自动把bash提到前台，并把这个任务放到后台
+
+bg + 任务号 继续运行后台任务
+
+![image-20241022172055503](D:\code\study\notes_stu\c++_note\picture\image-20241022172055503.png)
+
+**每一个用户登录系统的时候都会有session id**
+
+![image-20241022173345667](D:\code\study\notes_stu\c++_note\picture\image-20241022173345667.png)
+
+一个任务由一个进程组来完成，而这个进程组可能由一个或者多个进程组成
+
+**这个session id就是bash的pid**
+
+![image-20241022174205741](D:\code\study\notes_stu\c++_note\picture\image-20241022174205741.png)
+
+**关闭bash之后，后台进程并没有退出，同时被系统领养，但是标签页没有了，但是有些进程我们并不想受到用户登录退出的影响**
+
+![image-20241022174554462](D:\code\study\notes_stu\c++_note\picture\image-20241022174554462.png)
+
+自成会话
+
+![image-20241022213253944](D:\code\study\notes_stu\c++_note\picture\image-20241022213253944.png)
+
+**创建一个会话，并设置该进程的会话id设置为设置的这个会话id**
+
+同时这个任务组的leader不能调用这个函数
+
+![image-20241022213648580](D:\code\study\notes_stu\c++_note\picture\image-20241022213648580.png)
+
+**让父进程退出，子进程设置守护进程**
+
+![image-20241022214626797](D:\code\study\notes_stu\c++_note\picture\image-20241022214626797.png)
+
+![image-20241022215357938](D:\code\study\notes_stu\c++_note\picture\image-20241022215357938.png)
+
+4：把代码调试信息不显示，而对于日志信息可以打印到文件里
+
+![image-20241023091331755](D:\code\study\notes_stu\c++_note\picture\image-20241023091331755.png)
+
+![image-20241023091348045](D:\code\study\notes_stu\c++_note\picture\image-20241023091348045.png)
+
+**守护进程**
+
+![image-20241023091525342](D:\code\study\notes_stu\c++_note\picture\image-20241023091525342.png)
+
+![image-20241023093147495](D:\code\study\notes_stu\c++_note\picture\image-20241023093147495.png)
+
+系统的守护进程
+
+![image-20241023093323737](D:\code\study\notes_stu\c++_note\picture\image-20241023093323737.png)
+
+![image-20241023093337006](D:\code\study\notes_stu\c++_note\picture\image-20241023093337006.png)
+
+![image-20241023093703109](D:\code\study\notes_stu\c++_note\picture\image-20241023093703109.png)
+
+tcp全双工
+
+![image-20241023094840489](D:\code\study\notes_stu\c++_note\picture\image-20241023094840489.png)
