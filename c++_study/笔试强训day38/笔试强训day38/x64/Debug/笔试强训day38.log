@@ -1,0 +1,6 @@
+﻿  text.cpp
+D:\code\study\c++_study\笔试强训day38\text.cpp(62,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\study\c++_study\笔试强训day38\text.cpp(77,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  笔试强训day38.vcxproj -> D:\code\study\c++_study\笔试强训day38\x64\Debug\笔试强训day38.exe
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
