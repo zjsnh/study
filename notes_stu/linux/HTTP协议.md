@@ -121,3 +121,51 @@ wget 底层就是http协议
 ![image-20241031195956330](D:\code\study\notes_stu\c++_note\picture\image-20241031195956330.png)
 
 **如果是程序就可以通过程序替换来执行，管道通信进行信息通信**
+
+![image-20241101094545976](D:\code\study\notes_stu\c++_note\picture\image-20241101094545976.png)
+
+安全不安全是加密来说的，get方法跟post方法都不安全，get方法不私密因为可以通过url看出来
+
+![image-20241101095403351](D:\code\study\notes_stu\c++_note\picture\image-20241101095403351.png)
+
+### 重定向状态码
+
+![image-20241101102057291](D:\code\study\notes_stu\c++_note\picture\image-20241101102057291.png)
+
+#### 永久重定向，临时重定向
+
+![image-20241101102513603](D:\code\study\notes_stu\c++_note\picture\image-20241101102513603.png)
+
+# Http属性
+
+![image-20241101103812926](D:\code\study\notes_stu\c++_note\picture\image-20241101103812926.png)
+
+![image-20241101155043828](D:\code\study\notes_stu\c++_note\picture\image-20241101155043828.png)
+
+![image-20241101155144516](D:\code\study\notes_stu\c++_note\picture\image-20241101155144516.png)
+
+是否支持长连接  
+
+若干次请求的回复
+
+![image-20241101160319422](D:\code\study\notes_stu\c++_note\picture\image-20241101160319422.png)
+
+![image-20241101160410610](D:\code\study\notes_stu\c++_note\picture\image-20241101160410610.png)
+
+content-type 用来显示你的正文是什么类型的正文，对于图片的二进制数据，就需要显式的告诉content-type
+
+![image-20241101160923634](D:\code\study\notes_stu\c++_note\picture\image-20241101160923634.png)
+
+![image-20241101161623290](D:\code\study\notes_stu\c++_note\picture\image-20241101161623290.png)
+
+二进制读取文件
+
+![image-20241101162941675](D:\code\study\notes_stu\c++_note\picture\image-20241101162941675.png)
+
+### cookie
+
+![image-20241101164618540](D:\code\study\notes_stu\c++_note\picture\image-20241101164618540.png)
+
+![image-20241101170323466](D:\code\study\notes_stu\c++_note\picture\image-20241101170323466.png)
+
+![image-20241101170344255](D:\code\study\notes_stu\c++_note\picture\image-20241101170344255.png)
