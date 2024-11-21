@@ -169,3 +169,23 @@ content-type 用来显示你的正文是什么类型的正文，对于图片的�
 ![image-20241101170323466](D:\code\study\notes_stu\c++_note\picture\image-20241101170323466.png)
 
 ![image-20241101170344255](D:\code\study\notes_stu\c++_note\picture\image-20241101170344255.png)
+
+## cookie
+
+![image-20241118155615950](D:\code\study\notes_stu\c++_note\picture\image-20241118155615950.png)
+
+![image-20241118160429577](D:\code\study\notes_stu\c++_note\picture\image-20241118160429577.png)
+
+![image-20241118160516331](D:\code\study\notes_stu\c++_note\picture\image-20241118160516331.png)
+
+## session文件
+
+![image-20241118162038079](D:\code\study\notes_stu\c++_note\picture\image-20241118162038079.png)
+
+对session验证，拿出相对应的cookie，用来保护用户的cookie信息，拿不到更多的私密信息
+
+seesion id是服务端统一管理的
+
+# Http
+
+http的请求都是明文的，不管是通过url还是post正文传送，都是可以看到的，https就是通过加密的信息传输协议

@@ -1,0 +1,5 @@
+﻿  text.cpp
+D:\code\study\c++_study\oj150\text.cpp(144,24): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  oj150.vcxproj -> D:\code\study\c++_study\oj150\x64\Debug\oj150.exe
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。

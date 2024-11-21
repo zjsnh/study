@@ -1,0 +1,5 @@
+﻿  text.cpp
+D:\code\study\c++_study\MD5_text\text.cpp(1,9): warning C4005: “_CRT_SECURE_NO_WARNINGS”: 宏重定义
+  MD5_text.vcxproj -> D:\code\study\c++_study\MD5_text\x64\Debug\MD5_text.exe
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
