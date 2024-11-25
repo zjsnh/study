@@ -47,3 +47,33 @@ TCP包头里带有序号用于标识数据包的顺序
 **确认序号跟序号两个都需要的原因是因为TCP报文可能即是报文也是应答**
 
 ![image-20241121172719891](D:\code\study\notes_stu\c++_note\picture\image-20241121172719891.png)
+
+报文类型
+
+![image-20241125152603003](D:\code\study\notes_stu\c++_note\picture\image-20241125152603003.png)
+
+![image-20241125154920035](D:\code\study\notes_stu\c++_note\picture\image-20241125154920035.png)
+
+**URG** 标识报文中有紧急数据，表示16位紧急指针有效
+
+tcp报文里，紧急数据只有一个字节，紧急指针代表偏移量
+
+![image-20241125160546568](D:\code\study\notes_stu\c++_note\picture\image-20241125160546568.png)
+
+常规数据 ：带内数据
+
+紧急数据 ： 带外数据
+
+## 重传
+
+![image-20241125162830958](D:\code\study\notes_stu\c++_note\picture\image-20241125162830958.png)
+
+![image-20241125174334915](D:\code\study\notes_stu\c++_note\picture\image-20241125174334915.png)
+
+**使用三次握手，让建立连接的成本给到客户端**
+
+![image-20241125174917544](D:\code\study\notes_stu\c++_note\picture\image-20241125174917544.png)
+
+**大量客户端对服务器进行请求**
+
+![image-20241125175100833](D:\code\study\notes_stu\c++_note\picture\image-20241125175100833.png)
