@@ -145,3 +145,17 @@ tcp报文里，紧急数据只有一个字节，紧急指针代表偏移量
 ![image-20241127195840782](D:\code\study\notes_stu\c++_note\picture\image-20241127195840782.png)
 
 ![image-20241127195846631](D:\code\study\notes_stu\c++_note\picture\image-20241127195846631.png)
+
+![image-20241128160150977](D:\code\study\notes_stu\c++_note\picture\image-20241128160150977.png)
+
+![image-20241128162222787](D:\code\study\notes_stu\c++_note\picture\image-20241128162222787.png)
+
+延迟应答是为了接收方向发送方应答时回复一个更大的窗口
+
+![image-20241128162701484](D:\code\study\notes_stu\c++_note\picture\image-20241128162701484.png)
+
+![image-20241128164332670](D:\code\study\notes_stu\c++_note\picture\image-20241128164332670.png)
+
+![image-20241128165303095](D:\code\study\notes_stu\c++_note\picture\image-20241128165303095.png)
+
+![image-20241128165459425](D:\code\study\notes_stu\c++_note\picture\image-20241128165459425.png)
