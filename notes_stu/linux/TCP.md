@@ -159,3 +159,43 @@ tcp报文里，紧急数据只有一个字节，紧急指针代表偏移量
 ![image-20241128165303095](D:\code\study\notes_stu\c++_note\picture\image-20241128165303095.png)
 
 ![image-20241128165459425](D:\code\study\notes_stu\c++_note\picture\image-20241128165459425.png)
+
+### 慢启动
+
+**拥塞窗口**
+
+![image-20241130160654131](D:\code\study\notes_stu\c++_note\picture\image-20241130160654131.png)
+
+![image-20241130162222993](D:\code\study\notes_stu\c++_note\picture\image-20241130162222993.png)
+
+采取较小的窗口
+
+![image-20241130162738174](D:\code\study\notes_stu\c++_note\picture\image-20241130162738174.png)
+
+### 面向字节流
+
+![image-20241130170037193](D:\code\study\notes_stu\c++_note\picture\image-20241130170037193.png)
+
+当用户读取数据后，传来的数据流并不是整个的报文，
+
+**粘包问题**
+
+解决这个问题就需要定制协议，每一个完整的请求需要有自己内容的大小，防止多解析，或者报文不完整时解析
+
+![image-20241130172213289](D:\code\study\notes_stu\c++_note\picture\image-20241130172213289.png)
+
+**tcp**异常
+
+![image-20241130173635953](D:\code\study\notes_stu\c++_note\picture\image-20241130173635953.png)
+
+**UDP可靠性**
+
+![image-20241130173757398](D:\code\study\notes_stu\c++_note\picture\image-20241130173757398.png)
+
+## 文件与socket
+
+![image-20241130182309998](D:\code\study\notes_stu\c++_note\picture\image-20241130182309998.png)
+
+![image-20241130183253385](D:\code\study\notes_stu\c++_note\picture\image-20241130183253385.png)
+
+![image-20241130184445582](D:\code\study\notes_stu\c++_note\picture\image-20241130184445582.png)
