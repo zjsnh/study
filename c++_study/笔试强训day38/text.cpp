@@ -272,6 +272,7 @@
 #include<unordered_map>
 #include<string>
 using namespace std;
+#include <algorithm>
 
 //class Solution {
 //public:
@@ -300,35 +301,226 @@ using namespace std;
 //    }
 //};
 
-class Solution {
-public:
-    static bool isIsomorphic(string t, string s) {
-        if (s.size() != t.size())
-            return false;
-        std::unordered_map<char, char> _map;
+//class Solution {
+//public:
+//    static bool isIsomorphic(string t, string s) {
+//        if (s.size() != t.size())
+//            return false;
+//        std::unordered_map<char, char> _map;
+//
+//        int size = s.size();
+//        for (int i = 0; i < size; i++)
+//        {
+//            int it = _map.count(s[i]);
+//            if ( it == 0)
+//            {
+//                _map[s[i]] = t[i];
+//            }
+//            else
+//            {
+//                if (_map[s[i]] != t[i])
+//                    return false;
+//            }
+//            
+//        }
+//
+//        return true;
+//    }
+//};
+//
+//int main()
+//{
+//    Solution::isIsomorphic("badc", "baba");
+//    return 0;
+//}
 
-        int size = s.size();
-        for (int i = 0; i < size; i++)
-        {
-            int it = _map.count(s[i]);
-            if ( it == 0)
-            {
-                _map[s[i]] = t[i];
-            }
-            else
-            {
-                if (_map[s[i]] != t[i])
-                    return false;
-            }
-            
-        }
 
-        return true;
-    }
+//
+//class Solution {
+//public:
+//    /*static int removeElement(vector<int>& nums, int val) {
+//
+//        int right = (int)(nums.size() - 1);
+//        int left = 0;
+//        int  k = 0;
+//        while (right > left)
+//        {
+//
+//            k++;
+//            if (nums[left] == val)
+//            {
+//                while (nums[right] == val && right > left)
+//                {
+//                    right--;
+//                }
+//
+//                std::swap(nums[left], nums[right]);
+//
+//                left++;
+//
+//                continue;
+//            }
+//            left++;
+//        }
+//
+//        return k;
+//
+//    }*/
+//
+//    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+//
+//        nums1.emplace_back(nums2.begin(), nums2.end());
+//
+//        sort(nums1.begin(), nums1.end());
+//    }
+//};
+//
+//
+//int main()
+//{
+//  /*  vector<int> nums = { 0,1,2,2,3,0,4,2 };
+//    std::cout << Solution::removeElement(nums, 2) << std::endl;*/
+//
+//
+//    return 0;
+//}
+//
+//struct ListNode
+//{
+//	int val;
+//	ListNode* _next;
+//};
+//
+//ListNode* reverseList(ListNode* head) {
+//
+//	ListNode* temp = head;
+//	ListNode* prev = nullptr;
+//
+//	while (temp->_next != nullptr)
+//	{
+//		ListNode* next = temp->_next;
+//
+//		temp->_next = prev;
+//		prev = temp;
+//		temp = next;
+//
+//	}
+//
+//	return head;
+//}
+//
+////
+////ListNode* removeElements(ListNode* head, int val) {
+////    ListNode* temp = head;
+////    ListNode* prev = nullptr;
+////
+////    while (temp != nullptr) {
+////        if (temp->val == val) {
+////            ListNode* cur = temp->next; 
+////            delete temp;              
+////            if (prev == nullptr) {  
+////                head = cur;
+////            }
+////            else {
+////                prev->next = cur;      
+////            }
+////            temp = cur;            
+////        }
+////        else {
+////            prev = temp;            
+////            temp = temp->next;          
+////        }
+////    }
+////
+////    return head;
+////}
+
+struct TreeNode
+{
+	int val;
+	TreeNode* left;
+	TreeNode* right;
 };
 
-int main()
-{
-    Solution::isIsomorphic("badc", "baba");
-    return 0;
+//bool isUnivalTree(TreeNode* root) {
+//    if (!root)
+//    {
+//        return true;
+//    }
+//
+//    if (root->right) {
+//        if (root->val != root->right->val || !isUnivalTree(root->right))
+//            return false;
+//        //isUnivalTree(root->right); //忽略往下传递的bool值
+//    }
+//
+//    if (root->left) {
+//        if (root->val != root->left->val || !isUnivalTree(root->left))
+//            return false;
+//
+//    }
+//
+//    return true;
+//}
+
+
+
+//bool isSameTree(TreeNode* p, TreeNode* q) {
+//	if (p == nullptr && q == nullptr)
+//		return true;
+//	else if (p == nullptr || q == nullptr)
+//		return false;
+//	else if (p->val != q->val)
+//		return false;
+//	else
+//		return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
+//
+//}
+
+//bool isSame(TreeNode* p, TreeNode* q)
+//{
+//	if (p == nullptr && q == nullptr)
+//		return true;
+//	else if (p == nullptr || q == nullptr)
+//		return false;
+//	else if (p->val != q->val)
+//		return false;
+//	else
+//		return isSame(p->left, q->right) && isSame(p->right, q->left);
+//}
+//
+//bool isSymmetric(TreeNode* root) {
+//
+//	if (root)
+//		return;
+//	return isSame(root->left, root->right);
+//}
+#include <stack>
+vector<int> preorderTraversal(TreeNode* root) {
+
+	vector<int> n;
+
+	if (root == nullptr)
+		return n;
+
+	//非递归
+	stack<TreeNode*> sk;
+	TreeNode* node = root;
+	while (!sk.empty() || node != nullptr)
+	{
+		while (node != nullptr)
+		{
+			n.push_back(node->val);
+			sk.push(node); //把本身加进去
+
+			node = node->left;
+		}
+
+		node = sk.top();
+		sk.pop();
+		node = node->right;
+
+
+	}
+	return n;
 }
