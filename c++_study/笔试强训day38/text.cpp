@@ -496,8 +496,134 @@ struct TreeNode
 //	return isSame(root->left, root->right);
 //}
 #include <stack>
-vector<int> preorderTraversal(TreeNode* root) {
+//vector<int> preorderTraversal(TreeNode* root) {
+//
+//	vector<int> n;
+//
+//	if (root == nullptr)
+//		return n;
+//
+//	//非递归
+//	stack<TreeNode*> sk;
+//	TreeNode* node = root;
+//	while (!sk.empty() || node != nullptr)
+//	{
+//		while (node != nullptr)
+//		{
+//			n.push_back(node->val);
+//			sk.push(node); //把本身加进去
+//
+//			node = node->left;
+//		}
+//
+//		node = sk.top();
+//		sk.pop();
+//		node = node->right;
+//
+//
+//	}
+//	return n;
+//}
 
+
+//vector<int> inorderTraversal(TreeNode* root) {
+//	vector<int> n;
+//
+//	if (root == nullptr)
+//		return n;
+//
+//	//非递归
+//	stack<TreeNode*> sk;
+//	TreeNode* node = root;
+//
+//	while (!sk.empty() || node != nullptr)
+//	{
+//		while (node)
+//		{
+//			sk.push(node);
+//			node = node->left;
+//		}
+//
+//		node = sk.top();
+//		sk.pop();
+//		n.push_back(node->val);
+//
+//		node = node->right;
+//	}
+//
+//	return n;
+//
+//}
+
+//#include<queue>
+//
+//vector<vector<int>> levelOrder(TreeNode* root) {
+//    vector<vector<int>> result;
+//    if (root == nullptr)
+//        return result;
+//
+//    queue<TreeNode*> q;
+//    q.push(root);
+//
+//    while (!q.empty()) {
+//        int size = q.size();
+//        vector<int> tier;
+//
+//        for (int i = 0; i < size; ++i) {
+//            TreeNode* node = q.front();
+//            q.pop();
+//            tier.push_back(node->val);
+//
+//            if (node->left)
+//                q.push(node->left);
+//            if (node->right)
+//                q.push(node->right);
+//        }
+//
+//        result.push_back(tier);
+//    }
+//
+//    return result;
+//}
+//
+//bool inorderTraversal(TreeNode* root) {
+//	int n = INT_MIN;
+//
+//	if (root == nullptr)
+//		return false;
+//
+//	//非递归
+//	stack<TreeNode*> sk;
+//	TreeNode* node = root;
+//
+//	while (!sk.empty() || node != nullptr)
+//	{
+//		while (node)
+//		{
+//			sk.push(node);
+//			node = node->left;
+//		}
+//
+//		node = sk.top();
+//		sk.pop();
+//		if (node->val <= n)
+//			return false;
+//		std::swap(n, node->val);
+//
+//		node = node->right;
+//	}
+//
+//	return true;
+//
+//}
+//
+//bool isValidBST(TreeNode* root) {
+//	return inorderTraversal(root);
+//}
+
+#include <queue>
+
+vector<int> inorderTraversal(TreeNode* root) {
 	vector<int> n;
 
 	if (root == nullptr)
@@ -506,21 +632,60 @@ vector<int> preorderTraversal(TreeNode* root) {
 	//非递归
 	stack<TreeNode*> sk;
 	TreeNode* node = root;
+
 	while (!sk.empty() || node != nullptr)
 	{
-		while (node != nullptr)
+		while (node)
 		{
-			n.push_back(node->val);
-			sk.push(node); //把本身加进去
-
+			sk.push(node);
 			node = node->left;
 		}
 
 		node = sk.top();
 		sk.pop();
+		n.push_back(node->val);
+
 		node = node->right;
-
-
 	}
+
 	return n;
+
+}
+
+
+struct Less
+{
+	bool operator()(const int& p1, const int& p2)
+	{
+		return p1 < p2;
+	}
+};
+
+
+int kthSmallest(TreeNode* root, int k) {
+	priority_queue<int, deque<int>,Less()> heap;
+
+	vector<int> n = inorderTraversal(root);
+
+	for (const auto& e : n)
+	{
+		if (heap.size() < k)
+			heap.push(e);
+
+		if (e < heap.top())
+		{
+			heap.push(e);
+			heap.pop();
+		}
+	}
+
+	
+	return heap.top();
+	
+}
+
+
+int main()
+{
+
 }
