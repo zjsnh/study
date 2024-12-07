@@ -621,71 +621,168 @@ struct TreeNode
 //	return inorderTraversal(root);
 //}
 
-#include <queue>
+//#include <queue>
+//
+//vector<int> inorderTraversal(TreeNode* root) {
+//	vector<int> n;
+//
+//	if (root == nullptr)
+//		return n;
+//
+//	//非递归
+//	stack<TreeNode*> sk;
+//	TreeNode* node = root;
+//
+//	while (!sk.empty() || node != nullptr)
+//	{
+//		while (node)
+//		{
+//			sk.push(node);
+//			node = node->left;
+//		}
+//
+//		node = sk.top();
+//		sk.pop();
+//		n.push_back(node->val);
+//
+//		node = node->right;
+//	}
+//
+//	return n;
+//
+//}
+//
+//
+//struct Less
+//{
+//	bool operator()(const int& p1, const int& p2)
+//	{
+//		return p1 < p2;
+//	}
+//};
+//
+//
+//int kthSmallest(TreeNode* root, int k) {
+//	priority_queue<int, deque<int>,Less()> heap;
+//
+//	vector<int> n = inorderTraversal(root);
+//
+//	for (const auto& e : n)
+//	{
+//		if (heap.size() < k)
+//			heap.push(e);
+//
+//		if (e < heap.top())
+//		{
+//			heap.push(e);
+//			heap.pop();
+//		}
+//	}
+//
+//	
+//	return heap.top();
+//	
+//}
+//
+//
+//int main()
+//{
+//
+//}
 
-vector<int> inorderTraversal(TreeNode* root) {
-	vector<int> n;
+//#include <stdio.h>
+//#include <string.h>
+//#include <stdlib.h>
+//#include <ctype.h>
+//
+//// 去掉空行的辅助函数
+//int remove_empty_lines(char* lines[], int count, char* result[]) {
+//    int index = 0;
+//    for (int i = 0; i < count; i++) {
+//        if (lines[i][0] != '\0' && strspn(lines[i], " \t\r\n") != strlen(lines[i])) {
+//            result[index++] = lines[i];
+//        }
+//    }
+//    return index;
+//}
+//
+//// 比较文本块的函数
+//const char* compare_text_blocks(char* input_lines[], int total_lines) {
+//    // 找到标志行 "strA 4 strB 5"
+//    int marker_index = -1;
+//    for (int i = 0; i < total_lines; i++) {
+//        if (strcmp(input_lines[i], "strA 4 strB 5") == 0) {
+//            marker_index = i;
+//            break;
+//        }
+//    }
+//    if (marker_index == -1 || total_lines < marker_index + 9) {
+//        return "Error: Invalid input format or insufficient lines.";
+//    }
+//
+//    // 分割文本块
+//    char* block_a[4];
+//    char* block_b[4];
+//    for (int i = 0; i < 4; i++) {
+//        block_a[i] = input_lines[marker_index + 1 + i];
+//        block_b[i] = input_lines[marker_index + 5 + i];
+//    }
+//
+//    char* filtered_a[4];
+//    char* filtered_b[4];
+//    int len_a = remove_empty_lines(block_a, 4, filtered_a);
+//    int len_b = remove_empty_lines(block_b, 4, filtered_b);
+//
+//    if (len_a != len_b) {
+//        return "strA != strB";
+//    }
+//    for (int i = 0; i < len_a; i++) {
+//        if (strcmp(filtered_a[i], filtered_b[i]) != 0) {
+//            return "strA != strB";
+//        }
+//    }
+//    return "strA==strB";
+//}
 
-	if (root == nullptr)
-		return n;
-
-	//非递归
-	stack<TreeNode*> sk;
-	TreeNode* node = root;
-
-	while (!sk.empty() || node != nullptr)
-	{
-		while (node)
-		{
-			sk.push(node);
-			node = node->left;
-		}
-
-		node = sk.top();
-		sk.pop();
-		n.push_back(node->val);
-
-		node = node->right;
-	}
-
-	return n;
-
-}
 
 
-struct Less
+
+vector<int> path;
+vector<vector<int>> ret;
+
+void traceback(vector<int>& nums, vector<int>& res)
 {
-	bool operator()(const int& p1, const int& p2)
+	if (path.size() == nums.size())
+		ret.push_back(path);
+
+
+	for (int i = 0; i < nums.size(); i++)
 	{
-		return p1 < p2;
-	}
-};
-
-
-int kthSmallest(TreeNode* root, int k) {
-	priority_queue<int, deque<int>,Less()> heap;
-
-	vector<int> n = inorderTraversal(root);
-
-	for (const auto& e : n)
-	{
-		if (heap.size() < k)
-			heap.push(e);
-
-		if (e < heap.top())
+		if (res[i] == 0)
 		{
-			heap.push(e);
-			heap.pop();
+			path.push_back(nums[i]);
+			res[i] = 1;
+
+			//回溯
+			traceback(nums, res);
+			path.pop_back();
+
+			res[i] == 0;
 		}
 	}
+}
+vector<vector<int>> permute(vector<int>& nums) {
+    vector<int> res(nums.size());
 
-	
-	return heap.top();
-	
+    traceback(nums, res);
+
+    return ret;
 }
 
 
-int main()
-{
 
-}
+
+
+
+
+
