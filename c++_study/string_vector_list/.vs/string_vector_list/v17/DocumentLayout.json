@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:string_vector_list\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\string_vector_list\\string_vector_list\\iterator - \u526F\u672C.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:string_vector_list\\iterator - \u526F\u672C.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\string_vector_list\\string_vector_list\\vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:string_vector_list\\vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\string_vector_list\\string_vector_list\\iterator - \u526F\u672C.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:string_vector_list\\iterator - \u526F\u672C.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\study\\c\u002B\u002B_study\\string_vector_list\\string_vector_list\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 189,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "iterator - \u526F\u672C.h",
               "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\string_vector_list\\string_vector_list\\iterator - \u526F\u672C.h",
               "RelativeDocumentMoniker": "string_vector_list\\iterator - \u526F\u672C.h",
@@ -65,22 +65,23 @@
               "RelativeDocumentMoniker": "string_vector_list\\list.h",
               "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\string_vector_list\\string_vector_list\\list.h",
               "RelativeToolTip": "string_vector_list\\list.h",
-              "ViewState": "AQIAACMBAAAAAAAAAAAuwBYBAAAWAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAuwH8AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-14T08:42:38.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "vector.h",
               "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\string_vector_list\\string_vector_list\\vector.h",
               "RelativeDocumentMoniker": "string_vector_list\\vector.h",
               "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\string_vector_list\\string_vector_list\\vector.h",
               "RelativeToolTip": "string_vector_list\\vector.h",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAD0AAAAmAAAA",
+              "ViewState": "AQIAAPkAAAAAAAAAAAAAAD0AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-10T13:25:18.205Z"
+              "WhenOpened": "2024-07-10T13:25:18.205Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
