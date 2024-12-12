@@ -747,36 +747,44 @@ struct TreeNode
 
 
 
-vector<int> path;
-vector<vector<int>> ret;
+//vector<int> path;
+//vector<vector<int>> ret;
+//
+//void traceback(vector<int>& nums, vector<int>& res)
+//{
+//	if (path.size() == nums.size())
+//		ret.push_back(path);
+//
+//
+//	for (int i = 0; i < nums.size(); i++)
+//	{
+//		if (res[i] == 0)
+//		{
+//			path.push_back(nums[i]);
+//			res[i] = 1;
+//
+//			//»ØËÝ
+//			traceback(nums, res);
+//			path.pop_back();
+//
+//			res[i] == 0;
+//		}
+//	}
+//}
+//vector<vector<int>> permute(vector<int>& nums) {
+//    vector<int> res(nums.size());
+//
+//    traceback(nums, res);
+//
+//    return ret;
+//}
 
-void traceback(vector<int>& nums, vector<int>& res)
+
+int main()
 {
-	if (path.size() == nums.size())
-		ret.push_back(path);
+	std::cout << sizeof(std::vector<std::string>);
 
-
-	for (int i = 0; i < nums.size(); i++)
-	{
-		if (res[i] == 0)
-		{
-			path.push_back(nums[i]);
-			res[i] = 1;
-
-			//»ØËÝ
-			traceback(nums, res);
-			path.pop_back();
-
-			res[i] == 0;
-		}
-	}
-}
-vector<vector<int>> permute(vector<int>& nums) {
-    vector<int> res(nums.size());
-
-    traceback(nums, res);
-
-    return ret;
+	return 0;
 }
 
 
