@@ -780,13 +780,28 @@ struct TreeNode
 //}
 
 
+//int main()
+//{
+//	std::cout << sizeof(std::vector<std::string>);
+//
+//	return 0;
+//}
+
+#include <bitset>
+
 int main()
 {
-	std::cout << sizeof(std::vector<std::string>);
+	bitset<1000> N;
+	N.set(1);
+
+
+	const char* a[] = { "111" };
+
+	int arr[] = {1};
+
 
 	return 0;
 }
-
 
 
 
