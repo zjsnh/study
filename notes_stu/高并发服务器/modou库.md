@@ -16,3 +16,4 @@
 
 ![image-20241209150403832](D:\code\study\notes_stu\c++_note\picture\image-20241209150403832.png)
 
+EventLoop在同一个线程内处理就绪事件，和任务
