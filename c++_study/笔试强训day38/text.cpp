@@ -791,13 +791,19 @@ struct TreeNode
 
 int main()
 {
-	bitset<1000> N;
+	/*bitset<1000> N;
 	N.set(1);
 
 
 	const char* a[] = { "111" };
 
-	int arr[] = {1};
+	int arr[] = {1};*/
+
+
+	const char* s = { "1111111111\0" };
+
+	std::cout << strlen(s) << std::endl;
+	std::cout << sizeof(std::vector<string>) << std::endl;
 
 
 	return 0;
