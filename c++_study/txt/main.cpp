@@ -18,13 +18,13 @@ struct pair_hash {
 };
 
 // 预期结果文件
-const std::string txt_1 = "C:\\Users\\30780\\Desktop\\ssp_fl_1ch_1733559855001.txt";
-const std::string txt_2 = "C:\\Users\\30780\\Desktop\\ssp_fl_1ch_1733561048228.txt";
-const std::string txt_3 = "C:\\Users\\30780\\Desktop\\ssp_fl_1ch_1733562619682.txt";
-const std::string txt_4 = "C:\\Users\\30780\\Desktop\\ssp_fl_1ch_1733562948791.txt";
+const std::string txt_1 = "./ssp_fl_1ch_1733559855001.txt";
+const std::string txt_2 = "./ssp_fl_1ch_1733561048228.txt";
+const std::string txt_3 = "./ssp_fl_1ch_1733562619682.txt";
+const std::string txt_4 = "./ssp_fl_1ch_1733562948791.txt";
 
 //输出结果文件
-const std::string csv_1 = "C:\\Users\\30780\\Desktop\\res_showcar1227.csv";
+const std::string csv_1 = "./res_showcar1227.csv";
 
 class ssp
 {
@@ -50,12 +50,12 @@ public:
                 number_str = number_str.substr(0, dot_pos);
             }
 
-            path = number_str;
+            ideal_file = number_str;
         }
     }
 
 public:
-    std::string path;
+    std::string ideal_file;
 
     float s_time;
     float e_time;
@@ -214,6 +214,8 @@ void comparison(const std::unordered_map<std::string, std::shared_ptr<std::vecto
     }
 }
 
+// -> ssp map 创建
+
 int main()
 {
      //使用 shared_ptr
@@ -242,16 +244,13 @@ int main()
 
     comparison(map, csv_ptr, results);
 
-    //int num = txt_ptr->size();
-    
-
-    // 这里可以进行结果的输出或进一步处理
+    // 结果输出
     for (const auto& result : results)
     {
         const auto& key = result.first;
         float match_score = result.second;
-        std::cout << "File: " << key.first << ", Model: " << key.second
-            << ", Match score: " << match_score << std::endl;
+        std::cout << "File: " << key.first << ", Model: " << key.second 
+            << "\r\n Match score: " << match_score / (map[key.first]->size())<< std::endl;
     }
 
     return 0;

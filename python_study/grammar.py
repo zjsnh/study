@@ -27,8 +27,6 @@ def ssp_file_read(result, file,):
         #print(f"Error: Not enough elements in result for file {file}")
         return None
     
-
-
     ssp_c = ssp(file, result[0], result[1], result[2])
     return ssp_c
 
@@ -75,6 +73,19 @@ def main():
     for csv_c in csv_read_results:
         print(f"Ideal File: {csv_c.ideal_file}, Mode: {csv_c.mode}, Start Time: {csv_c.s_time}, End Time: {csv_c.e_time}, Literals: {csv_c.literals}")
     '''
+
+    for  f in ssp_read_results:
+        print(f.path)
+        print(f.s_time)
+        print(f.e_time)
+        print(f.literals)
+
+    for  f in csv_read_results:
+        print(f.ideal_file)
+        print(f.mode)
+        print(f.s_time)
+        print(f.e_time)
+        print(f.literals)
 
 
 
