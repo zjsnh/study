@@ -1,3 +1,5 @@
+#include "thread.h"
+
 #include <iostream>
 #include <vector>
 #include <sstream>
@@ -22,6 +24,7 @@ const std::string txt_1 = "./ssp_fl_1ch_1733559855001.txt";
 const std::string txt_2 = "./ssp_fl_1ch_1733561048228.txt";
 const std::string txt_3 = "./ssp_fl_1ch_1733562619682.txt";
 const std::string txt_4 = "./ssp_fl_1ch_1733562948791.txt";
+const std::string output_file = "./data.csv";
 
 //输出结果文件
 const std::string csv_1 = "./res_showcar1227.csv";
@@ -188,7 +191,7 @@ void match(const std::shared_ptr<std::vector<ssp>>& txt_ptr, const csv& csv_entr
     std::unordered_map<std::pair<std::string, std::string>, float, pair_hash>& results)
 {
     for (const auto& ssp_entry : *txt_ptr) {
-        if (csv_entry.s_time >= ssp_entry.s_time && csv_entry.e_time <= ssp_entry.e_time && ssp_entry.literals == csv_entry.literals) {
+        if (csv_entry.s_time >= (ssp_entry.s_time - 0.5) && csv_entry.e_time <= (ssp_entry.e_time + 0.5) && ssp_entry.literals == csv_entry.literals) {
             results[std::pair<std::string, std::string>(csv_entry.ideal_file, csv_entry.mode)]++;
         }
     }
@@ -213,11 +216,44 @@ void comparison(const std::unordered_map<std::string, std::shared_ptr<std::vecto
         }
     }
 }
+//
+//std::string map_key(const std::string& file_path)
+//{
+//	size_t pos = file_path.rfind('_');
+//	if (pos != std::string::npos) {
+//		std::string number_str = file_path.substr(pos + 1);
+//		size_t dot_pos = number_str.find('.');
+//		if (dot_pos != std::string::npos) {
+//			number_str = number_str.substr(0, dot_pos);
+//		}
+//		return number_str;
+//	}
+//	return "";
+//}
 
-// -> ssp map 创建
+//// -> ssp map 创建
+//
+//void ssp_map(std::unordered_map<std::string, std::shared_ptr<std::vector<ssp>>>& map, 
+//            const std::string& file_path,my_util::ThreadPool& pool)
+//{
+//	std::shared_ptr<std::vector<ssp>> txt_ptr = std::make_shared<std::vector<ssp>>();
+//	pool.addTask(std::bind(Processing<ssp, ssp>, file_path, txt_ptr, ssp(), "\t"));
+//	map.insert(std::make_pair(map_key(file_path), txt_ptr));
+//
+//}
 
 int main()
 {
+   /* my_util::ThreadPool pool;
+	pool.start();
+*/
+
+    std::unordered_map<std::string, std::shared_ptr<std::vector<ssp>>> map;
+    /*ssp_map(map, txt_1, pool);
+	ssp_map(map, txt_2, pool);
+	ssp_map(map, txt_3, pool);
+	ssp_map(map, txt_4, pool);*/
+
      //使用 shared_ptr
     std::shared_ptr<std::vector<ssp>> txt_ptr1 = std::make_shared<std::vector<ssp>>();
     Processing(txt_1, txt_ptr1, ssp(), "\t");
@@ -232,26 +268,53 @@ int main()
     Processing(txt_4, txt_ptr4, ssp(), "\t");
 
     std::shared_ptr<std::vector<csv>> csv_ptr = std::make_shared<std::vector<csv>>();
-    Processing(csv_1, csv_ptr, csv(), ", ");   //  列分割符   ', '  ;
+    Processing(csv_1, csv_ptr, csv(), ", ");
 
-    std::unordered_map<std::string, std::shared_ptr<std::vector<ssp>>> map;
+
+    //std::shared_ptr<std::vector<csv>> csv_ptr = std::make_shared<std::vector<csv>>();
+    //pool.addTask(std::bind(Processing<csv, csv>, csv_1, csv_ptr, csv(), ", "));  //  列分割符   ', '  ;
+
     map.insert(std::make_pair("1733559855001", txt_ptr1));  // 使用 shared_ptr 插入 map
     map.insert(std::make_pair("1733561048228", txt_ptr2));  // 使用 shared_ptr 插入 map
     map.insert(std::make_pair("1733562619682", txt_ptr3));  // 使用 shared_ptr 插入 map
     map.insert(std::make_pair("1733562948791", txt_ptr4));  // 使用 shared_ptr 插入 map
 
+    // 等待所有任务完成
+    //pool.stop();
+
     std::unordered_map<std::pair<std::string, std::string>, float, pair_hash> results;  //符合预期的结果数量
 
     comparison(map, csv_ptr, results);
 
-    // 结果输出
+    // 结果输出到文件
+    std::ofstream ofs(output_file);
+    if (!ofs.is_open()) {
+        std::cerr << "Failed to open output file." << std::endl;
+        return 1;
+    }
+
+	ofs << "文件标识" << ", " << "模型标识" << ", " << "匹配度" << std::endl;
+
     for (const auto& result : results)
     {
         const auto& key = result.first;
         float match_score = result.second;
-        std::cout << "File: " << key.first << ", Model: " << key.second 
-            << "\r\n Match score: " << match_score / (map[key.first]->size())<< std::endl;
+        ofs << key.first << ", " << key.second
+            << ", " << std::to_string(match_score / (map[key.first]->size())) << std::endl;
     }
+
+    ofs.close();
+
+	//pool.stop();
+	//输出结果 到cmd
+	/*for (const auto& result : results)
+	{
+		const auto& key = result.first;
+		float match_score = result.second;
+		std::cout << key.first << ", " << key.second
+			<< ", " << std::to_string(match_score / (map[key.first]->size())) << std::endl;
+	}*/
+
 
     return 0;
 }
