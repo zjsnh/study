@@ -3,16 +3,7 @@
   "WorkspaceRootPath": "D:\\code\\study\\c\u002B\u002B_study\\txt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08DD2C62-C3D7-4C7D-BB3F-A9E927D7E81C}|txt.vcxproj|D:\\code\\study\\c\u002B\u002B_study\\txt\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{08DD2C62-C3D7-4C7D-BB3F-A9E927D7E81C}|txt.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08DD2C62-C3D7-4C7D-BB3F-A9E927D7E81C}|txt.vcxproj|D:\\code\\study\\c\u002B\u002B_study\\txt\\main_copy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{08DD2C62-C3D7-4C7D-BB3F-A9E927D7E81C}|txt.vcxproj|solutionrelative:main_copy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08DD2C62-C3D7-4C7D-BB3F-A9E927D7E81C}|txt.vcxproj|D:\\code\\study\\c\u002B\u002B_study\\txt\\thread.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{08DD2C62-C3D7-4C7D-BB3F-A9E927D7E81C}|txt.vcxproj|solutionrelative:thread.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\30780\\AppData\\Local\\Temp\\AweZip\\Temp1\\AweZip2\\main\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +13,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 10,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main_copy.cpp",
-              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\txt\\main_copy.cpp",
-              "RelativeDocumentMoniker": "main_copy.cpp",
-              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\txt\\main_copy.cpp",
-              "RelativeToolTip": "main_copy.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-31T10:16:52.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "thread.h",
-              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\txt\\thread.h",
-              "RelativeDocumentMoniker": "thread.h",
-              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\txt\\thread.h",
-              "RelativeToolTip": "thread.h",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-31T03:10:03.484Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "D:\\code\\study\\c\u002B\u002B_study\\txt\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "D:\\code\\study\\c\u002B\u002B_study\\txt\\main.cpp*",
-              "RelativeToolTip": "main.cpp*",
-              "ViewState": "AgIAAA0BAAAAAAAAAAAIwCcBAAA/AAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\30780\\AppData\\Local\\Temp\\AweZip\\Temp1\\AweZip2\\main\\main.cpp",
+              "ToolTip": "C:\\Users\\30780\\AppData\\Local\\Temp\\AweZip\\Temp1\\AweZip2\\main\\main.cpp",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAIwAsBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-30T02:02:04.316Z",
+              "WhenOpened": "2025-01-03T02:44:17.266Z",
               "EditorCaption": ""
             }
           ]

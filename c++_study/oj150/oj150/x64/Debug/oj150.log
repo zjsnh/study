@@ -1,5 +1,2 @@
-﻿  text.cpp
-D:\code\study\c++_study\oj150\text.cpp(144,24): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-  oj150.vcxproj -> D:\code\study\c++_study\oj150\x64\Debug\oj150.exe
-  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
-  或批处理文件。
+﻿MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 main，函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中引用了该符号
+D:\code\study\c++_study\oj150\x64\Debug\oj150.exe : fatal error LNK1120: 1 个无法解析的外部命令
