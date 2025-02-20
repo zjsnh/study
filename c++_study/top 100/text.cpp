@@ -357,12 +357,35 @@ using namespace std;
 //	return head;
 //}
 
+//
+//int hIndex(vector<int>& citations) {
+//
+//	sort(citations.begin(), citations.end());
+//	int first = 0;
+//	int last = citations.size() - 1;
+//
+//	return citations[first + (last - first) / 2];
+//}
 
-int hIndex(vector<int>& citations) {
+//struct TreeNode {
+//	int val;
+//	TreeNode* left;
+//	TreeNode* right;
+//	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+//};
+//
+//TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+//
+//
+//
+//
+//
+//}
 
-	sort(citations.begin(), citations.end());
-	int first = 0;
-	int last = citations.size() - 1;
 
-	return citations[first + (last - first) / 2];
+int orangesRotting(vector<vector<int>>& grid) {
+
+	//广度优先
+
+
 }

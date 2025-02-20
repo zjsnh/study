@@ -1,4 +1,10 @@
 ﻿  text.cpp
-  top 100.vcxproj -> D:\code\study\c++_study\top 100\x64\Debug\top 100.exe
-  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
-  或批处理文件。
+D:\code\study\c++_study\top 100\text.cpp(376,2): error C2512: “TreeNode”: 没有合适的默认构造函数可用
+      D:\code\study\c++_study\top 100\text.cpp(370,9):
+      参见“TreeNode”的声明
+  
+D:\code\study\c++_study\top 100\text.cpp(379,1): error C2146: 语法错误: 缺少“;”(在标识符“TreeNode”的前面)
+D:\code\study\c++_study\top 100\text.cpp(379,11): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\code\study\c++_study\top 100\text.cpp(379,74): error C2059: 语法错误:“{”
+D:\code\study\c++_study\top 100\text.cpp(379,74): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\code\study\c++_study\top 100\text.cpp(379,74): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
